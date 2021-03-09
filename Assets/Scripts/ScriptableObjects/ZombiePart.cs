@@ -1,0 +1,36 @@
+﻿using UnityEngine;
+[CreateAssetMenu(fileName = "ZP_", menuName = "Custom/Zombie Part", order = 0)]
+public class ZombiePart : ScriptableObject
+{
+    [Header("Properties")]
+    public PartType partType;
+    public GameObject partObject;
+    public ZombiePart adjacentPart;
+    
+    [Space(5f)]
+    [Header("Modifiers")]
+    public float attackModifier;
+    public ModifierType attackType;
+    
+    [Space(5f)]
+    public float healthModifier;
+    public ModifierType healthType;
+    
+    [Space(5f)]
+    public float speedModifier;
+    public ModifierType speedType;
+}
+
+public enum PartType
+{
+    Head,
+    Torso,
+    Arms,
+    Leg
+}
+
+public enum ModifierType
+{
+    Add,
+    Mult
+}

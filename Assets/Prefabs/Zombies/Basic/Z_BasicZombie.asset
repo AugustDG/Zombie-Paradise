@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8292f1ea04264cb2918112e984488df5, type: 3}
+  m_Name: Z_BasicZombie
+  m_EditorClassIdentifier: 
+  head: {fileID: 11400000, guid: d42047f498deb674196ac6357a69e434, type: 2}
+  torso: {fileID: 11400000, guid: d0d8340d7057e284496f5d452decfceb, type: 2}
+  arms:
+  - {fileID: 11400000, guid: 5467df409a2db7c4e8c353addd438048, type: 2}
+  - {fileID: 11400000, guid: d965f91d7b0a8f34f8ff0fe35a2e6186, type: 2}
+  legs:
+  - {fileID: 11400000, guid: 06ccc2bba607a7e4f8abb1499954d1d2, type: 2}
+  - {fileID: 11400000, guid: fdd60a5aae2df2844a85281038db64f7, type: 2}
+  totalDamage: 6
+  totalHealth: 40
+  totalSpeed: 4

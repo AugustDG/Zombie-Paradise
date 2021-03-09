@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c28ddddad2b4fb9a45b4308d689b876, type: 3}
+  m_Name: ZP_BasicHead
+  m_EditorClassIdentifier: 
+  partType: 0
+  partObject: {fileID: 539518478048673518, guid: 590cc2f2f2cc7584cb3368845ebd1c1d, type: 3}
+  adjacentPart: {fileID: 0}
+  attackModifier: 1
+  attackType: 0
+  healthModifier: 15
+  healthType: 0
+  speedModifier: 0
+  speedType: 0

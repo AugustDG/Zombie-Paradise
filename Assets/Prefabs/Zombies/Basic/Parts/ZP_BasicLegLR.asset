@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c28ddddad2b4fb9a45b4308d689b876, type: 3}
+  m_Name: ZP_BasicLegLR
+  m_EditorClassIdentifier: 
+  partType: 3
+  partObject: {fileID: 6150550622639131284, guid: 1c253b4a4f243cc4b90307627220816b, type: 3}
+  adjacentPart: {fileID: 11400000, guid: 06ccc2bba607a7e4f8abb1499954d1d2, type: 2}
+  damageModifier: 0
+  damageType: 0
+  healthModifier: 0
+  healthType: 0
+  speedModifier: 2
+  speedType: 0
