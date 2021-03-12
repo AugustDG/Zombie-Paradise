@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using ScriptableObjects;
 using UnityEngine;
 using Utilities.Extensions;
 using Utility;
@@ -7,6 +8,10 @@ namespace Characters
 {
     public class ZombieBehaviour : CharacterBehaviour
     {
+        protected override void ChildStart()
+        {
+            
+        }
         protected override void AssignTarget()
         {
             if (MapData.HumanList.Count > 0)

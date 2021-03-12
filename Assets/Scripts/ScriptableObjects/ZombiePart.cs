@@ -19,6 +19,10 @@ public class ZombiePart : ScriptableObject
     [Space(5f)]
     public float speedModifier;
     public ModifierType speedType;
+    
+    [Space(5f)]
+    public float costModifier;
+    public ModifierType costType;
 }
 
 public enum PartType

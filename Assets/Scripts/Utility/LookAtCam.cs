@@ -2,6 +2,7 @@
 
 namespace Utility
 {
+    [ExecuteInEditMode]
     public class LookAtCam : MonoBehaviour
     {
         public Vector3 upDirection;
@@ -14,7 +15,7 @@ namespace Utility
 
         private void FixedUpdate()
         {
-            transform.LookAt(_mainCamera.transform,upDirection);
+            transform.LookAt(_mainCamera.transform, upDirection);
         }
     }
 }

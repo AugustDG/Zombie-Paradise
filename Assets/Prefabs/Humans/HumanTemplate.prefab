@@ -253,6 +253,10 @@ MonoBehaviour:
   canSkipCalculation: 0
   hasTargetChanged: 1
   target: {fileID: 0}
+  fingerDrop: 5
+  brainDrop: 1
+  fingerParticles: {fileID: 8497151285980114238, guid: ba75c4ad47dafde4dad05ab62f06e48d, type: 3}
+  brainParticles: {fileID: 3833523637174246460, guid: e7e255b5ad1a2104a902360f76af5334, type: 3}
   femaleHead: {fileID: 3591986850837945596, guid: 9254ab2a5dc1a824ebb926c684522acc, type: 3}
   maleHead: {fileID: 3591986850837945596, guid: abd014a76a9d7e74dae3594d0fc91907, type: 3}
   distance: 15

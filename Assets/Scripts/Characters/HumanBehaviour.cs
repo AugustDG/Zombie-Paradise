@@ -7,6 +7,12 @@ namespace Characters
 {
     public class HumanBehaviour : CharacterBehaviour
     {
+        [Header("Drops")]
+        public int fingerDrop = 5;
+        public int brainDrop = 1;
+        [SerializeField] private ParticleSystem fingerParticles;
+        [SerializeField] private ParticleSystem brainParticles;
+
         [Space(5f)]
         [Header("Custom Human Heads")]
         [SerializeField] private GameObject femaleHead;
@@ -62,18 +68,32 @@ namespace Characters
             {
                 IsScheduledForCleanup = true;
                 StartCoroutine(Cleanup());
+
+                for (var i = 0; i < fingerDrop; i++) Instantiate(fingerParticles, transform.position, Quaternion.identity).Play();
+                for (var i = 0; i < fingerDrop; i++) Instantiate(brainParticles, transform.position, Quaternion.identity).Play();
+
+                MapEvents.IncreaseBrainEvent.Invoke(this, brainDrop);
+                MapEvents.IncreaseFingerEvent.Invoke(this, fingerDrop);
             }
+        }
+
+        public override IEnumerator Cleanup()
+        {
+            yield return new WaitForFixedUpdate();
+
+            MapData.HumanList.Remove(this);
+            gameObject.Destroy();
         }
 
         private IEnumerator DelayRoamingAndAssign()
         {
             _canDelay = false;
-            
+
             //find an objective position inside a certain radius from starting position
             objective.position = _initialPos + (Random.insideUnitSphere * distance).ChopTo2DVector3();
 
             Target = objective;
-            
+
             yield return new WaitForSecondsRealtime(Random.Range(5f, 10f));
             _canDelay = true;
         }
@@ -90,14 +110,6 @@ namespace Characters
 
             yield return new WaitForSecondsRealtime(attackInterval);
             if (isDealingDamage) StartCoroutine(DealDamage(attackedChar));
-        }
-        
-        public override IEnumerator Cleanup()
-        {
-            yield return new WaitForFixedUpdate();
-
-            MapData.HumanList.Remove(this);
-            gameObject.Destroy();
         }
     }
 }

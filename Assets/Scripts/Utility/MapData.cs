@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using Characters;
 using ScriptableObjects;
 using Unity.Collections;
@@ -8,6 +10,9 @@ namespace Utility
 {
     public static class MapData
     {
+        public static float FogHiDensity = 0.1f;
+        public static float FogLoDensity = 0.01f;
+        
         public static Node[,] Map;
         public static NativeArray<JobNode> NativeMap;
         public static Vector2Int MapSize = new Vector2Int(250, 250);
@@ -17,9 +22,30 @@ namespace Utility
         public static SyncList<CharacterBehaviour, ZombieBehaviour> ZombieList;
 
         public static ZombieData ZombieToSpawn;
+
+        public static int FingerAmount
+        {
+            get => _fingerAmount;
+            set
+            {
+                _fingerAmount = value;
+                MapEvents.CurrencyChangedEvent.Invoke(null, EventArgs.Empty);
+            }
+        }
+
+        private static int _fingerAmount;
         
-        public static float FogHiDensity = 0.1f;
-        public static float FogLoDensity = 0.01f;
+        public static int BrainAmount
+        {
+            get => _brainAmount;
+            set
+            {
+                _brainAmount = value;
+                MapEvents.CurrencyChangedEvent.Invoke(null, EventArgs.Empty);
+            }
+        }
+
+        private static int _brainAmount;
 
         static MapData()
         {

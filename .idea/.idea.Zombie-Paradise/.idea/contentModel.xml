@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\augus\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\augus\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_Zombie-Paradise.-344429396.00" t="ExcludeRecursive" />
+    <e p="C:\Users\augus\AppData\Roaming\JetBrains\Rider2020.3\consoles\db" t="IncludeRecursive" />
+    <e p="C:\Users\augus\AppData\Roaming\JetBrains\Rider2020.3\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\augus\AppData\Roaming\JetBrains\Rider2020.3\scratches" t="IncludeRecursive" />
+    <e p="F:\Projects\Dev\Unity\Zombie-Paradise" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Input" t="Include">
+          <e p="MainControls.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="Trees" t="Include">
+            <e p="readme.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Demigiant" t="Include">
+            <e p="DOTween" t="Include">
+              <e p="Modules" t="Include">
+                <e p="DOTweenModuleAudio.cs" t="Include" />
+                <e p="DOTweenModulePhysics.cs" t="Include" />
+                <e p="DOTweenModulePhysics2D.cs" t="Include" />
+                <e p="DOTweenModuleSprite.cs" t="Include" />
+                <e p="DOTweenModuleUI.cs" t="Include" />
+                <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+                <e p="DOTweenModuleUtils.cs" t="Include" />
+              </e>
+              <e p="readme.txt" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Camera" t="Include">
+            <e p="CameraController.cs" t="Include" />
+          </e>
+          <e p="Characters" t="Include">
+            <e p="CharacterBehaviour.cs" t="Include" />
+            <e p="HumanBehaviour.cs" t="Include" />
+            <e p="ZombieBehaviour.cs" t="Include" />
+          </e>
+          <e p="Creation" t="Include">
+            <e p="CreationManager.cs" t="Include" />
+          </e>
+          <e p="Editor" t="Include">
+            <e p="CreationManagerEditor.cs" t="Include" />
+            <e p="MapManagerEditor.cs" t="Include" />
+            <e p="ZombieDataEditor.cs" t="Include" />
+          </e>
+          <e p="Pathfinding" t="Include">
+            <e p="MapManager.cs" t="Include" />
+            <e p="Node.cs" t="Include" />
+            <e p="Pathfinding.cs" t="Include" />
+          </e>
+          <e p="ScriptableObjects" t="Include">
+            <e p="ZombieData.cs" t="Include" />
+            <e p="ZombiePart.cs" t="Include" />
+          </e>
+          <e p="Spawning" t="Include">
+            <e p="SpawnManager.cs" t="Include" />
+            <e p="SpawnPreview.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="Button3D.cs" t="Include" />
+            <e p="Cursor3D.cs" t="Include" />
+          </e>
+          <e p="Utility" t="Include">
+            <e p="ChangeCanvasSize.cs" t="Include" />
+            <e p="Exceptions.cs" t="Include" />
+            <e p="Full Serializer" t="Include">
+              <e p="Aot" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="fsAotConfigurationEditor.cs" t="Include" />
+                </e>
+                <e p="fsAotCompilationManager.cs" t="Include" />
+                <e p="fsAotConfiguration.cs" t="Include" />
+                <e p="fsAotVersionInfo.cs" t="Include" />
+                <e p="fsIAotConverter.cs" t="Include" />
+              </e>
+              <e p="Converters" t="Include">
+                <e p="fsArrayConverter.cs" t="Include" />
+                <e p="fsDateConverter.cs" t="Include" />
+                <e p="fsDictionaryConverter.cs" t="Include" />
+                <e p="fsEnumConverter.cs" t="Include" />
+                <e p="fsForwardConverter.cs" t="Include" />
+                <e p="fsGuidConverter.cs" t="Include" />
+                <e p="fsIEnumerableConverter.cs" t="Include" />
+                <e p="fsKeyValuePairConverter.cs" t="Include" />
+                <e p="fsNullableConverter.cs" t="Include" />
+                <e p="fsPrimitiveConverter.cs" t="Include" />
+                <e p="fsReflectedConverter.cs" t="Include" />
+                <e p="fsTypeConverter.cs" t="Include" />
+                <e p="fsWeakReferenceConverter.cs" t="Include" />
+                <e p="Unity" t="Include">
+                  <e p="AnimationCurve_DirectConverter.cs" t="Include" />
+                  <e p="Bounds_DirectConverter.cs" t="Include" />
+                  <e p="Gradient_DirectConverter.cs" t="Include" />
+                  <e p="GUIStyle_DirectConverter.cs" t="Include" />
+                  <e p="GUIStyleState_DirectConverter.cs" t="Include" />
+                  <e p="Keyframe_DirectConverter.cs" t="Include" />
+                  <e p="LayerMask_DirectConverter.cs" t="Include" />
+                  <e p="Rect_DirectConverter.cs" t="Include" />
+                  <e p="RectOffset_DirectConverter.cs" t="Include" />
+                  <e p="UnityEvent_Converter.cs" t="Include" />
+                </e>
+              </e>
+              <e p="fsBaseConverter.cs" t="Include" />
+              <e p="fsConfig.cs" t="Include" />
+              <e p="fsContext.cs" t="Include" />
+              <e p="fsConverter.cs" t="Include" />
+              <e p="fsConverterRegistrar.cs" t="Include" />
+              <e p="fsData.cs" t="Include" />
+              <e p="fsDirectConverter.cs" t="Include" />
+              <e p="fsExceptions.cs" t="Include" />
+              <e p="fsIgnoreAttribute.cs" t="Include" />
+              <e p="fsISerializationCallbacks.cs" t="Include" />
+              <e p="fsJsonParser.cs" t="Include" />
+              <e p="fsJsonPrinter.cs" t="Include" />
+              <e p="fsMemberSerialization.cs" t="Include" />
+              <e p="fsObjectAttribute.cs" t="Include" />
+              <e p="fsObjectProcessor.cs" t="Include" />
+              <e p="fsPropertyAttribute.cs" t="Include" />
+              <e p="fsResult.cs" t="Include" />
+              <e p="fsSerializer.cs" t="Include" />
+              <e p="Internal" t="Include">
+                <e p="fsCyclicReferenceManager.cs" t="Include" />
+                <e p="fsOption.cs" t="Include" />
+                <e p="fsPortableReflection.cs" t="Include" />
+                <e p="fsTypeExtensions.cs" t="Include" />
+                <e p="fsVersionedType.cs" t="Include" />
+                <e p="fsVersionManager.cs" t="Include" />
+              </e>
+              <e p="Reflection" t="Include">
+                <e p="fsMetaProperty.cs" t="Include" />
+                <e p="fsMetaType.cs" t="Include" />
+                <e p="fsReflectionUtility.cs" t="Include" />
+                <e p="fsTypeCache.cs" t="Include" />
+              </e>
+            </e>
+            <e p="LookAtCam.cs" t="Include" />
+            <e p="MapData.cs" t="Include" />
+            <e p="MapEvents.cs" t="Include" />
+            <e p="SerializeProperty.cs" t="Include" />
+            <e p="SetCurrencyValue.cs" t="Include" />
+            <e p="SyncList.cs" t="Include" />
+            <e p="UnityExtensions.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Simple Helvetica" t="Include">
+          <e p="Editor" t="Include">
+            <e p="SimpleHelveticaCustomEditor.cs" t="Include" />
+          </e>
+          <e p="readme.txt" t="Include" />
+          <e p="SimpleHelvetica.cs" t="Include" />
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\Bin" t="ExcludeRecursive" />
+      <e p="Zombie-Paradise.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

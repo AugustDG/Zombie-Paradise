@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Characters;
@@ -18,22 +19,22 @@ public class CharacterBehaviour : MonoBehaviour
             if (value) StartCoroutine(Cleanup());
             isScheduledForCleanup = value;
         }
-    } 
+    }
     [SerializeProperty(nameof(IsScheduledForCleanup))]
     public bool isScheduledForCleanup;
-    
-    [Header("Body Parts")]
+
+    [Space(5f)] [Header("Body Parts")]
     public Transform headPosition;
     public Transform torsoPosition;
     public Transform armLPosition;
     public Transform armRPosition;
     public Transform legLPosition;
-    public Transform legRPosition; 
+    public Transform legRPosition;
 
     [Space(5f)] [Header("Attacking")]
     public bool isDealingDamage;
     protected Coroutine DamageDealerCoroutine;
-    
+
     [Space(5f)] [Header("Pathfinding")]
     public Vector2Int targetPosition;
     public bool canSkipCalculation;
@@ -70,6 +71,8 @@ public class CharacterBehaviour : MonoBehaviour
         }
     }
 
+    private void Start() => ChildStart();
+
     private void OnTriggerEnter(Collider other) => TriggerEntered(other);
 
     private void OnTriggerExit(Collider other) => TriggerExited(other);
@@ -85,18 +88,20 @@ public class CharacterBehaviour : MonoBehaviour
         targetPosition = tempNode.gridPosition;
         hasTargetChanged = true;
     }
-    
+
     //true: Target now has a valid value, false it does not
-    protected virtual void AssignTarget() {  }
-    
-    protected virtual void TriggerEntered(Collider other) {}
-    
-    protected virtual void TriggerExited(Collider other) {}
+    protected virtual void AssignTarget() { }
+
+    protected virtual void ChildStart() { }
+
+    protected virtual void TriggerEntered(Collider other) { }
+
+    protected virtual void TriggerExited(Collider other) { }
 
     public virtual void SufferDamage(float damage) { }
-    
+
     //makes sure that no zombie has this object as a target during a fixed frame
-    public virtual IEnumerator Cleanup(){ yield break;} 
+    public virtual IEnumerator Cleanup() { yield break; }
 
     private void OnDrawGizmos()
     {
