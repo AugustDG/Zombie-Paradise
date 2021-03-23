@@ -44,7 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f651f22f235db34a87313d7e5862351, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  previewMaterial: {fileID: 2100000, guid: 1ad4fbe552f4d1a4385c9b711c57a4dd, type: 2}
   hasJustSpawned: 1
+  isValidSpawn: 0
 --- !u!1 &7202014148036931421
 GameObject:
   m_ObjectHideFlags: 0

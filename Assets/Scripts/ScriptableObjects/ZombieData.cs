@@ -15,12 +15,14 @@ namespace ScriptableObjects
         public float totalAttack;
         public float totalHealth;
         public float totalSpeed;
+        public float totalCost;
 
         public void CalculateTotalModifiers()
         {
             totalAttack = 0;
             totalHealth = 0;
             totalSpeed = 0;
+            totalCost = 0;
 
             totalAttack = totalAttack
               + (head is { attackType   : ModifierType.Add } ? head.attackModifier : 0)
@@ -69,6 +71,22 @@ namespace ScriptableObjects
               * (arms[1] is { speedType: ModifierType.Mult } ? arms[1].speedModifier : 1)
               * (legs[0] is { speedType: ModifierType.Mult } ? legs[0].speedModifier : 1)
               * (legs[1] is { speedType: ModifierType.Mult } ? legs[1].speedModifier : 1);
+            
+            totalCost = totalCost
+            + (head is { costType   : ModifierType.Add } ? head.costModifier : 0)
+            + (torso is { costType  : ModifierType.Add } ? torso.costModifier : 0)
+            + (arms[0] is { costType: ModifierType.Add } ? arms[0].costModifier : 0)
+            + (arms[1] is { costType: ModifierType.Add } ? arms[1].costModifier : 0)
+            + (legs[0] is { costType: ModifierType.Add } ? legs[0].costModifier : 0)
+            + (legs[1] is { costType: ModifierType.Add } ? legs[1].costModifier : 0);
+
+            totalCost = totalCost
+            * (head is { costType   : ModifierType.Mult } ? head.costModifier : 1)
+            * (torso is { costType  : ModifierType.Mult } ? torso.costModifier : 1)
+            * (arms[0] is { costType: ModifierType.Mult } ? arms[0].costModifier : 1)
+            * (arms[1] is { costType: ModifierType.Mult } ? arms[1].costModifier : 1)
+            * (legs[0] is { costType: ModifierType.Mult } ? legs[0].costModifier : 1)
+            * (legs[1] is { costType: ModifierType.Mult } ? legs[1].costModifier : 1);
         }
     }
 }

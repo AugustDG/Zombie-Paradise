@@ -8,10 +8,8 @@ namespace Characters
 {
     public class ZombieBehaviour : CharacterBehaviour
     {
-        protected override void ChildStart()
-        {
-            
-        }
+        public float spawnCost;
+        
         protected override void AssignTarget()
         {
             if (MapData.HumanList.Count > 0)

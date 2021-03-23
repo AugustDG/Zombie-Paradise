@@ -8,28 +8,48 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.3.2/Runtime/UniversalAdditionalLightData.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/SetCurrencyValue.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/DevTools.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/DisplayCurrencyValue.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/14/4731db24/KeyValuePair`2.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LookAtCam.cs" />
       <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.3.2/Runtime/UniversalAdditionalLightData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ZombiePart.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Characters/CharacterBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Characters/HumanBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SetLabel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Characters/CharacterBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ZombieData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Characters/ZombieBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapEvents.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SyncList.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SetCurrencyValue.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/DisplayCurrencyValue.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/DevTools.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnPreview.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Editor/MapManagerEditor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Characters/HumanBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Node.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/MapManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinding.cs" />
     </changedPaths>
   </component>
+  <component name="PerforceDirect.Settings">
+    <option name="ENABLED" value="false" />
+  </component>
   <component name="ProjectId" id="1pZH85vtmy9V7eI7KYF0nbYVkaG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35008103" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -37,9 +57,17 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="ParameterNameHintsOptionsId" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Builds\Zombie Paradise.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="F:\Projects\Dev\Unity\Zombie-Paradise\Builds" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -49,10 +77,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="20412">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="20412" />
+      <option name="pid" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -60,6 +88,9 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\augus\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f319ddcf-deb5-40fd-ad02-78d4e41a9a74" name="Default Changelist" comment="" />
@@ -69,6 +100,16 @@
       <updated>1615383536413</updated>
       <workItem from="1615383545107" duration="953000" />
       <workItem from="1615555061075" duration="3553000" />
+      <workItem from="1615921467430" duration="681000" />
+      <workItem from="1615988871837" duration="6612000" />
+      <workItem from="1616093356874" duration="409000" />
+      <workItem from="1616093844957" duration="9034000" />
+      <workItem from="1616185491972" duration="3678000" />
+      <workItem from="1616416584925" duration="5744000" />
+      <workItem from="1616505129170" duration="59000" />
+      <workItem from="1616505214211" duration="12541000" />
+      <workItem from="1616525067072" duration="89000" />
+      <workItem from="1616525176420" duration="137000" />
     </task>
     <servers />
   </component>
@@ -78,6 +119,33 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Pathfinding/MapManager.cs</url>
+          <line>369</line>
+          <properties documentPath="F:\Projects\Dev\Unity\Zombie-Paradise\Assets\Scripts\Pathfinding\MapManager.cs" initialLine="371" containingFunctionPresentation="method 'CreateNativeMap'">
+            <startOffsets>
+              <option value="12904" />
+            </startOffsets>
+            <endOffsets>
+              <option value="12905" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="DotNet Exception Breakpoints">
+          <properties justMyCode="true" />
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

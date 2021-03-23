@@ -24,22 +24,27 @@ namespace Characters
         [SerializeField] private Transform objective;
         private Vector3 _initialPos;
         private bool _canDelay = true;
-
-        public void Awake()
-        {
-            Instantiate(Random.Range(0, 2) == 0 ? femaleHead : maleHead, headPosition.position, headPosition.rotation, headPosition); //gives a random custom head (M or F)
-
-            MapData.HumanList.Add(this); //adds itself to the global human & character list
-        }
+        private bool _hasHead;
 
         public void Start()
         {
             _initialPos = transform.position;
+            
+            SpawnHead();
+            
+            MapData.HumanList.Add(this); //adds itself to the global human & character list
+        }
+
+        public void SpawnHead()
+        {
+            if (_hasHead) return;
+            _hasHead = true;
+            Instantiate(Random.Range(0, 2) == 0 ? femaleHead : maleHead, headPosition.position, headPosition.rotation, headPosition); //gives a random custom head (M or F)   
         }
 
         protected override void AssignTarget()
         {
-            if (_canDelay) StartCoroutine(DelayRoamingAndAssign());
+            if (_canDelay) StartCoroutine(DelayRoamingAndAssignTarget());
         }
 
         protected override void TriggerEntered(Collider other)
@@ -72,8 +77,8 @@ namespace Characters
                 for (var i = 0; i < fingerDrop; i++) Instantiate(fingerParticles, transform.position, Quaternion.identity).Play();
                 for (var i = 0; i < fingerDrop; i++) Instantiate(brainParticles, transform.position, Quaternion.identity).Play();
 
-                MapEvents.IncreaseBrainEvent.Invoke(this, brainDrop);
-                MapEvents.IncreaseFingerEvent.Invoke(this, fingerDrop);
+                MapData.BrainAmount += brainDrop;
+                MapData.FingerAmount += fingerDrop;
             }
         }
 
@@ -85,7 +90,7 @@ namespace Characters
             gameObject.Destroy();
         }
 
-        private IEnumerator DelayRoamingAndAssign()
+        private IEnumerator DelayRoamingAndAssignTarget()
         {
             _canDelay = false;
 

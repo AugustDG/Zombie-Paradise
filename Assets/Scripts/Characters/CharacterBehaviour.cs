@@ -71,8 +71,6 @@ public class CharacterBehaviour : MonoBehaviour
         }
     }
 
-    private void Start() => ChildStart();
-
     private void OnTriggerEnter(Collider other) => TriggerEntered(other);
 
     private void OnTriggerExit(Collider other) => TriggerExited(other);

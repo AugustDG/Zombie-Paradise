@@ -1,45 +1,50 @@
+using System;
 using System.Collections.Generic;
+using Characters;
 using Unity.Collections;
 using UnityEngine;
 using Utilities.Extensions;
 using Utility;
-[ExecuteInEditMode]
+using Random = UnityEngine.Random;
+
 public class MapManager : MonoBehaviour
 {
+    public static int GridSizeX, GridSizeY;
+
     public float nodeRadius;
     public LayerMask obstacleMask;
-
-    public static int GridSizeX, GridSizeY;
 
     private float _nodeDiameter;
 
     [Space(5f)]
     [Header("Map Generation")]
-    [SerializeField] private Transform[] trees;
-    [SerializeField] private Transform treesParent;
-    [SerializeField] private List<Transform> spawnedTrees;
+    [SerializeField] private GameObject[] tiles;
+    [SerializeField] private GameObject[] borderTrees;
+    [SerializeField] private GameObject[] mapTrees;
+    [SerializeField] private GameObject[] props;
+    [SerializeField] private HumanBehaviour human;
+    [SerializeField] private Transform tilesParent;
+    [SerializeField] private Transform borderTreesParent;
+    [SerializeField] private Transform mapTreesParent;
+    [SerializeField] private Transform propsParent;
+    [SerializeField] private Transform humansParent;
+    [SerializeField] private List<GameObject> spawnedTiles = new List<GameObject>();
+    [SerializeField] private List<GameObject> spawnedBorderTrees = new List<GameObject>();
+    [SerializeField] private List<GameObject> spawnedMapTrees = new List<GameObject>();
+    [SerializeField] private List<GameObject> spawnedProps = new List<GameObject>();
+    [SerializeField] private List<HumanBehaviour> spawnedHumans = new List<HumanBehaviour>();
     [SerializeField] private int localMapSize;
 
-    private void Start()
+    public void Start()
     {
+        transform.localScale = new Vector3(localMapSize / 10f, 1, localMapSize / 10f);
+        MapData.MapSize = new Vector2Int(localMapSize, localMapSize);
+
         _nodeDiameter = nodeRadius * 2;
         GridSizeX = (MapData.MapSize.x / _nodeDiameter).RoundToInt();
         GridSizeY = (MapData.MapSize.y / _nodeDiameter).RoundToInt();
 
         CreateMap();
-    }
-
-    private void Update()
-    {
-        #if UNITY_EDITOR
-        transform.localScale = new Vector3(localMapSize / 10f, 1, localMapSize / 10f);
-        MapData.MapSize = new Vector2Int(localMapSize, localMapSize);
-        #endif
-    }
-
-    private void OnApplicationQuit()
-    {
-        MapData.NativeMap.Dispose();
     }
 
     private void OnDrawGizmos()
@@ -61,7 +66,7 @@ public class MapManager : MonoBehaviour
             {
                 //Handles.Label(nodeArray.worldPosition, $"{nodeArray.gridPosition} {Environment.NewLine} {nodeArray.neighbours[2].gridPosition}", style);
                 Gizmos.color = nodeArray.nodeType == NodeTypes.Blocked ? Color.red : Color.white;
-                //Gizmos.DrawCube(nodeArray.worldPosition, Vector3.one * (_nodeDiameter - 0.1f));
+                Gizmos.DrawCube(nodeArray.worldPosition, Vector3.one * (_nodeDiameter - 0.1f));
             }
         }
 
@@ -92,10 +97,12 @@ public class MapManager : MonoBehaviour
 
         return MapData.Map[x, y];
     }
-    public void SpawnTrees()
+
+    #region Editor Functions
+    public void SpawnBorderTrees()
     {
         if (MapData.Map == null || MapData.Map.Length == 0) CreateMap();
-        if (spawnedTrees.Count > 0) DeleteTrees();
+        if (spawnedBorderTrees.Count > 0) DeleteBorderTrees();
 
         var i = 0;
 
@@ -108,48 +115,166 @@ public class MapManager : MonoBehaviour
                     var rndRot = Random.Range(0, 5);
                     var rot = new Vector3(0, 90 * rndRot, 0);
 
-                    spawnedTrees.Add(Instantiate(trees[Random.Range(0, trees.Length)], MapData.Map[x, y].worldPosition, Quaternion.Euler(rot), treesParent));
+                    spawnedBorderTrees.Add(Instantiate(borderTrees[Random.Range(0, borderTrees.Length)], MapData.Map[x, y].worldPosition, Quaternion.Euler(rot), borderTreesParent));
                     i++;
                 }
             }
         }
-
-        print($"Trees planted: {i}!");
     }
 
-    public void DeleteTrees()
+    public void DeleteBorderTrees()
     {
-        foreach (var tree in spawnedTrees)
+        foreach (var tree in spawnedBorderTrees)
         {
             tree.gameObject.DestroyImmediate();
         }
 
-        spawnedTrees.Clear();
+        spawnedBorderTrees.Clear();
     }
 
-    private void CreateNativeMap()
+    public void SpawnMapTrees()
     {
-        var tempMap = new JobNode[MapData.MapSize.x * MapData.MapSize.y];
+        if (MapData.Map == null || MapData.Map.Length == 0) CreateMap();
+        if (spawnedMapTrees.Count > 0) DeleteMapTrees();
 
-        for (var i = 0; i < tempMap.Length; i++)
+        foreach (var node in MapData.Map)
         {
-            Node tempNode;
+            if (Random.Range(0, 250) == 0)
+            {
+                spawnedMapTrees.Add(Instantiate(mapTrees[Random.Range(0, mapTrees.Length)], node.worldPosition, Quaternion.identity, mapTreesParent));
+            }
+        }
+    }
 
-            tempNode = MapData.Map[i % MapData.MapSize.x, i / MapData.MapSize.y];
-
-            tempMap[i] = Node.ToJobNode(tempNode);
-
-            tempMap[i].Neighbour1 = Node.ToJobNeighbour(tempNode.neighbours[0]);
-            tempMap[i].Neighbour2 = Node.ToJobNeighbour(tempNode.neighbours[1]);
-            tempMap[i].Neighbour3 = Node.ToJobNeighbour(tempNode.neighbours[2]);
-            if (tempNode.neighbours.Length > 3) tempMap[i].Neighbour4 = Node.ToJobNeighbour(tempNode.neighbours[3]);
-            if (tempNode.neighbours.Length > 4) tempMap[i].Neighbour5 = Node.ToJobNeighbour(tempNode.neighbours[4]);
-            if (tempNode.neighbours.Length > 5) tempMap[i].Neighbour6 = Node.ToJobNeighbour(tempNode.neighbours[5]);
-            if (tempNode.neighbours.Length > 6) tempMap[i].Neighbour7 = Node.ToJobNeighbour(tempNode.neighbours[6]);
-            if (tempNode.neighbours.Length > 7) tempMap[i].Neighbour8 = Node.ToJobNeighbour(tempNode.neighbours[7]);
+    public void DeleteMapTrees()
+    {
+        foreach (var tree in spawnedMapTrees)
+        {
+            tree.gameObject.DestroyImmediate();
         }
 
-        MapData.NativeMap = new NativeArray<JobNode>(tempMap, Allocator.Persistent);
+        spawnedMapTrees.Clear();
+    }
+
+    public void SpawnProps()
+    {
+        if (MapData.Map == null || MapData.Map.Length == 0) CreateMap();
+        if (spawnedProps.Count > 0) DeleteProps();
+
+        foreach (var node in MapData.Map)
+        {
+            if (Random.Range(0, 1000) == 0)
+            {
+                spawnedProps.Add(Instantiate(props[Random.Range(0, props.Length)], node.worldPosition, Quaternion.identity, propsParent));
+            }
+        }
+    }
+
+    public void DeleteProps()
+    {
+        foreach (var prop in spawnedProps)
+        {
+            prop.gameObject.DestroyImmediate();
+        }
+
+        spawnedProps.Clear();
+    }
+
+    public void SpawnHumans()
+    {
+        if (MapData.Map == null || MapData.Map.Length == 0) CreateMap();
+        if (spawnedHumans.Count > 0) DeleteHumans();
+
+        var chanceMult = 1;
+
+        foreach (var node in MapData.Map)
+        {
+            var tempNode = node;
+
+            if (tempNode.nodeType == NodeTypes.Blocked) continue;
+            if (Random.Range(0, GridSizeX * chanceMult) == 0)
+            {
+                var spawns = 0;
+                do
+                {
+                    foreach (var neighbour in tempNode.neighbours)
+                    {
+                        if (Random.Range(0, 10 * spawns) == 0 && neighbour.nodeType != NodeTypes.Blocked)
+                        {
+                            var spawnedBehaviour = Instantiate(human, neighbour.worldPosition, Quaternion.identity, humansParent);
+                            spawnedBehaviour.SpawnHead();
+                            spawnedHumans.Add(spawnedBehaviour);
+                            spawns++;
+                        }
+                    }
+
+                    tempNode = tempNode.neighbours[Random.Range(0, tempNode.neighbours.Length)];
+
+                    chanceMult++;
+                } while (spawns <= 6);
+            }
+        }
+    }
+
+    public void DeleteHumans()
+    {
+        foreach (var humanBehaviour in spawnedHumans)
+        {
+            humanBehaviour.gameObject.DestroyImmediate();
+        }
+
+        spawnedHumans.Clear();
+    }
+
+    public void SpawnTiles()
+    {
+        if (spawnedTiles.Count > 0) DeleteTiles();
+
+        foreach (var tile in tiles)
+        {
+            tile.transform.localScale = new Vector3(1f / (localMapSize / 10f), 1, 1f / (localMapSize / 10f));
+        }
+
+        var i = 0;
+
+        for (var x = -(localMapSize - 50) / 2; x <= (localMapSize - 50) / 2; x += 50)
+        {
+            for (var y = -(localMapSize - 50) / 2; y <= (localMapSize - 50) / 2; y += 50)
+            {
+                i++;
+
+                if (x == 0 && y == 0) continue;
+
+                var rndRot = Random.Range(0, 5);
+                var rot = new Vector3(0, 90 * rndRot, 0);
+
+                spawnedTiles.Add(Instantiate(tiles[RandomWeightedNumber()], new Vector3(x, 0, y), Quaternion.Euler(rot), tilesParent));
+            }
+        }
+    }
+
+    public void DeleteTiles()
+    {
+        foreach (var tile in spawnedTiles)
+        {
+            tile.gameObject.DestroyImmediate();
+        }
+
+        spawnedTiles.Clear();
+    }
+
+    private int RandomWeightedNumber()
+    {
+        var rnd = Random.value;
+
+        if (rnd < 0.45f)
+            return 0;
+        else if (rnd < 0.9f)
+            return 1;
+        else if (rnd < 0.95f)
+            return 2;
+        else
+            return 3;
     }
 
     public void CreateMap()
@@ -193,21 +318,21 @@ public class MapManager : MonoBehaviour
                 var ym1 = currentNode.gridPosition.y - 1;
                 var yp1 = currentNode.gridPosition.y + 1;
 
-                if (IsValidNeighbour(xm1, yp1, out var temp))
+                if (IsValidNodeNeighbour(xm1, yp1, out var temp))
                     nodesToBe.Add(temp);
-                if (IsValidNeighbour(xpos, yp1, out temp))
+                if (IsValidNodeNeighbour(xpos, yp1, out temp))
                     nodesToBe.Add(temp);
-                if (IsValidNeighbour(xp1, yp1, out temp))
+                if (IsValidNodeNeighbour(xp1, yp1, out temp))
                     nodesToBe.Add(temp);
-                if (IsValidNeighbour(xm1, ypos, out temp))
+                if (IsValidNodeNeighbour(xm1, ypos, out temp))
                     nodesToBe.Add(temp);
-                if (IsValidNeighbour(xp1, ypos, out temp))
+                if (IsValidNodeNeighbour(xp1, ypos, out temp))
                     nodesToBe.Add(temp);
-                if (IsValidNeighbour(xm1, ym1, out temp))
+                if (IsValidNodeNeighbour(xm1, ym1, out temp))
                     nodesToBe.Add(temp);
-                if (IsValidNeighbour(xpos, ym1, out temp))
+                if (IsValidNodeNeighbour(xpos, ym1, out temp))
                     nodesToBe.Add(temp);
-                if (IsValidNeighbour(xp1, ym1, out temp))
+                if (IsValidNodeNeighbour(xp1, ym1, out temp))
                     nodesToBe.Add(temp);
 
                 currentNode.neighbours = nodesToBe.ToArray();
@@ -219,7 +344,32 @@ public class MapManager : MonoBehaviour
         CreateNativeMap();
     }
 
-    private bool IsValidNeighbour(int x, int y, out Node result)
+    private void CreateNativeMap()
+    {
+        if (MapData.NativeMap.IsCreated) MapData.NativeMap.Dispose();
+
+        var tempMap = new JobNode[MapData.MapSize.x * MapData.MapSize.y];
+
+        for (var i = 0; i < tempMap.Length; i++)
+        {
+            var tempNode = MapData.Map[i % MapData.MapSize.x, i / MapData.MapSize.y];
+
+            tempMap[i] = Node.ToJobNode(tempNode);
+
+            tempMap[i].Neighbour1 = Node.ToJobNeighbour(tempNode.neighbours[0]);
+            tempMap[i].Neighbour2 = Node.ToJobNeighbour(tempNode.neighbours[1]);
+            tempMap[i].Neighbour3 = Node.ToJobNeighbour(tempNode.neighbours[2]);
+            tempMap[i].Neighbour4 = tempNode.neighbours.Length > 3 ? Node.ToJobNeighbour(tempNode.neighbours[3]) : new JobNeighbour(Vector2Int.zero, true);
+            tempMap[i].Neighbour4 = tempNode.neighbours.Length > 4 ? Node.ToJobNeighbour(tempNode.neighbours[4]) : new JobNeighbour(Vector2Int.zero, true);
+            tempMap[i].Neighbour4 = tempNode.neighbours.Length > 5 ? Node.ToJobNeighbour(tempNode.neighbours[5]) : new JobNeighbour(Vector2Int.zero, true);
+            tempMap[i].Neighbour4 = tempNode.neighbours.Length > 6 ? Node.ToJobNeighbour(tempNode.neighbours[6]) : new JobNeighbour(Vector2Int.zero, true);
+            tempMap[i].Neighbour4 = tempNode.neighbours.Length > 7 ? Node.ToJobNeighbour(tempNode.neighbours[7]) : new JobNeighbour(Vector2Int.zero, true);
+        }
+
+        MapData.NativeMap = new NativeArray<JobNode>(tempMap, Allocator.Persistent);
+    }
+
+    private bool IsValidNodeNeighbour(int x, int y, out Node result)
     {
         if (x >= 0 && x < MapData.MapSize.x && y >= 0 && y < MapData.MapSize.y)
         {
@@ -230,4 +380,5 @@ public class MapManager : MonoBehaviour
         result = null;
         return false;
     }
+    #endregion
 }

@@ -15,8 +15,10 @@
           <e p="MainControls.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
-          <e p="Trees" t="Include">
-            <e p="readme.txt" t="Include" />
+          <e p="Environment" t="Include">
+            <e p="Trees" t="Include">
+              <e p="readme.txt" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Plugins" t="Include">
@@ -71,6 +73,8 @@
           </e>
           <e p="Utility" t="Include">
             <e p="ChangeCanvasSize.cs" t="Include" />
+            <e p="DevTools.cs" t="Include" />
+            <e p="DisplayCurrencyValue.cs" t="Include" />
             <e p="Exceptions.cs" t="Include" />
             <e p="Full Serializer" t="Include">
               <e p="Aot" t="Include">
@@ -142,11 +146,11 @@
                 <e p="fsTypeCache.cs" t="Include" />
               </e>
             </e>
+            <e p="GameManager.cs" t="Include" />
             <e p="LookAtCam.cs" t="Include" />
             <e p="MapData.cs" t="Include" />
             <e p="MapEvents.cs" t="Include" />
             <e p="SerializeProperty.cs" t="Include" />
-            <e p="SetCurrencyValue.cs" t="Include" />
             <e p="SyncList.cs" t="Include" />
             <e p="UnityExtensions.cs" t="Include" />
           </e>

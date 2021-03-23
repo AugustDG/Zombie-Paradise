@@ -21,3 +21,5 @@ MonoBehaviour:
   healthType: 0
   speedModifier: 0
   speedType: 0
+  costModifier: 0.5
+  costType: 0

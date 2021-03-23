@@ -32,76 +32,56 @@ public class Pathfinding : MonoBehaviour
 
         for (var i = 0; i < MapData.CharacterList.Count; i++)
         {
-            try
+            if (MapData.CharacterList[i].Target == null || !MapData.CharacterList[i].hasTargetChanged)
             {
-                if (MapData.CharacterList[i].Target == null || !MapData.CharacterList[i].hasTargetChanged)
-                {
-                    MapData.CharacterList[i].canSkipCalculation = true;
-                    continue;
-                }
-
-                MapData.CharacterList[i].hasTargetChanged = false;
-
-                _result[i] = new NativeList<JobNode>(50, Allocator.Persistent);
-
-                _jobs[i] = new PathfindingJob
-                {
-                    Map = MapData.NativeMap,
-                    CharPos = MapData.CharacterList[i].transform.position,
-                    TargetPos = MapData.CharacterList[i].targetPosition,
-                    Randomizer = _randoms[_rnd.Next(0, _randoms.Length - 1)],
-                    MapSizeX = MapData.MapSize.x,
-                    MapSizeY = MapData.MapSize.y,
-                    GridSizeX = MapManager.GridSizeX,
-                    GridSizeY = MapManager.GridSizeY,
-                    OutNodes = _result[i]
-                };
-
-                _jobHandles.Add(_jobs[i].Schedule());
+                MapData.CharacterList[i].canSkipCalculation = true;
+                continue;
             }
-            catch (Exception e)
+
+            MapData.CharacterList[i].hasTargetChanged = false;
+
+            _result[i] = new NativeList<JobNode>(50, Allocator.Persistent);
+
+            _jobs[i] = new PathfindingJob
             {
-			#if UNITY_EDITOR
-                Debug.LogError(e);
-                Debug.Break();
-			#endif
-            }
+                Map = MapData.NativeMap,
+                CharPos = MapData.CharacterList[i].transform.position,
+                TargetPos = MapData.CharacterList[i].targetPosition,
+                Randomizer = _randoms[_rnd.Next(0, _randoms.Length - 1)],
+                MapSizeX = MapData.MapSize.x,
+                MapSizeY = MapData.MapSize.y,
+                GridSizeX = MapManager.GridSizeX,
+                GridSizeY = MapManager.GridSizeY,
+                OutNodes = _result[i]
+            };
+
+            _jobHandles.Add(_jobs[i].Schedule());
         }
 
         JobHandle.CompleteAll(_jobHandles);
 
         for (var i = 0; i < _jobs.Length; i++)
         {
-            try
+            if (MapData.CharacterList[i].canSkipCalculation)
             {
-                if (MapData.CharacterList[i].canSkipCalculation)
-                {
-                    if (_result[i].IsCreated) _result[i].Dispose();
-                    MapData.CharacterList[i].canSkipCalculation = false;
-                    continue;
-                }
-                
-                MapData.CharacterList[i].waypoints.Clear();
-                MapData.CharacterList[i].waypoints = new Queue<Node>(Node.ToNode(_result[i].ToArray()));
-                
-                _result[i].Dispose();
+                if (_result[i].IsCreated) _result[i].Dispose();
+                MapData.CharacterList[i].canSkipCalculation = false;
+                continue;
             }
-            catch (Exception e)
-            {
-			#if UNITY_EDITOR
-                Debug.LogError(e);
-                Debug.Break();
-			#endif
-            }
+
+            MapData.CharacterList[i].waypoints.Clear();
+            MapData.CharacterList[i].waypoints = new Queue<Node>(Node.ToNode(_result[i].ToArray()));
+
+            _result[i].Dispose();
         }
-        
+
         _jobHandles.Dispose();
     }
 
     private void OnApplicationQuit()
     {
         MapData.ClearLists();
-        
+
         if (_jobHandles.IsCreated) _jobHandles.Dispose();
 
         foreach (var nativeList in _result)
@@ -129,8 +109,8 @@ public struct PathfindingJob : IJob
         var percentX = math.clamp((worldPos.z + MapSizeX / 2f) / MapSizeX, 0, 1);
         var percentY = math.clamp((worldPos.x + MapSizeY / 2f) / MapSizeY, 0, 1);
 
-        var x = ((GridSizeX - 1) * percentX).RoundToInt();
-        var y = ((GridSizeY - 1) * percentY).RoundToInt();
+        var x = (int)math.round((GridSizeX - 1) * percentX);
+        var y = (int)math.round((GridSizeY - 1) * percentY);
 
         return Map[x * MapSizeX + y];
     }
@@ -139,7 +119,7 @@ public struct PathfindingJob : IJob
     {
         if (neighbour.IsBlocked) return currentNode;
         if ((TargetPos - neighbour.GridPosition).sqrMagnitude <
-            (TargetPos - currentNode.GridPosition).sqrMagnitude && Randomizer.NextInt(5)==0)
+            (TargetPos - currentNode.GridPosition).sqrMagnitude && Randomizer.NextInt(2) == 0)
         {
             return Map[neighbour.GridPosition.y * MapSizeX + neighbour.GridPosition.x];
         }
@@ -152,11 +132,12 @@ public struct PathfindingJob : IJob
         var currentNode = NodeFromWorldPoint(CharPos);
 
         var i = 0;
-        
+
         while (currentNode.GridPosition != TargetPos)
         {
-            if (i > MapSizeX * MapSizeY) return;
-            
+            //todo: test this value
+            if (i > 5000) return;
+
             currentNode = IsClosestNeighbour(currentNode.Neighbour1, currentNode);
             currentNode = IsClosestNeighbour(currentNode.Neighbour2, currentNode);
             currentNode = IsClosestNeighbour(currentNode.Neighbour3, currentNode);

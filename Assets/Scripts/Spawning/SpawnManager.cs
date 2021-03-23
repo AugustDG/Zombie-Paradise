@@ -2,35 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Characters;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Utilities.Extensions;
 using Utility;
+
 public class SpawnManager : MonoBehaviour
 {
     public Vector3 startWorldPos, endWorldPos;
-    
-    [SerializeField] private GameObject humanPrefab;
+
     [SerializeField] private GameObject zombieTemplate;
     [SerializeField] private SpawnPreview zombiePreview;
+    [SerializeField] private TMP_Text costText;
 
-    private Dictionary<Vector2Int, SpawnPreview> _spawnPreviews = new Dictionary<Vector2Int, SpawnPreview>();
+    private List<SpawnPreview> _spawnPreviews = new List<SpawnPreview>();
     private ZombieBehaviour _zombieToSpawn;
     private Camera _camera;
     private LayerMask _rayLayerMask;
     private bool _canSpawn = true;
     private Ray _startRay;
+    private float _currentCost;
 
-    //todo:remove this
-    IEnumerator SpawnHumans()
-    {
-        MapData.HumanList.Add(Instantiate(humanPrefab, Random.Range(-100, 100) * Vector3.right + Random.Range(-100, 100) * Vector3.forward, Quaternion.identity).GetComponent<HumanBehaviour>());
-
-        yield return new WaitForSecondsRealtime(5f);
-
-        StartCoroutine(SpawnHumans());
-    }
-    
     private void Awake()
     {
         _camera = Camera.main;
@@ -42,9 +35,12 @@ public class SpawnManager : MonoBehaviour
         //todo: fix this as it is a temporary solution
         var previewBehaviour = Instantiate(zombieTemplate, new Vector3(0f, -150f, 0f), Quaternion.identity).GetComponent<ZombieBehaviour>();
 
+        MapData.ZombieToSpawn.CalculateTotalModifiers();
+
         previewBehaviour.attack = MapData.ZombieToSpawn.totalAttack;
         previewBehaviour.health = MapData.ZombieToSpawn.totalHealth;
         previewBehaviour.speed = MapData.ZombieToSpawn.totalSpeed;
+        previewBehaviour.spawnCost = MapData.ZombieToSpawn.totalCost;
 
         var partsRotation = previewBehaviour.torsoPosition.rotation;
 
@@ -56,7 +52,7 @@ public class SpawnManager : MonoBehaviour
         Instantiate(MapData.ZombieToSpawn.legs[1].partObject, previewBehaviour.legRPosition.position, partsRotation, previewBehaviour.legRPosition);
 
         _zombieToSpawn = previewBehaviour;
-        
+
         //StartCoroutine(SpawnHumans());
     }
 
@@ -102,64 +98,81 @@ public class SpawnManager : MonoBehaviour
                     endGridPos.y = temp;
                 }
 
-                foreach (var keyPair in _spawnPreviews)
-                {
-                    _spawnPreviews[keyPair.Key].hasJustSpawned = false;
-                }
+                _spawnPreviews.ForEach(preview => preview.hasJustSpawned = false);
+
+                _currentCost = 0;
 
                 for (var x = startGridPos.x; x <= endGridPos.x; x++)
                 {
                     for (var y = startGridPos.y; y <= endGridPos.y; y++)
                     {
                         if (MapData.Map[x, y].nodeType == NodeTypes.Blocked) continue;
-                        if (_spawnPreviews.ContainsKey(MapData.Map[x, y].gridPosition))
+                        if (_currentCost.RoundToInt() > MapData.FingerAmount || MapData.FingerAmount == 0) break;
+
+                        var evalPreview = _spawnPreviews.FirstOrDefault(preview => preview.gridPosition == MapData.Map[x, y].gridPosition);
+
+                        if (evalPreview != null)
                         {
-                            _spawnPreviews[MapData.Map[x, y].gridPosition].hasJustSpawned = true;
+                            evalPreview.hasJustSpawned = true;
+                            _currentCost += _zombieToSpawn.spawnCost;
                             continue;
                         }
 
-                        _spawnPreviews.Add(MapData.Map[x, y].gridPosition, Instantiate(zombiePreview,
+                        var objToInstantiate = Instantiate(zombiePreview,
                             MapData.Map[x, y].worldPosition,
-                            Quaternion.identity));
-                        ;
+                            Quaternion.identity);
+
+                        objToInstantiate.gridPosition = MapData.Map[x, y].gridPosition;
+
+                        _spawnPreviews.Add(objToInstantiate);
+                        _currentCost += _zombieToSpawn.spawnCost;
                     }
                 }
 
-                foreach (var keyPair in _spawnPreviews.ToArray())
+                foreach (var preview in _spawnPreviews.ToArray())
                 {
-                    //if it hasn't just spawned, it's not part of the preview and can be destroyed
-                    if (!keyPair.Value.hasJustSpawned)
+                    //if it hasn't spawned this fixed frame, it's not part of the preview and can be destroyed
+                    if (!preview.hasJustSpawned)
                     {
-                        _spawnPreviews[keyPair.Key].gameObject.Destroy();
-                        _spawnPreviews.Remove(keyPair.Key);
+                        preview.gameObject.Destroy();
+                        _spawnPreviews.Remove(preview);
                     }
                 }
+
+                costText.gameObject.SetActive(true);
+                costText.GetComponent<RectTransform>().anchoredPosition = endMousePos;
+                costText.text = _currentCost.RoundToInt().ToString();
             }
 
             if (Mouse.current.rightButton.wasPressedThisFrame)
             {
                 _canSpawn = false;
 
-                foreach (var keyPair in _spawnPreviews.ToArray()) _spawnPreviews[keyPair.Key].gameObject.Destroy();
+                foreach (var preview in _spawnPreviews) preview.gameObject.Destroy();
 
                 _spawnPreviews.Clear();
+
+                costText.gameObject.SetActive(false);
             }
         }
 
         if (Mouse.current.leftButton.wasReleasedThisFrame && _canSpawn)
         {
-            var zombieBehaviours = new ZombieBehaviour[_spawnPreviews.Count];
-            var i = 0;
+            _spawnPreviews.RemoveAll(preview => preview == null);
+            var zombieBehaviours = new List<ZombieBehaviour>();
 
             foreach (var preview in _spawnPreviews.ToArray())
             {
-                zombieBehaviours[i] = Instantiate(_zombieToSpawn, MapData.Map[preview.Key.x, preview.Key.y].worldPosition, Quaternion.identity);
-                _spawnPreviews[preview.Key].gameObject.Destroy();
-                i++;
+                zombieBehaviours.Add(Instantiate(_zombieToSpawn, MapData.Map[preview.gridPosition.x, preview.gridPosition.y].worldPosition, Quaternion.identity));
+                preview.gameObject.Destroy();
             }
-            
+
             MapData.ZombieList.AddRange(zombieBehaviours);
             _spawnPreviews.Clear();
+
+            MapData.FingerAmount -= _currentCost.RoundToInt();
+
+            costText.gameObject.SetActive(false);
         }
     }
 

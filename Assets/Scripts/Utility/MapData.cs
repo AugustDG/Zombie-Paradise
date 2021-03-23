@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using Characters;
 using ScriptableObjects;
 using Unity.Collections;
@@ -33,7 +32,7 @@ namespace Utility
             }
         }
 
-        private static int _fingerAmount;
+        private static int _fingerAmount = 0;
         
         public static int BrainAmount
         {
@@ -45,7 +44,7 @@ namespace Utility
             }
         }
 
-        private static int _brainAmount;
+        private static int _brainAmount = 0;
 
         static MapData()
         {
