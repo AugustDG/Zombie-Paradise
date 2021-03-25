@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using Utility;
 [Serializable]
@@ -6,7 +7,8 @@ public class Node
 {
     public Vector3 worldPosition;
     public Vector2Int gridPosition;
-    public Node[] neighbours;
+    // ReSharper disable once InconsistentNaming
+    [NonSerialized] public List<Node> neighbours;
     public NodeTypes nodeType;
 
     public Node(Vector3 position, Vector2Int gridPosition, NodeTypes nodeType)
@@ -26,7 +28,7 @@ public class Node
         return new JobNeighbour(node.gridPosition, node.nodeType == NodeTypes.Blocked);
     }
 
-    public static Node[] ToNode(JobNode[] jobNode)
+    public static Node[] ToNodes(JobNode[] jobNode)
     {
         var returnNodes = new Node[jobNode.Length];
 

@@ -13,12 +13,11 @@ namespace Utility
         public static float FogLoDensity = 0.01f;
         
         public static Node[,] Map;
-        public static NativeArray<JobNode> NativeMap;
         public static Vector2Int MapSize = new Vector2Int(250, 250);
 
-        public static List<CharacterBehaviour> CharacterList;
-        public static SyncList<CharacterBehaviour, HumanBehaviour> HumanList;
-        public static SyncList<CharacterBehaviour, ZombieBehaviour> ZombieList;
+        public static List<CharacterBehaviour> PathfindingList;
+        public static List<HumanBehaviour> HumanList;
+        public static List<ZombieBehaviour> ZombieList;
 
         public static ZombieData ZombieToSpawn;
 
@@ -48,14 +47,14 @@ namespace Utility
 
         static MapData()
         {
-            CharacterList = new List<CharacterBehaviour>();
-            HumanList = new SyncList<CharacterBehaviour, HumanBehaviour>(CharacterList);
-            ZombieList = new SyncList<CharacterBehaviour, ZombieBehaviour>(CharacterList);
+            PathfindingList = new List<CharacterBehaviour>();
+            HumanList = new List<HumanBehaviour>();
+            ZombieList = new List<ZombieBehaviour>();
         }
 
         public static void ClearLists()
         {
-            CharacterList.Clear();
+            PathfindingList.Clear();
             HumanList.Clear();
             ZombieList.Clear();
         }

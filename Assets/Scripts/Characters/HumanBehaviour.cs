@@ -21,18 +21,15 @@ namespace Characters
         [Space(5f)]
         [Header("Roaming")]
         public float distance = 5f;
-        [SerializeField] private Transform objective;
+        public Transform objective;
         private Vector3 _initialPos;
-        private bool _canDelay = true;
         private bool _hasHead;
 
-        public void Start()
+        protected override void Start()
         {
             _initialPos = transform.position;
-            
+
             SpawnHead();
-            
-            MapData.HumanList.Add(this); //adds itself to the global human & character list
         }
 
         public void SpawnHead()
@@ -42,12 +39,12 @@ namespace Characters
             Instantiate(Random.Range(0, 2) == 0 ? femaleHead : maleHead, headPosition.position, headPosition.rotation, headPosition); //gives a random custom head (M or F)   
         }
 
-        protected override void AssignTarget()
+        protected override void FindTarget()
         {
-            if (_canDelay) StartCoroutine(DelayRoamingAndAssignTarget());
+            if (Target.hasReached) StartCoroutine(FindTargetAndDelayRoaming());
         }
 
-        protected override void TriggerEntered(Collider other)
+        protected override void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Zombie"))
             {
@@ -56,7 +53,7 @@ namespace Characters
             }
         }
 
-        protected override void TriggerExited(Collider other)
+        protected override void OnTriggerExit(Collider other)
         {
             if (DamageDealerCoroutine != null)
             {
@@ -82,32 +79,32 @@ namespace Characters
             }
         }
 
-        public override IEnumerator Cleanup()
+        private IEnumerator FindTargetAndDelayRoaming()
         {
-            yield return new WaitForFixedUpdate();
+            Target.TargetTransform = null;
+            Target.hasReached = false;
 
-            MapData.HumanList.Remove(this);
-            gameObject.Destroy();
-        }
+            //find an objective position inside a certain radius of starting position
+            do
+            {
+                objective.position = _initialPos + (Random.insideUnitSphere * distance).ChopTo2DVector3();
+            } while (PathfindingManager.NodeFromWorldPoint(objective.position).nodeType == NodeTypes.Blocked);
 
-        private IEnumerator DelayRoamingAndAssignTarget()
-        {
-            _canDelay = false;
-
-            //find an objective position inside a certain radius from starting position
-            objective.position = _initialPos + (Random.insideUnitSphere * distance).ChopTo2DVector3();
-
-            Target = objective;
-
-            yield return new WaitForSecondsRealtime(Random.Range(5f, 10f));
-            _canDelay = true;
+            print("Target found!");
+            
+            yield return new WaitForSeconds(Random.Range(1f, 5f));
+            
+            Target.TargetTransform = objective;
+            if (!MapData.PathfindingList.Contains(this)) MapData.PathfindingList.Add(this);
+            print("Can now roam!");
+            //Debug.Break();
         }
 
         private IEnumerator DealDamage(CharacterBehaviour attackedChar)
         {
             if (attackedChar == null || attackedChar.IsScheduledForCleanup)
             {
-                Target = null;
+                Target.TargetTransform = transform;
                 yield break;
             }
 
@@ -115,6 +112,14 @@ namespace Characters
 
             yield return new WaitForSecondsRealtime(attackInterval);
             if (isDealingDamage) StartCoroutine(DealDamage(attackedChar));
+        }
+
+        protected override IEnumerator Cleanup()
+        {
+            yield return new WaitForFixedUpdate();
+
+            MapData.HumanList.Remove(this);
+            gameObject.Destroy();
         }
     }
 }

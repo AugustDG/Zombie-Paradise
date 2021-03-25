@@ -1,35 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5296240386411499547
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6402756002027527998}
-  m_Layer: 0
-  m_Name: Objective
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6402756002027527998
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5296240386411499547}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 9010886534824744986}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9010886533608326641
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,11 +187,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9010886534824744987}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 74.5, y: 0, z: -18.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9010886533608326640}
-  - {fileID: 6402756002027527998}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -249,10 +218,22 @@ MonoBehaviour:
   legLPosition: {fileID: 9010886533680213413}
   legRPosition: {fileID: 9010886534798017166}
   isDealingDamage: 0
-  targetPosition: {x: 0, y: 0}
   canSkipCalculation: 0
-  hasTargetChanged: 1
-  target: {fileID: 0}
+  targetChanged: 1
+  waypointsList: []
+  target:
+    targetTransform: {fileID: 0}
+    node:
+      worldPosition: {x: 0, y: 0, z: 0}
+      gridPosition: {x: 0, y: 0}
+      nodeType: 0
+      isEmpty: 0
+    isValid: 0
+  _nextNode:
+    worldPosition: {x: 0, y: 0, z: 0}
+    gridPosition: {x: 0, y: 0}
+    nodeType: 0
+    isEmpty: 1
   fingerDrop: 5
   brainDrop: 1
   fingerParticles: {fileID: 8497151285980114238, guid: ba75c4ad47dafde4dad05ab62f06e48d, type: 3}
@@ -260,7 +241,7 @@ MonoBehaviour:
   femaleHead: {fileID: 3591986850837945596, guid: 9254ab2a5dc1a824ebb926c684522acc, type: 3}
   maleHead: {fileID: 3591986850837945596, guid: abd014a76a9d7e74dae3594d0fc91907, type: 3}
   distance: 15
-  objective: {fileID: 6402756002027527998}
+  objective: {fileID: 0}
 --- !u!136 &3379567772744489650
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -70,7 +70,6 @@ using UnityEditor;
                 case SerializedPropertyType.Color:
                     return EditorGUI.ColorField(position,label,(Color)value);
                 case SerializedPropertyType.ObjectReference:
-                    return EditorGUI.ObjectField(position,label,(Object)value,type,true);
                 case SerializedPropertyType.ExposedReference:
                     return EditorGUI.ObjectField(position,label,(Object)value,type,true);
                 case SerializedPropertyType.LayerMask:
