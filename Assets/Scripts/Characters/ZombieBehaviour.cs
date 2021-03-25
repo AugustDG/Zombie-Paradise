@@ -10,7 +10,7 @@ namespace Characters
     {
         public float spawnCost;
         
-        protected override void AssignTarget()
+        protected override void FindTarget()
         {
             if (MapData.HumanList.Count > 0)
             {
@@ -25,11 +25,11 @@ namespace Characters
                     }
                 }
 
-                Target = closestHuman.transform;
+                Target.TargetTransform = closestHuman.transform;
             }
         }
 
-        protected override void TriggerEntered(Collider other)
+        protected override void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Human"))
             {
@@ -38,7 +38,7 @@ namespace Characters
             }
         }
 
-        protected override void TriggerExited(Collider other)
+        protected override void OnTriggerExit(Collider other)
         {
             if (DamageDealerCoroutine != null)
             {
@@ -62,17 +62,17 @@ namespace Characters
         {
             if (attackChar == null || attackChar.IsScheduledForCleanup)
             {
-                Target = null;
+                Target.TargetTransform = null;
                 yield break;
             }
 
             attackChar.SufferDamage(attack);
 
-            yield return new WaitForSecondsRealtime(attackInterval);
+            yield return new WaitForSeconds(attackInterval);
             if (isDealingDamage) StartCoroutine(DealDamage(attackChar));
         }
-        
-        public override IEnumerator Cleanup()
+
+        protected override IEnumerator Cleanup()
         {
             yield return new WaitForFixedUpdate();
 

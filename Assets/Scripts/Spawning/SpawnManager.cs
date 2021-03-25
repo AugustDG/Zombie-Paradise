@@ -53,10 +53,9 @@ public class SpawnManager : MonoBehaviour
 
         _zombieToSpawn = previewBehaviour;
 
-        //StartCoroutine(SpawnHumans());
+        previewBehaviour.enabled = false;
     }
-
-    // Not showing bounding box, because it's useless if the units preview already shows up
+    
     private void Update()
     {
         if (Mouse.current.leftButton.wasPressedThisFrame)
@@ -81,8 +80,8 @@ public class SpawnManager : MonoBehaviour
             {
                 endWorldPos = hitInfo.point;
 
-                var startGridPos = MapManager.NodeFromWorldPoint(startWorldPos).gridPosition;
-                var endGridPos = MapManager.NodeFromWorldPoint(endWorldPos).gridPosition;
+                var startGridPos = PathfindingManager.NodeFromWorldPoint(startWorldPos).gridPosition;
+                var endGridPos = PathfindingManager.NodeFromWorldPoint(endWorldPos).gridPosition;
 
                 if (startGridPos.x > endGridPos.x)
                 {

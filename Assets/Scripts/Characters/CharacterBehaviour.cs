@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Characters;
 using UnityEngine;
+using Utility;
 public class CharacterBehaviour : MonoBehaviour
 {
     [Header("Properties")]
@@ -36,70 +37,60 @@ public class CharacterBehaviour : MonoBehaviour
     protected Coroutine DamageDealerCoroutine;
 
     [Space(5f)] [Header("Pathfinding")]
-    public Vector2Int targetPosition;
-    public bool canSkipCalculation;
-    public bool hasTargetChanged = true;
-
     public Queue<Node> waypoints = new Queue<Node>();
-    public Transform Target
+    public List<Node> waypointsList = new List<Node>();
+
+    public Target Target
     {
         get => target;
-        protected set
-        {
-            FindValidTargetPosition(value);
-            target = value;
-        }
+        set => target = value;
     }
-    [SerializeProperty(nameof(Target))]
-    public Transform target;
+
+    [SerializeField] private Target target;
 
     private Node _nextNode;
 
-    public virtual void FixedUpdate()
+    private void FixedUpdate()
     {
-        if (_nextNode is null)
+        if (!PathfindingManager.MapHasGenerated) return;
+
+        waypointsList.Clear();
+        waypointsList.AddRange(waypoints.ToArray());
+        
+        if (_nextNode == null)
         {
             if (waypoints.Count > 0) _nextNode = waypoints.Dequeue();
-
-            if (Target == null || MapManager.NodeFromWorldPoint(Target.position).gridPosition != targetPosition) AssignTarget();
+        }
+        
+        if (Target.hasReached)
+        {
+            print("Looking for target");
+            FindTarget();
         }
         else
         {
-            transform.LookAt(new Vector3(_nextNode.worldPosition.x, transform.position.y, _nextNode.worldPosition.z));
-            transform.position += transform.forward * (Time.deltaTime * speed);
-            if ((_nextNode.worldPosition - transform.position).sqrMagnitude < 1f) _nextNode = null;
+            if (_nextNode != null)
+            {
+                transform.LookAt(new Vector3(_nextNode.worldPosition.x, transform.position.y, _nextNode.worldPosition.z));
+                transform.position += transform.forward * (Time.deltaTime * speed);
+                if (PathfindingManager.NodeFromWorldPoint(transform.position) == Target.node) Target.hasReached = true;   
+            }
         }
     }
 
-    private void OnTriggerEnter(Collider other) => TriggerEntered(other);
+    protected virtual void Start() { }
 
-    private void OnTriggerExit(Collider other) => TriggerExited(other);
+    protected virtual void OnTriggerEnter(Collider other) { }
 
-    private void FindValidTargetPosition(Transform trans)
-    {
-        var tempNode = trans != null
-            ? MapManager.NodeFromWorldPoint(trans.position)
-            : MapManager.NodeFromWorldPoint(transform.position);
-
-        while (tempNode.nodeType == NodeTypes.Blocked) tempNode = tempNode.neighbours[0];
-
-        targetPosition = tempNode.gridPosition;
-        hasTargetChanged = true;
-    }
+    protected virtual void OnTriggerExit(Collider other) { }
 
     //true: Target now has a valid value, false it does not
-    protected virtual void AssignTarget() { }
-
-    protected virtual void ChildStart() { }
-
-    protected virtual void TriggerEntered(Collider other) { }
-
-    protected virtual void TriggerExited(Collider other) { }
-
-    public virtual void SufferDamage(float damage) { }
+    protected virtual void FindTarget() { }
 
     //makes sure that no zombie has this object as a target during a fixed frame
-    public virtual IEnumerator Cleanup() { yield break; }
+    protected virtual IEnumerator Cleanup() { yield break; }
+
+    public virtual void SufferDamage(float damage) { }
 
     private void OnDrawGizmos()
     {

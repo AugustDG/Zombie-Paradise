@@ -5,11 +5,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
-using Object = UnityEngine.Object;
-public class MainControls : IInputActionCollection, IDisposable
+
+public class @MainControls : IInputActionCollection, IDisposable
 {
     public InputActionAsset asset { get; }
-    public MainControls()
+    public @MainControls()
     {
         asset = InputActionAsset.FromJson(@"{
     ""name"": ""MainControls"",
@@ -269,7 +269,7 @@ public class MainControls : IInputActionCollection, IDisposable
 
     public void Dispose()
     {
-        Object.Destroy(asset);
+        UnityEngine.Object.Destroy(asset);
     }
 
     public InputBinding? bindingMask
@@ -321,13 +321,13 @@ public class MainControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Map_ZoomOutCamChange;
     public struct MapActions
     {
-        private MainControls m_Wrapper;
-        public MapActions(MainControls wrapper) { m_Wrapper = wrapper; }
-        public InputAction MoveMap => m_Wrapper.m_Map_MoveMap;
-        public InputAction RotateMap => m_Wrapper.m_Map_RotateMap;
-        public InputAction ZoomMap => m_Wrapper.m_Map_ZoomMap;
-        public InputAction GraveyardCamChange => m_Wrapper.m_Map_GraveyardCamChange;
-        public InputAction ZoomOutCamChange => m_Wrapper.m_Map_ZoomOutCamChange;
+        private @MainControls m_Wrapper;
+        public MapActions(@MainControls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @MoveMap => m_Wrapper.m_Map_MoveMap;
+        public InputAction @RotateMap => m_Wrapper.m_Map_RotateMap;
+        public InputAction @ZoomMap => m_Wrapper.m_Map_ZoomMap;
+        public InputAction @GraveyardCamChange => m_Wrapper.m_Map_GraveyardCamChange;
+        public InputAction @ZoomOutCamChange => m_Wrapper.m_Map_ZoomOutCamChange;
         public InputActionMap Get() { return m_Wrapper.m_Map; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -337,44 +337,44 @@ public class MainControls : IInputActionCollection, IDisposable
         {
             if (m_Wrapper.m_MapActionsCallbackInterface != null)
             {
-                MoveMap.started -= m_Wrapper.m_MapActionsCallbackInterface.OnMoveMap;
-                MoveMap.performed -= m_Wrapper.m_MapActionsCallbackInterface.OnMoveMap;
-                MoveMap.canceled -= m_Wrapper.m_MapActionsCallbackInterface.OnMoveMap;
-                RotateMap.started -= m_Wrapper.m_MapActionsCallbackInterface.OnRotateMap;
-                RotateMap.performed -= m_Wrapper.m_MapActionsCallbackInterface.OnRotateMap;
-                RotateMap.canceled -= m_Wrapper.m_MapActionsCallbackInterface.OnRotateMap;
-                ZoomMap.started -= m_Wrapper.m_MapActionsCallbackInterface.OnZoomMap;
-                ZoomMap.performed -= m_Wrapper.m_MapActionsCallbackInterface.OnZoomMap;
-                ZoomMap.canceled -= m_Wrapper.m_MapActionsCallbackInterface.OnZoomMap;
-                GraveyardCamChange.started -= m_Wrapper.m_MapActionsCallbackInterface.OnGraveyardCamChange;
-                GraveyardCamChange.performed -= m_Wrapper.m_MapActionsCallbackInterface.OnGraveyardCamChange;
-                GraveyardCamChange.canceled -= m_Wrapper.m_MapActionsCallbackInterface.OnGraveyardCamChange;
-                ZoomOutCamChange.started -= m_Wrapper.m_MapActionsCallbackInterface.OnZoomOutCamChange;
-                ZoomOutCamChange.performed -= m_Wrapper.m_MapActionsCallbackInterface.OnZoomOutCamChange;
-                ZoomOutCamChange.canceled -= m_Wrapper.m_MapActionsCallbackInterface.OnZoomOutCamChange;
+                @MoveMap.started -= m_Wrapper.m_MapActionsCallbackInterface.OnMoveMap;
+                @MoveMap.performed -= m_Wrapper.m_MapActionsCallbackInterface.OnMoveMap;
+                @MoveMap.canceled -= m_Wrapper.m_MapActionsCallbackInterface.OnMoveMap;
+                @RotateMap.started -= m_Wrapper.m_MapActionsCallbackInterface.OnRotateMap;
+                @RotateMap.performed -= m_Wrapper.m_MapActionsCallbackInterface.OnRotateMap;
+                @RotateMap.canceled -= m_Wrapper.m_MapActionsCallbackInterface.OnRotateMap;
+                @ZoomMap.started -= m_Wrapper.m_MapActionsCallbackInterface.OnZoomMap;
+                @ZoomMap.performed -= m_Wrapper.m_MapActionsCallbackInterface.OnZoomMap;
+                @ZoomMap.canceled -= m_Wrapper.m_MapActionsCallbackInterface.OnZoomMap;
+                @GraveyardCamChange.started -= m_Wrapper.m_MapActionsCallbackInterface.OnGraveyardCamChange;
+                @GraveyardCamChange.performed -= m_Wrapper.m_MapActionsCallbackInterface.OnGraveyardCamChange;
+                @GraveyardCamChange.canceled -= m_Wrapper.m_MapActionsCallbackInterface.OnGraveyardCamChange;
+                @ZoomOutCamChange.started -= m_Wrapper.m_MapActionsCallbackInterface.OnZoomOutCamChange;
+                @ZoomOutCamChange.performed -= m_Wrapper.m_MapActionsCallbackInterface.OnZoomOutCamChange;
+                @ZoomOutCamChange.canceled -= m_Wrapper.m_MapActionsCallbackInterface.OnZoomOutCamChange;
             }
             m_Wrapper.m_MapActionsCallbackInterface = instance;
             if (instance != null)
             {
-                MoveMap.started += instance.OnMoveMap;
-                MoveMap.performed += instance.OnMoveMap;
-                MoveMap.canceled += instance.OnMoveMap;
-                RotateMap.started += instance.OnRotateMap;
-                RotateMap.performed += instance.OnRotateMap;
-                RotateMap.canceled += instance.OnRotateMap;
-                ZoomMap.started += instance.OnZoomMap;
-                ZoomMap.performed += instance.OnZoomMap;
-                ZoomMap.canceled += instance.OnZoomMap;
-                GraveyardCamChange.started += instance.OnGraveyardCamChange;
-                GraveyardCamChange.performed += instance.OnGraveyardCamChange;
-                GraveyardCamChange.canceled += instance.OnGraveyardCamChange;
-                ZoomOutCamChange.started += instance.OnZoomOutCamChange;
-                ZoomOutCamChange.performed += instance.OnZoomOutCamChange;
-                ZoomOutCamChange.canceled += instance.OnZoomOutCamChange;
+                @MoveMap.started += instance.OnMoveMap;
+                @MoveMap.performed += instance.OnMoveMap;
+                @MoveMap.canceled += instance.OnMoveMap;
+                @RotateMap.started += instance.OnRotateMap;
+                @RotateMap.performed += instance.OnRotateMap;
+                @RotateMap.canceled += instance.OnRotateMap;
+                @ZoomMap.started += instance.OnZoomMap;
+                @ZoomMap.performed += instance.OnZoomMap;
+                @ZoomMap.canceled += instance.OnZoomMap;
+                @GraveyardCamChange.started += instance.OnGraveyardCamChange;
+                @GraveyardCamChange.performed += instance.OnGraveyardCamChange;
+                @GraveyardCamChange.canceled += instance.OnGraveyardCamChange;
+                @ZoomOutCamChange.started += instance.OnZoomOutCamChange;
+                @ZoomOutCamChange.performed += instance.OnZoomOutCamChange;
+                @ZoomOutCamChange.canceled += instance.OnZoomOutCamChange;
             }
         }
     }
-    public MapActions Map => new MapActions(this);
+    public MapActions @Map => new MapActions(this);
     private int m_KeyboardMouseSchemeIndex = -1;
     public InputControlScheme KeyboardMouseScheme
     {

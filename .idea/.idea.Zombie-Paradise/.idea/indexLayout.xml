@@ -16,9 +16,12 @@
       <Path>Library/PackageCache/com.unity.jobs@0.8.0-preview.23</Path>
       <Path>Library/PackageCache/com.unity.mathematics@1.2.1</Path>
       <Path>Library/PackageCache/com.unity.memoryprofiler@0.2.9-preview.1</Path>
-      <Path>Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0</Path>
+      <Path>Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0-preview</Path>
       <Path>Library/PackageCache/com.unity.postprocessing@3.1.0</Path>
-      <Path>Library/PackageCache/com.unity.searcher@4.3.2</Path>
+      <Path>Library/PackageCache/com.unity.render-pipelines.core@10.3.2</Path>
+      <Path>Library/PackageCache/com.unity.render-pipelines.universal@10.3.2</Path>
+      <Path>Library/PackageCache/com.unity.searcher@4.3.1</Path>
+      <Path>Library/PackageCache/com.unity.shadergraph@10.3.2</Path>
       <Path>Library/PackageCache/com.unity.test-framework.performance@2.3.1-preview</Path>
       <Path>Library/PackageCache/com.unity.test-framework@1.1.24</Path>
       <Path>Library/PackageCache/com.unity.textmeshpro@3.0.4</Path>
@@ -33,7 +36,6 @@
       <Path>Builds</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
-      <Path>MemoryCaptures</Path>
       <Path>Temp</Path>
       <Path>UserSettings</Path>
       <Path>obj</Path>
