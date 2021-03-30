@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using Utilities.Extensions;
 using Utility;
@@ -23,25 +24,24 @@ namespace Characters
         public float distance = 5f;
         public Transform objective;
         private Vector3 _initialPos;
-        private bool _hasHead;
 
-        protected override void Start()
+        protected override IEnumerator Start()
         {
             _initialPos = transform.position;
-
             SpawnHead();
+            MapData.HumanList.Add(this);
+            
+            yield return base.Start();
         }
 
         public void SpawnHead()
         {
-            if (_hasHead) return;
-            _hasHead = true;
             Instantiate(Random.Range(0, 2) == 0 ? femaleHead : maleHead, headPosition.position, headPosition.rotation, headPosition); //gives a random custom head (M or F)   
         }
 
         protected override void FindTarget()
         {
-            if (Target.hasReached) StartCoroutine(FindTargetAndDelayRoaming());
+            UnityExtensions.DelayAction(this, ()=> StartCoroutine(FindTargetAndDelayRoaming()), Random.Range(1f, 5f));
         }
 
         protected override void OnTriggerEnter(Collider other)
@@ -81,22 +81,23 @@ namespace Characters
 
         private IEnumerator FindTargetAndDelayRoaming()
         {
-            Target.TargetTransform = null;
-            Target.hasReached = false;
-
             //find an objective position inside a certain radius of starting position
             do
             {
                 objective.position = _initialPos + (Random.insideUnitSphere * distance).ChopTo2DVector3();
-            } while (PathfindingManager.NodeFromWorldPoint(objective.position).nodeType == NodeTypes.Blocked);
+            } while (Node.NodeFromWorldPoint(objective.position).nodeType == NodeTypes.Blocked);
 
-            print("Target found!");
-            
-            yield return new WaitForSeconds(Random.Range(1f, 5f));
-            
             Target.TargetTransform = objective;
-            if (!MapData.PathfindingList.Contains(this)) MapData.PathfindingList.Add(this);
-            print("Can now roam!");
+            
+            var hasCompleted = false;
+            
+            StartCoroutine(Pathfinder.PathfindToTarget(objective, transform.position, queue =>
+            {
+                waypoints = queue;
+                hasCompleted = true;
+            }));
+
+            yield return new WaitUntil(() => hasCompleted);
             //Debug.Break();
         }
 

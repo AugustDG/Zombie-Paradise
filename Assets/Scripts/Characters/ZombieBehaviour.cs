@@ -9,7 +9,7 @@ namespace Characters
     public class ZombieBehaviour : CharacterBehaviour
     {
         public float spawnCost;
-        
+
         protected override void FindTarget()
         {
             if (MapData.HumanList.Count > 0)
@@ -26,6 +26,10 @@ namespace Characters
                 }
 
                 Target.TargetTransform = closestHuman.transform;
+                StartCoroutine(Pathfinder.PathfindToTarget(closestHuman.transform, transform.position, queue =>
+                {
+                    waypoints = queue;
+                }));
             }
         }
 
