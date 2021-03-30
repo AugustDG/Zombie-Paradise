@@ -187,7 +187,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9010886534824744987}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 74.5, y: 0, z: -18.5}
+  m_LocalPosition: {x: 90.5, y: 0, z: 23.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9010886533608326640}
@@ -218,8 +218,6 @@ MonoBehaviour:
   legLPosition: {fileID: 9010886533680213413}
   legRPosition: {fileID: 9010886534798017166}
   isDealingDamage: 0
-  canSkipCalculation: 0
-  targetChanged: 1
   waypointsList: []
   target:
     targetTransform: {fileID: 0}
@@ -227,13 +225,7 @@ MonoBehaviour:
       worldPosition: {x: 0, y: 0, z: 0}
       gridPosition: {x: 0, y: 0}
       nodeType: 0
-      isEmpty: 0
-    isValid: 0
-  _nextNode:
-    worldPosition: {x: 0, y: 0, z: 0}
-    gridPosition: {x: 0, y: 0}
-    nodeType: 0
-    isEmpty: 1
+    hasReached: 0
   fingerDrop: 5
   brainDrop: 1
   fingerParticles: {fileID: 8497151285980114238, guid: ba75c4ad47dafde4dad05ab62f06e48d, type: 3}

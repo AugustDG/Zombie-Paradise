@@ -51,13 +51,15 @@ public class SpawnManager : MonoBehaviour
         Instantiate(MapData.ZombieToSpawn.legs[0].partObject, previewBehaviour.legLPosition.position, partsRotation, previewBehaviour.legLPosition);
         Instantiate(MapData.ZombieToSpawn.legs[1].partObject, previewBehaviour.legRPosition.position, partsRotation, previewBehaviour.legRPosition);
 
-        _zombieToSpawn = previewBehaviour;
-
-        previewBehaviour.enabled = false;
+        _zombieToSpawn =  Instantiate(previewBehaviour);
+        previewBehaviour.gameObject.Destroy();
     }
     
     private void Update()
     {
+        print(MapData.CanSpawnZombies);
+        if (!MapData.CanSpawnZombies) return;
+        
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             var startMousePos = Mouse.current.position.ReadValue();
@@ -106,7 +108,7 @@ public class SpawnManager : MonoBehaviour
                     for (var y = startGridPos.y; y <= endGridPos.y; y++)
                     {
                         if (MapData.Map[x, y].nodeType == NodeTypes.Blocked) continue;
-                        if (_currentCost.RoundToInt() > MapData.FingerAmount || MapData.FingerAmount == 0) break;
+                        if (_currentCost > MapData.FingerAmount - MapData.ZombieToSpawn.totalCost || MapData.FingerAmount == 0) break;
 
                         var evalPreview = _spawnPreviews.FirstOrDefault(preview => preview.gridPosition == MapData.Map[x, y].gridPosition);
 
@@ -162,7 +164,8 @@ public class SpawnManager : MonoBehaviour
 
             foreach (var preview in _spawnPreviews.ToArray())
             {
-                zombieBehaviours.Add(Instantiate(_zombieToSpawn, MapData.Map[preview.gridPosition.x, preview.gridPosition.y].worldPosition, Quaternion.identity));
+                var spawnedZombie = Instantiate(_zombieToSpawn, MapData.Map[preview.gridPosition.x, preview.gridPosition.y].worldPosition + Vector3.up*0.5f, Quaternion.identity);
+                zombieBehaviours.Add(spawnedZombie);
                 preview.gameObject.Destroy();
             }
 

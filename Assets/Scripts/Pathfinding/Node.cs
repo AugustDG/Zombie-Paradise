@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
+using Utilities.Extensions;
 using Utility;
 [Serializable]
 public class Node
@@ -11,6 +13,7 @@ public class Node
     [NonSerialized] public List<Node> neighbours;
     public NodeTypes nodeType;
 
+    //Constructor
     public Node(Vector3 position, Vector2Int gridPosition, NodeTypes nodeType)
     {
         worldPosition = position;
@@ -18,6 +21,7 @@ public class Node
         this.nodeType = nodeType;
     }
 
+    //Utility methods
     public static JobNode ToJobNode(Node node)
     {
         return new JobNode(node.gridPosition, node.nodeType == NodeTypes.Blocked);
@@ -38,6 +42,29 @@ public class Node
         }
 
         return returnNodes;
+    }
+
+    public static Node NodeFromWorldPoint(Vector3 wPoint, Vector2Int mapSize, Vector2Int gridSize, [NotNull] ref Node[,] map)
+    {
+        var percentX = Mathf.Clamp01((wPoint.x + mapSize.x / 2f) / mapSize.x);
+        var percentY = Mathf.Clamp01((wPoint.z + mapSize.y / 2f) / mapSize.y);
+
+        var x = ((gridSize.x - 1) * percentX).RoundToInt();
+        var y = ((gridSize.y - 1) * percentY).RoundToInt();
+
+        return map[x, y];
+    }
+    
+    //To shorten the code, for my own use
+    public static Node NodeFromWorldPoint(Vector3 wPoint)
+    {
+        var percentX = Mathf.Clamp01((wPoint.x + MapData.MapSize.x / 2f) / MapData.MapSize.x);
+        var percentY = Mathf.Clamp01((wPoint.z + MapData.MapSize.y / 2f) / MapData.MapSize.y);
+
+        var x = ((PathfindingManager.GridSizeX - 1) * percentX).RoundToInt();
+        var y = ((PathfindingManager.GridSizeY - 1) * percentY).RoundToInt();
+
+        return MapData.Map[x, y];
     }
 }
 
@@ -87,7 +114,7 @@ public struct JobNeighbour
 {
     public Vector2Int GridPosition;
     public bool IsBlocked;
-    
+
     public JobNeighbour(Vector2Int gridPosition, bool isBlocked)
     {
         GridPosition = gridPosition;

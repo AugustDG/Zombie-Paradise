@@ -19,7 +19,6 @@ public class Target
     [SerializeField] private Transform targetTransform;
 
     public Node node;
-    public bool hasReached = true;
 
     public Target(Transform initialTransform)
     {

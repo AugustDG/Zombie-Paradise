@@ -35,7 +35,8 @@ public class CameraController : MonoBehaviour
 
     private void Start()
     {
-        _dofComponent.focalLength.value = 1f;
+        _dofComponent.gaussianStart.value = 300f;
+        creationCollection.SetActive(false);
     }
 
     private void Update()
@@ -102,7 +103,9 @@ public class CameraController : MonoBehaviour
 
             DOTween.To(() => RenderSettings.fogDensity, res => RenderSettings.fogDensity = res, 0, 1f);
         }
-
+        
+        MapEvents.ChangedToTopViewEvent.Invoke(this, !_isZoomedOut);
+        
         _isZoomedOut = !_isZoomedOut;
     }
 
@@ -120,6 +123,9 @@ public class CameraController : MonoBehaviour
             RenderSettings.fogDensity = MapData.FogHiDensity;
             vGraveyardCam.Priority = 100;
         }
+        
+        MapData.CanSpawnZombies = _onGraveyard;
+        MapEvents.ChangedToGraveyardEvent.Invoke(this, !_onGraveyard);
 
         fgImg.DOFade(1f, 0.5f).OnComplete(() => fgImg.DOFade(0f, 0.1f));
         _onGraveyard = !_onGraveyard;
@@ -136,7 +142,7 @@ public class CameraController : MonoBehaviour
 
             UnityExtensions.DelayAction(this, () =>
             {
-                DOTween.To(() => _dofComponent.focalLength.value, res => _dofComponent.focalLength.value = res, 1f, 0.1f);
+                DOTween.To(() => _dofComponent.gaussianStart.value, res => _dofComponent.gaussianStart.value = res, 300f, 0.1f);
                 creationCollection.SetActive(false);
             }, 0.1f);
         }
@@ -149,7 +155,7 @@ public class CameraController : MonoBehaviour
 
             UnityExtensions.DelayAction(this, () =>
             {
-                DOTween.To(() => _dofComponent.focalLength.value, res => _dofComponent.focalLength.value = res, 32f, 0.1f);
+                DOTween.To(() => _dofComponent.gaussianStart.value, res => _dofComponent.gaussianStart.value = res, 2f, 0.1f);
             }, 0.8f);
         }
 

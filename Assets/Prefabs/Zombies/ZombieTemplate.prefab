@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: -4863450585800847110}
   - component: {fileID: 3379567772744489650}
   m_Layer: 0
-  m_Name: HumanPrefabTemplate
+  m_Name: ZombieTemplate
   m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -212,10 +212,15 @@ MonoBehaviour:
   legLPosition: {fileID: 9010886533680213413}
   legRPosition: {fileID: 9010886534798017166}
   isDealingDamage: 0
-  targetPosition: {x: 0, y: 0}
-  canSkip: 0
-  hasTargetChanged: 1
-  justSpawned: 1
+  waypointsList: []
+  target:
+    targetTransform: {fileID: 0}
+    node:
+      worldPosition: {x: 0, y: 0, z: 0}
+      gridPosition: {x: 0, y: 0}
+      nodeType: 0
+    hasReached: 1
+  spawnCost: 0
 --- !u!136 &3379567772744489650
 CapsuleCollider:
   m_ObjectHideFlags: 0

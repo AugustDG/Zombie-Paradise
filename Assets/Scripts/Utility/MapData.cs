@@ -11,7 +11,9 @@ namespace Utility
     {
         public static float FogHiDensity = 0.1f;
         public static float FogLoDensity = 0.01f;
-        
+
+        public static bool CanSpawnZombies = true;
+
         public static Node[,] Map;
         public static Vector2Int MapSize = new Vector2Int(250, 250);
 
@@ -28,11 +30,12 @@ namespace Utility
             {
                 _fingerAmount = value;
                 MapEvents.CurrencyChangedEvent.Invoke(null, EventArgs.Empty);
+                MapEvents.FingerAddedEvent.Invoke(null, EventArgs.Empty);
             }
         }
 
         private static int _fingerAmount = 0;
-        
+
         public static int BrainAmount
         {
             get => _brainAmount;
@@ -40,6 +43,7 @@ namespace Utility
             {
                 _brainAmount = value;
                 MapEvents.CurrencyChangedEvent.Invoke(null, EventArgs.Empty);
+                MapEvents.BrainAddedEvent.Invoke(null, EventArgs.Empty);
             }
         }
 

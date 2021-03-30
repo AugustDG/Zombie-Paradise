@@ -1,9 +1,6 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using Characters;
 using UnityEngine;
-using Utility;
 public class CharacterBehaviour : MonoBehaviour
 {
     [Header("Properties")]
@@ -50,35 +47,43 @@ public class CharacterBehaviour : MonoBehaviour
 
     private Node _nextNode;
 
+    protected virtual IEnumerator Start()
+    {
+        yield return new WaitUntil(() => Pathfinder.HasInit);
+        
+        FindTarget();
+    }
+    
     private void FixedUpdate()
     {
-        if (!PathfindingManager.MapHasGenerated) return;
+        if (!Pathfinder.HasInit) return;
 
         waypointsList.Clear();
         waypointsList.AddRange(waypoints.ToArray());
+
+        if (Target.TargetTransform == null || Node.NodeFromWorldPoint(Target.TargetTransform.position) != Target.node)
+        {
+            waypoints.Clear();
+            _nextNode = null;
+            FindTarget();
+        }
         
         if (_nextNode == null)
         {
             if (waypoints.Count > 0) _nextNode = waypoints.Dequeue();
-        }
-        
-        if (Target.hasReached)
-        {
-            print("Looking for target");
-            FindTarget();
+            else  FindTarget();   
         }
         else
         {
-            if (_nextNode != null)
-            {
-                transform.LookAt(new Vector3(_nextNode.worldPosition.x, transform.position.y, _nextNode.worldPosition.z));
-                transform.position += transform.forward * (Time.deltaTime * speed);
-                if (PathfindingManager.NodeFromWorldPoint(transform.position) == Target.node) Target.hasReached = true;   
-            }
+            transform.LookAt(new Vector3(_nextNode.worldPosition.x, transform.position.y, _nextNode.worldPosition.z));
+            transform.position += transform.forward * (Time.deltaTime * speed);
+
+            var transformNode = Node.NodeFromWorldPoint(transform.position);
+            
+            if (transformNode == _nextNode) _nextNode = null;
+            if (transformNode == Target.node) FindTarget();
         }
     }
-
-    protected virtual void Start() { }
 
     protected virtual void OnTriggerEnter(Collider other) { }
 
@@ -102,5 +107,8 @@ public class CharacterBehaviour : MonoBehaviour
 
         Gizmos.color = Color.yellow;
         if (_nextNode != null) Gizmos.DrawSphere(_nextNode.worldPosition, 0.25f);
+
+        Gizmos.color = Color.red;
+        if (Application.isPlaying) Gizmos.DrawSphere(PathfindingManager.NodeFromWorldPoint(transform.position).worldPosition, 0.25f);
     }
 }
