@@ -19,6 +19,7 @@ public class Target
     [SerializeField] private Transform targetTransform;
 
     public Node node;
+    public bool isSearching;
 
     public Target(Transform initialTransform)
     {

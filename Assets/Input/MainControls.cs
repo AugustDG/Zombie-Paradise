@@ -57,6 +57,14 @@ public class @MainControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Click"",
+                    ""type"": ""Button"",
+                    ""id"": ""0baeb567-5c2a-47f9-a987-647e29d0db0c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -235,6 +243,17 @@ public class @MainControls : IInputActionCollection, IDisposable
                     ""action"": ""ZoomOutCamChange"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""be4c7b26-ccfe-4429-ab8f-eea4ed8a9861"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""KeyboardMouse"",
+                    ""action"": ""Click"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -265,6 +284,7 @@ public class @MainControls : IInputActionCollection, IDisposable
         m_Map_ZoomMap = m_Map.FindAction("ZoomMap", throwIfNotFound: true);
         m_Map_GraveyardCamChange = m_Map.FindAction("GraveyardCamChange", throwIfNotFound: true);
         m_Map_ZoomOutCamChange = m_Map.FindAction("ZoomOutCamChange", throwIfNotFound: true);
+        m_Map_Click = m_Map.FindAction("Click", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -319,6 +339,7 @@ public class @MainControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Map_ZoomMap;
     private readonly InputAction m_Map_GraveyardCamChange;
     private readonly InputAction m_Map_ZoomOutCamChange;
+    private readonly InputAction m_Map_Click;
     public struct MapActions
     {
         private @MainControls m_Wrapper;
@@ -328,6 +349,7 @@ public class @MainControls : IInputActionCollection, IDisposable
         public InputAction @ZoomMap => m_Wrapper.m_Map_ZoomMap;
         public InputAction @GraveyardCamChange => m_Wrapper.m_Map_GraveyardCamChange;
         public InputAction @ZoomOutCamChange => m_Wrapper.m_Map_ZoomOutCamChange;
+        public InputAction @Click => m_Wrapper.m_Map_Click;
         public InputActionMap Get() { return m_Wrapper.m_Map; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -352,6 +374,9 @@ public class @MainControls : IInputActionCollection, IDisposable
                 @ZoomOutCamChange.started -= m_Wrapper.m_MapActionsCallbackInterface.OnZoomOutCamChange;
                 @ZoomOutCamChange.performed -= m_Wrapper.m_MapActionsCallbackInterface.OnZoomOutCamChange;
                 @ZoomOutCamChange.canceled -= m_Wrapper.m_MapActionsCallbackInterface.OnZoomOutCamChange;
+                @Click.started -= m_Wrapper.m_MapActionsCallbackInterface.OnClick;
+                @Click.performed -= m_Wrapper.m_MapActionsCallbackInterface.OnClick;
+                @Click.canceled -= m_Wrapper.m_MapActionsCallbackInterface.OnClick;
             }
             m_Wrapper.m_MapActionsCallbackInterface = instance;
             if (instance != null)
@@ -371,6 +396,9 @@ public class @MainControls : IInputActionCollection, IDisposable
                 @ZoomOutCamChange.started += instance.OnZoomOutCamChange;
                 @ZoomOutCamChange.performed += instance.OnZoomOutCamChange;
                 @ZoomOutCamChange.canceled += instance.OnZoomOutCamChange;
+                @Click.started += instance.OnClick;
+                @Click.performed += instance.OnClick;
+                @Click.canceled += instance.OnClick;
             }
         }
     }
@@ -391,5 +419,6 @@ public class @MainControls : IInputActionCollection, IDisposable
         void OnZoomMap(InputAction.CallbackContext context);
         void OnGraveyardCamChange(InputAction.CallbackContext context);
         void OnZoomOutCamChange(InputAction.CallbackContext context);
+        void OnClick(InputAction.CallbackContext context);
     }
 }

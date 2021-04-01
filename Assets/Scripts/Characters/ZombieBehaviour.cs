@@ -10,10 +10,30 @@ namespace Characters
     {
         public float spawnCost;
 
-        protected override void FindTarget()
+        protected override void FindTarget(bool newTarget = false)
         {
+            if (!newTarget)
+            {
+                Target.isSearching = true;
+
+                StartCoroutine(Pathfinder.PathfindToTarget(Target.TargetTransform, transform.position, queue =>
+                {
+                    foreach (var node in queue)
+                    {
+                        if (waypoints.Count > 0) waypoints.Dequeue();
+                        waypoints.Enqueue(node);   
+                    }
+                    
+                    Target.isSearching = false;
+                }));
+
+                return;
+            }
+
             if (MapData.HumanList.Count > 0)
             {
+                Target.isSearching = true;
+
                 var closestHuman = MapData.HumanList[0];
 
                 foreach (var human in MapData.HumanList)
@@ -29,8 +49,10 @@ namespace Characters
                 StartCoroutine(Pathfinder.PathfindToTarget(closestHuman.transform, transform.position, queue =>
                 {
                     waypoints = queue;
+                    Target.isSearching = false;
                 }));
             }
+            else Target.isSearching = false;
         }
 
         protected override void OnTriggerEnter(Collider other)

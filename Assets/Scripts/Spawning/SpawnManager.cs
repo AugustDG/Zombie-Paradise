@@ -52,12 +52,12 @@ public class SpawnManager : MonoBehaviour
         Instantiate(MapData.ZombieToSpawn.legs[1].partObject, previewBehaviour.legRPosition.position, partsRotation, previewBehaviour.legRPosition);
 
         _zombieToSpawn =  Instantiate(previewBehaviour);
+        _zombieToSpawn.gameObject.SetActive(false);
         previewBehaviour.gameObject.Destroy();
     }
     
     private void Update()
     {
-        print(MapData.CanSpawnZombies);
         if (!MapData.CanSpawnZombies) return;
         
         if (Mouse.current.leftButton.wasPressedThisFrame)
@@ -140,6 +140,7 @@ public class SpawnManager : MonoBehaviour
                     }
                 }
 
+                //todo:fix flaoting away text on resolutions other than 1920x1080
                 costText.gameObject.SetActive(true);
                 costText.GetComponent<RectTransform>().anchoredPosition = endMousePos;
                 costText.text = _currentCost.RoundToInt().ToString();
@@ -165,6 +166,7 @@ public class SpawnManager : MonoBehaviour
             foreach (var preview in _spawnPreviews.ToArray())
             {
                 var spawnedZombie = Instantiate(_zombieToSpawn, MapData.Map[preview.gridPosition.x, preview.gridPosition.y].worldPosition + Vector3.up*0.5f, Quaternion.identity);
+                spawnedZombie.gameObject.SetActive(true);
                 zombieBehaviours.Add(spawnedZombie);
                 preview.gameObject.Destroy();
             }

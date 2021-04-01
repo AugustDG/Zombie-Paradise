@@ -30,7 +30,6 @@ namespace Utility
             {
                 _fingerAmount = value;
                 MapEvents.CurrencyChangedEvent.Invoke(null, EventArgs.Empty);
-                MapEvents.FingerAddedEvent.Invoke(null, EventArgs.Empty);
             }
         }
 
@@ -43,7 +42,6 @@ namespace Utility
             {
                 _brainAmount = value;
                 MapEvents.CurrencyChangedEvent.Invoke(null, EventArgs.Empty);
-                MapEvents.BrainAddedEvent.Invoke(null, EventArgs.Empty);
             }
         }
 

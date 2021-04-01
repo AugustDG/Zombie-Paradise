@@ -5,37 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f319ddcf-deb5-40fd-ad02-78d4e41a9a74" name="Default Changelist" comment="Still not working, maybe more efficient">
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX/Guts-A2-www.fesliyanstudios.com.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX/Guts-A2-www.fesliyanstudios.com.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX/Gutting-A1-www.fesliyanstudios.com.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX/Gutting-A1-www.fesliyanstudios.com.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Brain Drop.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Brain Drop.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Finger Drop.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Finger Drop.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Zombie-Paradise/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Zombie-Paradise/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Zombie-Paradise/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Zombie-Paradise/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Button2D.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Button2D.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Zombie-Paradise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Zombie-Paradise/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/UI/SmallButton_Zombie.002.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/UI/SmallButton_Zombie.002.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Humans/HumanTemplate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Humans/HumanTemplate.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Label3D.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Label3D.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/ZombieTemplate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/ZombieTemplate.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Input/MainControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Input/MainControls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Input/MainControls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Input/MainControls.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map_1/Main Camera Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1/Main Camera Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/CharacterBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/CharacterBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/HumanBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/HumanBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/ZombieBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/ZombieBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Node.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/MapEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/MapEvents.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Target.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,18 +36,24 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@10.3.2/Runtime/Debugging/DebugManager.Actions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2348FB5E-CC9E-4E68-9F37-F7D7FADAEA9A/fc/3585da20/TweenManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/cc/a5da24d3/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1CDF5C2C-C101-4916-9242-B9590B7EBB6B/33/e158c441/IMGUIContainer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C44E24CB-7B9D-4E50-96E6-5A3281E887F5/b4/b9a2a453/GUIUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/DisplayCurrencyValue.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/14/4731db24/KeyValuePair`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@10.3.2/Runtime/Debugging/DebugManager.Actions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/9d/7e8ed4c4/Monitor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/f3/d947ac18/JobHandle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Target.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/DevTools.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/TaskManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/DisplayCurrencyValue.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/14/4731db24/KeyValuePair`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1CDF5C2C-C101-4916-9242-B9590B7EBB6B/a8/e334a7f8/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -88,19 +75,20 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TargetVector.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SerializeProperty.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Node.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Target.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/AudioManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Target.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Characters/HumanBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Events/AudioEventArgs.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapEvents.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Characters/CharacterBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Characters/ZombieBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/AudioManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinder.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapEvents.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" />
     </changedPaths>
   </component>
   <component name="PerforceDirect.Settings">
@@ -147,10 +135,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="32744">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="32744" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -186,7 +174,9 @@
       <workItem from="1616701217058" duration="14119000" />
       <workItem from="1616757264967" duration="2951000" />
       <workItem from="1617022730509" duration="5238000" />
-      <workItem from="1617111449319" duration="306000" />
+      <workItem from="1617111449319" duration="1616000" />
+      <workItem from="1617113482951" duration="4624000" />
+      <workItem from="1617285120411" duration="11703000" />
     </task>
     <task id="LOCAL-00001" summary="Another &quot;first upload&quot;, a lot changed and is not fully working yet (play mode? human behaviour?).&#10;&#10;In any case, regular commits will follow!">
       <created>1616525541549</created>
@@ -216,7 +206,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616636889957</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added Sound Files (John Leonard UGM),&#10;Added sfx (wind, graveyard track, brain and finger drop),&#10;Pathfinding now works with new system (cleaned up previous script a bit),&#10;Fixed some UI bugs (text appearing when it shouldn't, oversized buttons)">
+      <created>1617112334168</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617112334168</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added Sound Files (John Leonard UGM),&#10;Added sfx (wind, graveyard track, brain and finger drop),&#10;Pathfinding now works with new system (cleaned up previous script a bit),&#10;Fixed some UI bugs (text appearing when it shouldn't, oversized buttons)">
+      <created>1617112377700</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617112377700</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +278,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Another &quot;first upload&quot;, a lot changed and is not fully working yet (play mode? human behaviour?).&#10;&#10;In any case, regular commits will follow!" />
     <MESSAGE value="Still not working, maybe more efficient" />
-    <option name="LAST_COMMIT_MESSAGE" value="Still not working, maybe more efficient" />
+    <MESSAGE value="Added Sound Files (John Leonard UGM),&#10;Added sfx (wind, graveyard track, brain and finger drop),&#10;Pathfinding now works with new system (cleaned up previous script a bit),&#10;Fixed some UI bugs (text appearing when it shouldn't, oversized buttons)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Sound Files (John Leonard UGM),&#10;Added sfx (wind, graveyard track, brain and finger drop),&#10;Pathfinding now works with new system (cleaned up previous script a bit),&#10;Fixed some UI bugs (text appearing when it shouldn't, oversized buttons)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -284,6 +289,12 @@
             <option name="internal" value="false" />
           </properties>
           <option name="timeStamp" value="58" />
+        </breakpoint>
+        <breakpoint suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.IndexOutOfRangeException" isInternal="false" displayValue="IndexOutOfRangeException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+          <option name="timeStamp" value="59" />
         </breakpoint>
       </breakpoints>
       <default-breakpoints>

@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Utilities.Extensions;
 using Utility;
+using Random = UnityEngine.Random;
 
 namespace Characters
 {
@@ -39,8 +41,9 @@ namespace Characters
             Instantiate(Random.Range(0, 2) == 0 ? femaleHead : maleHead, headPosition.position, headPosition.rotation, headPosition); //gives a random custom head (M or F)   
         }
 
-        protected override void FindTarget()
+        protected override void FindTarget(bool newTarget = false)
         {
+            Target.isSearching = true;
             UnityExtensions.DelayAction(this, ()=> StartCoroutine(FindTargetAndDelayRoaming()), Random.Range(1f, 5f));
         }
 
@@ -70,6 +73,8 @@ namespace Characters
             {
                 IsScheduledForCleanup = true;
                 StartCoroutine(Cleanup());
+                
+                MapEvents.HumanKilledEvent.Invoke(this, EventArgs.Empty);
 
                 for (var i = 0; i < fingerDrop; i++) Instantiate(fingerParticles, transform.position, Quaternion.identity).Play();
                 for (var i = 0; i < fingerDrop; i++) Instantiate(brainParticles, transform.position, Quaternion.identity).Play();
@@ -98,7 +103,7 @@ namespace Characters
             }));
 
             yield return new WaitUntil(() => hasCompleted);
-            //Debug.Break();
+            Target.isSearching = false;
         }
 
         private IEnumerator DealDamage(CharacterBehaviour attackedChar)

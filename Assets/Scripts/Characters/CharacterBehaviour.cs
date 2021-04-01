@@ -1,6 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Utilities.Extensions;
+using Utility;
+using Utility.Events;
 public class CharacterBehaviour : MonoBehaviour
 {
     [Header("Properties")]
@@ -35,7 +39,6 @@ public class CharacterBehaviour : MonoBehaviour
 
     [Space(5f)] [Header("Pathfinding")]
     public Queue<Node> waypoints = new Queue<Node>();
-    public List<Node> waypointsList = new List<Node>();
 
     public Target Target
     {
@@ -46,57 +49,74 @@ public class CharacterBehaviour : MonoBehaviour
     [SerializeField] private Target target;
 
     private Node _nextNode;
+    private bool _isPlayingStep;
 
     protected virtual IEnumerator Start()
     {
         yield return new WaitUntil(() => Pathfinder.HasInit);
-        
-        FindTarget();
+
+        FindTarget(true);
     }
-    
+
     private void FixedUpdate()
     {
         if (!Pathfinder.HasInit) return;
 
-        waypointsList.Clear();
-        waypointsList.AddRange(waypoints.ToArray());
-
-        if (Target.TargetTransform == null || Node.NodeFromWorldPoint(Target.TargetTransform.position) != Target.node)
+        if (!Target.isSearching && Target.TargetTransform == null)
         {
             waypoints.Clear();
             _nextNode = null;
-            FindTarget();
+            FindTarget(true);
+            return;
         }
-        
+
+        if (!Target.isSearching && Node.NodeFromWorldPoint(Target.TargetTransform.position) != Target.node) FindTarget(false);
+
         if (_nextNode == null)
         {
             if (waypoints.Count > 0) _nextNode = waypoints.Dequeue();
-            else  FindTarget();   
+            else if (!Target.isSearching) FindTarget(true);
         }
         else
         {
             transform.LookAt(new Vector3(_nextNode.worldPosition.x, transform.position.y, _nextNode.worldPosition.z));
             transform.position += transform.forward * (Time.deltaTime * speed);
 
+            if (!_isPlayingStep) StartCoroutine(PlayStepSound());
+
             var transformNode = Node.NodeFromWorldPoint(transform.position);
-            
+
             if (transformNode == _nextNode) _nextNode = null;
-            if (transformNode == Target.node) FindTarget();
+            if (transformNode == Target.node && !Target.isSearching) FindTarget(true);
         }
     }
+
+    public virtual void SufferDamage(float damage) { }
 
     protected virtual void OnTriggerEnter(Collider other) { }
 
     protected virtual void OnTriggerExit(Collider other) { }
 
     //true: Target now has a valid value, false it does not
-    protected virtual void FindTarget() { }
+    protected virtual void FindTarget(bool newTarget = false) { }
 
     //makes sure that no zombie has this object as a target during a fixed frame
     protected virtual IEnumerator Cleanup() { yield break; }
 
-    public virtual void SufferDamage(float damage) { }
+    private IEnumerator PlayStepSound()
+    {
+        _isPlayingStep = true;
 
+        var audioArgs = new AudioEventArgs();
+        
+        MapEvents.StepTakenEvent.Invoke(this, audioArgs);
+
+        yield return new WaitForSeconds(0.5f);
+
+        audioArgs.AudioObject.gameObject.Destroy();
+        _isPlayingStep = false;
+    }
+    
     private void OnDrawGizmos()
     {
         foreach (var node in waypoints)

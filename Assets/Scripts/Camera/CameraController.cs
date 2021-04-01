@@ -13,7 +13,8 @@ public class CameraController : MonoBehaviour
     public float zoomSpeed = 10f;
 
     [SerializeField] private CinemachineVirtualCamera vPersCam, vTopCam, vGraveyardCam, vCreationCam, vResearchCam;
-    [SerializeField] private GameObject creationCollection;
+    [SerializeField] private RectTransform currencyColection;
+    [SerializeField] private RectTransform creationCollection;
     [SerializeField] private VolumeProfile volumeProfile;
     [SerializeField] private RawImage fgImg;
 
@@ -24,19 +25,18 @@ public class CameraController : MonoBehaviour
 
     private CinemachineOrbitalTransposer _body;
     private Button3D _lastButt;
-    private DepthOfField _dofComponent;
+    //private DepthOfField _dofComponent;
 
     public void Awake()
     {
         _body = (CinemachineOrbitalTransposer)vPersCam.GetCinemachineComponent(CinemachineCore.Stage.Body);
 
-        volumeProfile.TryGet(out _dofComponent);
+        //volumeProfile.TryGet(out _dofComponent);
     }
 
     private void Start()
     {
-        _dofComponent.gaussianStart.value = 300f;
-        creationCollection.SetActive(false);
+        //_dofComponent.gaussianStart.value = 300f;
     }
 
     private void Update()
@@ -115,11 +115,17 @@ public class CameraController : MonoBehaviour
         if (!context.started) return;
         if (_onGraveyard)
         {
+            DOTween.To(() => Time.timeScale, set => Time.timeScale = set, 1f, 1f);
+            currencyColection.DOAnchorPosY(0f, 1.5f, true);
+
             RenderSettings.fogDensity = MapData.FogLoDensity;
             vGraveyardCam.Priority = 0;
         }
         else
         {
+            DOTween.To(() => Time.timeScale, set => Time.timeScale = set, 0f, 1f);
+            currencyColection.DOAnchorPosY(-400f, 1.5f, true);
+            
             RenderSettings.fogDensity = MapData.FogHiDensity;
             vGraveyardCam.Priority = 100;
         }
@@ -140,22 +146,23 @@ public class CameraController : MonoBehaviour
             vCreationCam.Priority = 0;
             vGraveyardCam.Priority = 100;
 
+            creationCollection.DOAnchorPosY(Screen.width, 1.5f, true);
+            
             UnityExtensions.DelayAction(this, () =>
             {
-                DOTween.To(() => _dofComponent.gaussianStart.value, res => _dofComponent.gaussianStart.value = res, 300f, 0.1f);
-                creationCollection.SetActive(false);
+                //DOTween.To(() => _dofComponent.gaussianStart.value, res => _dofComponent.gaussianStart.value = res, 300f, 0.1f);
             }, 0.1f);
         }
         else
         {
-            creationCollection.SetActive(true);
-            
             vCreationCam.Priority = 100;
             vGraveyardCam.Priority = 0;
 
+            creationCollection.DOAnchorPosY(0f, 1.5f, true);
+            
             UnityExtensions.DelayAction(this, () =>
             {
-                DOTween.To(() => _dofComponent.gaussianStart.value, res => _dofComponent.gaussianStart.value = res, 2f, 0.1f);
+                //DOTween.To(() => _dofComponent.gaussianStart.value, res => _dofComponent.gaussianStart.value = res, 2f, 0.1f);
             }, 0.8f);
         }
 

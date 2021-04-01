@@ -9,6 +9,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+/[Aa]ssets/Audio/Ultimate Game Music Collection
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
@@ -21,6 +22,7 @@
 
 # Visual Studio cache directory
 .vs/
+.idea/
 
 # Gradle cache directory
 .gradle/
