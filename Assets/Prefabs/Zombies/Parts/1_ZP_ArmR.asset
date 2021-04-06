@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c28ddddad2b4fb9a45b4308d689b876, type: 3}
-  m_Name: ZP_BasicArmL
+  m_Name: 1_ZP_ArmR
   m_EditorClassIdentifier: 
   partType: 2
-  partObject: {fileID: 3425488167074989734, guid: 50115b22d93ad7e418d899223dd1ef8c, type: 3}
-  adjacentPart: {fileID: 11400000, guid: d965f91d7b0a8f34f8ff0fe35a2e6186, type: 2}
+  partObject: {fileID: 1834104609693271537, guid: ca52c4efe0576e44d8fe6cf1db585aed, type: 3}
+  adjacentPart: {fileID: 11400000, guid: 5467df409a2db7c4e8c353addd438048, type: 2}
   attackModifier: 2
   attackType: 0
   healthModifier: 0

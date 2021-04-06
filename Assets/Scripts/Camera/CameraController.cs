@@ -16,7 +16,6 @@ public class CameraController : MonoBehaviour
     [SerializeField] private RectTransform currencyColection;
     [SerializeField] private RectTransform creationCollection;
     [SerializeField] private VolumeProfile volumeProfile;
-    [SerializeField] private RawImage fgImg;
 
     private Vector3 _translateVec;
     private Vector3 _targetRotation;
@@ -115,7 +114,7 @@ public class CameraController : MonoBehaviour
         if (!context.started) return;
         if (_onGraveyard)
         {
-            DOTween.To(() => Time.timeScale, set => Time.timeScale = set, 1f, 1f);
+            Time.timeScale = 1f;
             currencyColection.DOAnchorPosY(0f, 1.5f, true);
 
             RenderSettings.fogDensity = MapData.FogLoDensity;
@@ -123,7 +122,7 @@ public class CameraController : MonoBehaviour
         }
         else
         {
-            DOTween.To(() => Time.timeScale, set => Time.timeScale = set, 0f, 1f);
+            Time.timeScale = 0f;
             currencyColection.DOAnchorPosY(-400f, 1.5f, true);
             
             RenderSettings.fogDensity = MapData.FogHiDensity;
@@ -132,8 +131,7 @@ public class CameraController : MonoBehaviour
         
         MapData.CanSpawnZombies = _onGraveyard;
         MapEvents.ChangedToGraveyardEvent.Invoke(this, !_onGraveyard);
-
-        fgImg.DOFade(1f, 0.5f).OnComplete(() => fgImg.DOFade(0f, 0.1f));
+        
         _onGraveyard = !_onGraveyard;
     }
 

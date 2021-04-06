@@ -22,6 +22,7 @@ namespace Utility
         public static List<ZombieBehaviour> ZombieList;
 
         public static ZombieData ZombieToSpawn;
+        public static CreationManager CreationManagerRef;
 
         public static int FingerAmount
         {

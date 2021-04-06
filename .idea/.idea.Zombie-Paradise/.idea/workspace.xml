@@ -5,19 +5,94 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f319ddcf-deb5-40fd-ad02-78d4e41a9a74" name="Default Changelist" comment="Still not working, maybe more efficient">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Button2D.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Button2D.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/UI/Button2D.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/UI/Button2D.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/UI/Button2D_Long.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Animations/UI/Button2D_Long.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/GameObjects.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/GameObjects/Z_BasicArmL.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/GameObjects/Z_BasicArmL.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/GameObjects/Z_BasicArmR.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/GameObjects/Z_BasicArmR.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/GameObjects/Z_BasicHead.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/GameObjects/Z_BasicHead.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/GameObjects/Z_BasicLegL.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/GameObjects/Z_BasicLegL.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/GameObjects/Z_BasicLegR.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/GameObjects/Z_BasicLegR.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/GameObjects/Z_BasicTorso.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/GameObjects/Z_BasicTorso.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_ArmL.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_ArmL.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_ArmR.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_ArmR.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_Head.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_Head.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_LegL.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_LegL.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_LegLR.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_LegLR.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_Torso.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_Torso.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Z_BasicZombie.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Z_BasicZombie.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Settings/InputSystem.inputsettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Settings/InputSystem.inputsettings.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/UI/2D Gore UI/Panel_ZombieSkin_Thick_Full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/UI/2D Gore UI/Panel_ZombieSkin_Thick_Full.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Zombie-Paradise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Zombie-Paradise/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Input/MainControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Input/MainControls.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Input/MainControls.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Input/MainControls.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Environment/Translucent.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Environment/Translucent.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Button2D.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Button2D.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/GameObjects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/GameObjects/Z_BasicArmL.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/GameObjects/Z_BasicArmL.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/GameObjects/Z_BasicArmR.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/GameObjects/Z_BasicArmR.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/GameObjects/Z_BasicHead.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/GameObjects/Z_BasicHead.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/GameObjects/Z_BasicLegL.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/GameObjects/Z_BasicLegL.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/GameObjects/Z_BasicLegR.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/GameObjects/Z_BasicLegR.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/GameObjects/Z_BasicTorso.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/GameObjects/Z_BasicTorso.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/ZP_BasicArmL.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/ZP_BasicArmL.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/ZP_BasicArmR.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/ZP_BasicArmR.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/ZP_BasicHead.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/ZP_BasicHead.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/ZP_BasicLegL.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/ZP_BasicLegL.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/ZP_BasicLegLR.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/ZP_BasicLegLR.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/ZP_BasicTorso.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Parts/ZP_BasicTorso.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Z_BasicZombie.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Basic/Z_BasicZombie.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map_1/Main Camera Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1/Main Camera Profile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Creation/CreationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Creation/CreationManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/pixelplay.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/pixelplay.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/UI/2D Gore UI/Button_Flesh.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/UI/2D Gore UI/Button_Flesh.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/UI/2D Gore UI/Button_Zombie.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/UI/2D Gore UI/Button_Zombie.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/UI/2D Gore UI/Button_Zombie_Pressed.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/UI/2D Gore UI/Button_Zombie_Pressed.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/UI/2D Gore UI/Gauge_ZombieSkinRotten_Thick_Full.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/UI/2D Gore UI/Gauge_ZombieSkinRotten_Thick_Full.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/UI/2D Gore UI/Gauge_ZombieSkin_Thick_Full.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/UI/2D Gore UI/Gauge_ZombieSkin_Thick_Full.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/UI/2D Gore UI/LargeGauge_Empty_Mid.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/UI/2D Gore UI/LargeGauge_Empty_Mid.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/UI/2D Gore UI/SmallButton_Zombie.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/UI/2D Gore UI/SmallButton_Zombie.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/UI/2D Gore UI/SmallButton_Zombie_Pressed.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/UI/2D Gore UI/SmallButton_Zombie_Pressed.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +113,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2348FB5E-CC9E-4E68-9F37-F7D7FADAEA9A/fc/3585da20/TweenManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/cc/a5da24d3/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1CDF5C2C-C101-4916-9242-B9590B7EBB6B/33/e158c441/IMGUIContainer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C44E24CB-7B9D-4E50-96E6-5A3281E887F5/b4/b9a2a453/GUIUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -80,15 +156,16 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Target.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Characters/HumanBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Events/AudioEventArgs.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapEvents.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Characters/CharacterBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Characters/ZombieBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioObject.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Creation/CreationManager.cs" />
     </changedPaths>
   </component>
   <component name="PerforceDirect.Settings">
@@ -135,10 +212,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="32744">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="32744" />
+      <option name="pid" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -177,6 +254,9 @@
       <workItem from="1617111449319" duration="1616000" />
       <workItem from="1617113482951" duration="4624000" />
       <workItem from="1617285120411" duration="11703000" />
+      <workItem from="1617547330880" duration="3202000" />
+      <workItem from="1617634546956" duration="4042000" />
+      <workItem from="1617715961455" duration="3013000" />
     </task>
     <task id="LOCAL-00001" summary="Another &quot;first upload&quot;, a lot changed and is not fully working yet (play mode? human behaviour?).&#10;&#10;In any case, regular commits will follow!">
       <created>1616525541549</created>

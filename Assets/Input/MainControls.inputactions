@@ -44,14 +44,6 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
-                },
-                {
-                    "name": "Click",
-                    "type": "Button",
-                    "id": "0baeb567-5c2a-47f9-a987-647e29d0db0c",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -228,17 +220,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "ZoomOutCamChange",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "be4c7b26-ccfe-4429-ab8f-eea4ed8a9861",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardMouse",
-                    "action": "Click",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

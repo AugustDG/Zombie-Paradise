@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c28ddddad2b4fb9a45b4308d689b876, type: 3}
-  m_Name: ZP_BasicTorso
+  m_Name: 1_ZP_Torso
   m_EditorClassIdentifier: 
   partType: 1
   partObject: {fileID: 9003428805886132296, guid: a8a41144c26efdc42919c2cef62052ad, type: 3}

@@ -35,8 +35,6 @@ public class SpawnManager : MonoBehaviour
         //todo: fix this as it is a temporary solution
         var previewBehaviour = Instantiate(zombieTemplate, new Vector3(0f, -150f, 0f), Quaternion.identity).GetComponent<ZombieBehaviour>();
 
-        MapData.ZombieToSpawn.CalculateTotalModifiers();
-
         previewBehaviour.attack = MapData.ZombieToSpawn.totalAttack;
         previewBehaviour.health = MapData.ZombieToSpawn.totalHealth;
         previewBehaviour.speed = MapData.ZombieToSpawn.totalSpeed;

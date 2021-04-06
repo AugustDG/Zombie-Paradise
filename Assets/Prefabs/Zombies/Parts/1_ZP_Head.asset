@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c28ddddad2b4fb9a45b4308d689b876, type: 3}
-  m_Name: ZP_BasicHead
+  m_Name: 1_ZP_Head
   m_EditorClassIdentifier: 
   partType: 0
   partObject: {fileID: 539518478048673518, guid: 590cc2f2f2cc7584cb3368845ebd1c1d, type: 3}
