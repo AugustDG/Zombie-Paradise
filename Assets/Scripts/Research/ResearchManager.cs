@@ -1,37 +1,43 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering;
+using Utilities.Extensions;
 using Utility;
 using Random = UnityEngine.Random;
 
 public class ResearchManager : MonoBehaviour
 {
     public EventHandler<ResearchType> OnResearchClick;
-    
+
     [SerializeField] private TMP_Text brainText;
     [SerializeField] private RectTransform techTreeCollection;
     [SerializeField] private RectTransform potionRoomCollection;
     [SerializeField] private CanvasGroup partCreationGroup;
+    [SerializeField] private CanvasGroup statsGroup;
 
-    public SerializedDictionary<ResearchType, int> ResearchCostDictionary = new SerializedDictionary<ResearchType, int>();
-    
-    [SerializeField] private List<int> researchCosts = new List<int>();
-    
     //0: Head
     //1: Torso
     //2: Arm
     //3: Leg
-    [SerializeField] private List<GameObject> partPreview = new List<GameObject>(4);
+    [SerializeField] private TMP_Text[] statTexts;
+
+    public SerializedDictionary<ResearchType, int> ResearchCostDictionary = new SerializedDictionary<ResearchType, int>();
+
+    [SerializeField] private List<int> researchCosts = new List<int>();
+
+    //Same as statTexts
+    [SerializeField] private GameObject[] partPreview = new GameObject[4];
 
     private bool _onPotionRoom;
     private int _numbOBrains;
     private int _activePart;
-    
+
     public void Awake()
     {
         MapData.ResearchManagerRef = this;
@@ -54,7 +60,12 @@ public class ResearchManager : MonoBehaviour
         if (_onPotionRoom)
         {
             techTreeCollection.DOAnchorPosX(0f, 1.5f);
-            potionRoomCollection.DOAnchorPosX(2500f, 1.5f);
+            potionRoomCollection.DOAnchorPosX(2500f, 1.5f).OnComplete(() =>
+            {
+                partCreationGroup.alpha = 1f;
+                statsGroup.alpha = 0f;
+                statsGroup.blocksRaycasts = false;
+            });
         }
         else
         {
@@ -66,8 +77,26 @@ public class ResearchManager : MonoBehaviour
         DOTween.PlayAll();
     }
 
+    public void CreatePartAgain()
+    {
+        statsGroup.DOFade(0f, 1f);
+        statsGroup.blocksRaycasts = false;
+        partCreationGroup.DOFade(1f, 1f);
+        DOTween.PlayAll();
+    }
+
     public void CreatePart()
     {
+        if (_numbOBrains == 0)
+        {
+            partCreationGroup.DOFade(0.1f, 0.1f).OnComplete(() =>
+            {
+                partCreationGroup.DOFade(1f, 0.2f).Play();
+            }).Play();
+            
+            return;
+        }
+        
         MapData.BrainAmount -= _numbOBrains;
 
         var tempPart = (ZombiePart)ScriptableObject.CreateInstance(typeof(ZombiePart));
@@ -75,13 +104,33 @@ public class ResearchManager : MonoBehaviour
         //the part preview list is in accord with the PartType enum 
         tempPart.partType = (PartType)_activePart;
 
-        tempPart.attackModifier = MapData.CurrentMaxAttack * Random.Range(0f + _numbOBrains * 0.08f, _numbOBrains * 0.1f);
+        var calcAttack = (MapData.CurrentMaxAttack * Random.Range(0f + _numbOBrains * 0.08f, _numbOBrains * 0.1f)).Round(1);
+        tempPart.attackModifier = calcAttack;
+        statTexts[0].text = calcAttack.ToString(CultureInfo.InvariantCulture);
+
+        var calcHealth = (MapData.CurrentMaxHealth * Random.Range(0f + _numbOBrains * 0.08f, _numbOBrains * 0.1f)).Round(1);
+        tempPart.healthModifier = calcHealth;
+        statTexts[1].text = calcHealth.ToString(CultureInfo.InvariantCulture);
+
+        var calcSpeed = MapData.CurrentMaxSpeed * Random.Range(0f + _numbOBrains * 0.08f, _numbOBrains * 0.1f).Round(1);
+        tempPart.speedModifier = calcSpeed;
+        statTexts[2].text = calcSpeed.ToString(CultureInfo.InvariantCulture);
+
+        var calcCost = (MapData.CurrentCostMult * (tempPart.attackModifier + tempPart.healthModifier + tempPart.speedModifier) / 20f).Round(1);
+        tempPart.costModifier = calcCost;
+        statTexts[3].text = calcCost.ToString(CultureInfo.InvariantCulture);
         
-        tempPart.healthModifier = MapData.CurrentMaxHealth * Random.Range(0f + _numbOBrains * 0.08f, _numbOBrains * 0.1f);
-        
-        tempPart.speedModifier = MapData.CurrentMaxSpeed * Random.Range(0f + _numbOBrains * 0.08f, _numbOBrains * 0.1f);
-        
-        tempPart.costModifier = MapData.CurrentCostMult * (tempPart.attackModifier + tempPart.healthModifier + tempPart.speedModifier)/25f;
+        if (_activePart <= 1)
+            tempPart.partObject = partPreview[_activePart].transform.GetChild(0).gameObject;
+        else
+        {
+            var adjPart = tempPart;
+
+            tempPart.partObject = partPreview[_activePart].transform.GetChild(0).gameObject;
+            adjPart.partObject = partPreview[_activePart].transform.GetChild(1).gameObject;
+            
+            tempPart.adjacentPart = adjPart;
+        }
 
         switch (tempPart.partType)
         {
@@ -100,7 +149,8 @@ public class ResearchManager : MonoBehaviour
         }
 
         _numbOBrains = 0;
-            
+        brainText.text = _numbOBrains.ToString();
+
         partCreationGroup.DOFade(0f, 1.5f).Play().OnComplete(() => StartCoroutine(PartCreationSequence()));
     }
 
@@ -109,18 +159,18 @@ public class ResearchManager : MonoBehaviour
         if (_activePart > 0)
             _activePart--;
         else
-            _activePart = partPreview.Count - 1;
-    
+            _activePart = partPreview.Length - 1;
+
         RefreshPartPreviewList();
     }
-    
+
     public void SwitchPartRight()
     {
-        if (_activePart < partPreview.Count - 1)
+        if (_activePart < partPreview.Length - 1)
             _activePart++;
         else
             _activePart = 0;
-        
+
         RefreshPartPreviewList();
     }
 
@@ -137,7 +187,7 @@ public class ResearchManager : MonoBehaviour
     {
         if (_numbOBrains > 0)
             _numbOBrains--;
-        
+
         brainText.text = _numbOBrains.ToString();
     }
 
@@ -158,13 +208,17 @@ public class ResearchManager : MonoBehaviour
         DOTween.PlayAll();
 
         yield return new WaitForSecondsRealtime(2f);
-        
+
         partPreview[_activePart].transform.DOLocalMoveX(0f, 1.5f);
         partPreview[_activePart].transform.DOLocalMoveY(0f, 1.5f);
-        partPreview[_activePart].transform.DOLocalRotate(Vector3.up * 720f, 2f, RotateMode.FastBeyond360);
+        partPreview[_activePart].transform.DOLocalRotate(Vector3.up * 720f, 2f, RotateMode.FastBeyond360).OnComplete(() =>
+        {
+            statsGroup.DOFade(1f, 1f).Play();
+            statsGroup.blocksRaycasts = true;
+        });
         DOTween.PlayAll();
     }
-    
+
     private void OnResearchClickHandler(object sender, ResearchType rType)
     {
         if (!ResearchCostDictionary.TryGetValue(rType, out var value)) return;
@@ -181,9 +235,9 @@ public class ResearchManager : MonoBehaviour
                 dependentButt.RState = ResearchState.Unlocked;
                 dependentButt.RefreshResearchState();
             }
-            
+
             //todo: apply research effects
-            
+
             switch (rType)
             {
                 case ResearchType.ATTACK:

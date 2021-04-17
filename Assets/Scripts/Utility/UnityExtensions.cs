@@ -330,7 +330,7 @@ namespace Utilities.Extensions
         /// <returns></returns>
         public static Vector2 Round(this Vector2 vector2, int decimalPlaces)
         {
-            float multiplier = 1;
+            var multiplier = 1f;
             for (var i = 0; i < decimalPlaces; i++) multiplier *= 10f;
             return new Vector2(
                 Mathf.Round(vector2.x * multiplier) / multiplier,
@@ -385,6 +385,29 @@ namespace Utilities.Extensions
                     break;
             }
 #endif
+        }
+
+        /// <summary>
+        ///     Rounds float and returns float according to the number of decimal places supplied.
+        /// </summary>
+        /// <param name="numb"></param>
+        /// <param name="decimalPlaces">Number of decimals after the period.</param>
+        /// <returns></returns>
+        public static float Round(this float numb, int decimalPlaces)
+        {
+            var multiplier = 1f;
+            for (var i = 0; i < decimalPlaces; i++) multiplier *= 10f;
+            return Mathf.Round(numb * multiplier) / multiplier;
+        }
+        
+        /// <summary>
+        ///     Rounds float and returns float.
+        /// </summary>
+        /// <param name="numb"></param>
+        /// <returns></returns>
+        public static float Round(this float numb)
+        {
+            return Mathf.Round(numb);
         }
 
         /// <summary>
