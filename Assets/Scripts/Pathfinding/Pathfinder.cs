@@ -104,18 +104,18 @@ public struct PathfindJob : IJob
     [ReadOnly] public Vector2Int CharPos;
     [ReadOnly] public int MapSizeX, MapSizeY;
 
-    [WriteOnly] public NativeList<JobNode> OutNodes;
+    public NativeList<JobNode> OutNodes;
 
     private void IsClosestNeighbour(JobNeighbour neighbour, ref JobNode currentNode, out bool hasChanged)
     {
-        if (neighbour.IsBlocked)
+        if (!neighbour.CanWalk)
         {
             hasChanged = false;
             return;
         }
 
         if ((TargetPos - neighbour.GridPosition).sqrMagnitude <
-            (TargetPos - currentNode.GridPosition).sqrMagnitude && Randomizer.NextInt(0, 2) == 0)
+            (TargetPos - currentNode.GridPosition).sqrMagnitude && Randomizer.NextInt(0, 3) == 0)
         {
             hasChanged = true;
             currentNode = Map[neighbour.GridPosition.y * MapSizeX + neighbour.GridPosition.x];
@@ -148,10 +148,35 @@ public struct PathfindJob : IJob
             IsClosestNeighbour(currentNode.Neighbour7, ref tempNode, out hasChanged);
             if (hasChanged) tempNode = currentNode;
             IsClosestNeighbour(currentNode.Neighbour8, ref tempNode, out hasChanged);
+            if (hasChanged) tempNode = currentNode;
 
             i++;
             OutNodes.Add(tempNode);
             currentNode = tempNode;
+            
+            continue;
+            
+            if (OutNodes.Length > 0 && OutNodes[OutNodes.Length - 1].GridPosition == tempNode.GridPosition)
+            {
+                if (currentNode.Neighbour1.CanWalk)
+                    tempNode = Map[currentNode.Neighbour1.GridPosition.y *MapSizeX + currentNode.Neighbour1.GridPosition.x];
+                if (currentNode.Neighbour2.CanWalk)
+                    tempNode = Map[currentNode.Neighbour2.GridPosition.y *MapSizeX + currentNode.Neighbour2.GridPosition.x];
+                if (currentNode.Neighbour3.CanWalk)
+                    tempNode = Map[currentNode.Neighbour3.GridPosition.y *MapSizeX + currentNode.Neighbour3.GridPosition.x];
+                if (currentNode.Neighbour4.CanWalk)
+                    tempNode = Map[currentNode.Neighbour4.GridPosition.y *MapSizeX + currentNode.Neighbour4.GridPosition.x];
+                if (currentNode.Neighbour5.CanWalk)
+                    tempNode = Map[currentNode.Neighbour5.GridPosition.y *MapSizeX + currentNode.Neighbour5.GridPosition.x];
+                if (currentNode.Neighbour6.CanWalk)
+                    tempNode = Map[currentNode.Neighbour6.GridPosition.y *MapSizeX + currentNode.Neighbour6.GridPosition.x];
+                if (currentNode.Neighbour7.CanWalk)
+                    tempNode = Map[currentNode.Neighbour7.GridPosition.y *MapSizeX + currentNode.Neighbour7.GridPosition.x];
+                if (currentNode.Neighbour8.CanWalk)
+                    tempNode = Map[currentNode.Neighbour8.GridPosition.y *MapSizeX + currentNode.Neighbour8.GridPosition.x];
+            }
+            
+            
         }
     }
 }

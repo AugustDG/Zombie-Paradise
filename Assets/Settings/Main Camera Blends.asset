@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CustomBlends:
   - m_From: '**ANY CAMERA**'
-    m_To: CM_Research
+    m_To: CM_Graveyard
     m_Blend:
       m_Style: 1
       m_Time: 1.5
@@ -24,7 +24,7 @@ MonoBehaviour:
         m_PreInfinity: 0
         m_PostInfinity: 0
         m_RotationOrder: 0
-  - m_From: CM_Research
+  - m_From: CM_Graveyard
     m_To: '**ANY CAMERA**'
     m_Blend:
       m_Style: 1

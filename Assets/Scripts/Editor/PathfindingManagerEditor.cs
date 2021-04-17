@@ -1,6 +1,5 @@
 using UnityEditor;
 using UnityEngine;
-using Utility;
 [CustomEditor(typeof(PathfindingManager))]
 public class PathfindingManagerEditor : Editor
 {

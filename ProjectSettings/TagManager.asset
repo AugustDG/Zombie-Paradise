@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Human
   - Zombie
+  - Z_Base
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - Button3D
   - Particles
   - Creation
-  - 
-  - 
+  - Brains
+  - Fingers
   - 
   - 
   - 
@@ -45,4 +46,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Bot
+    uniqueID: 30200853
     locked: 0

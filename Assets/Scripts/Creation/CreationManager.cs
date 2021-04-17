@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Globalization;
 using ScriptableObjects;
 using TMPro;
-using UnityEditor;
 using UnityEngine;
+using UnityEngine.Rendering;
 using Utilities.Extensions;
 using Utility;
 public class CreationManager : MonoBehaviour
@@ -53,6 +53,7 @@ public class CreationManager : MonoBehaviour
     /// Adds supplied part to the corresponding list!
     ///
     /// Caution: when giving arms or legs, only give the left one with the right being adjacent ;)
+    /// Also, it doesn't save, so beware shutting the game down!
     /// </summary>
     /// <param name="part"> Part to be given and added to part list!</param>
     /// <exception cref="ArgumentOutOfRangeException"></exception>
@@ -100,6 +101,8 @@ public class CreationManager : MonoBehaviour
         
         _spawnedHead = Instantiate(_spawnedHeadPart.partObject, headPosition.position, headPosition.rotation, headPosition);
         
+        _spawnedHead.GetComponentInChildren<MeshRenderer>().shadowCastingMode = ShadowCastingMode.Off;
+        
         CalculateCurrentStats();
     }
     
@@ -125,6 +128,8 @@ public class CreationManager : MonoBehaviour
         _spawnedTorsoPart = torsos[_torsoIndex];
         
         _spawnedTorso = Instantiate(_spawnedTorsoPart.partObject, torsoPosition.position, torsoPosition.rotation, torsoPosition);
+        
+        _spawnedTorso.GetComponentInChildren<MeshRenderer>().shadowCastingMode = ShadowCastingMode.Off;
         
         CalculateCurrentStats();
     }
@@ -155,6 +160,9 @@ public class CreationManager : MonoBehaviour
         _spawnedArms[0] = Instantiate(_spawnedArmsPart[0].partObject, armLPosition.position, armLPosition.rotation, armLPosition);
         _spawnedArms[1] = Instantiate(_spawnedArmsPart[1].partObject, armRPosition.position, armRPosition.rotation, armRPosition);
         
+        _spawnedArms[0].GetComponentInChildren<MeshRenderer>().shadowCastingMode = ShadowCastingMode.Off;
+        _spawnedArms[1].GetComponentInChildren<MeshRenderer>().shadowCastingMode = ShadowCastingMode.Off;
+        
         CalculateCurrentStats();
     }
     
@@ -183,6 +191,9 @@ public class CreationManager : MonoBehaviour
         
         _spawnedLegs[0] = Instantiate(_spawnedLegsPart[0].partObject, legLPosition.position, legLPosition.rotation, legLPosition);
         _spawnedLegs[1] = Instantiate(_spawnedLegsPart[1].partObject, legRPosition.position, legRPosition.rotation, legRPosition);
+        
+        _spawnedLegs[0].GetComponentInChildren<MeshRenderer>().shadowCastingMode = ShadowCastingMode.Off;
+        _spawnedLegs[1].GetComponentInChildren<MeshRenderer>().shadowCastingMode = ShadowCastingMode.Off;
         
         CalculateCurrentStats();
     }
@@ -246,6 +257,13 @@ public class CreationManager : MonoBehaviour
         _spawnedArms[1] = Instantiate(arms[0].adjacentPart.partObject, armRPosition.position, armRPosition.rotation, armRPosition);
         _spawnedLegs[0] = Instantiate(legs[0].partObject, legLPosition.position, legLPosition.rotation, legLPosition);
         _spawnedLegs[1] = Instantiate(legs[0].adjacentPart.partObject, legRPosition.position, legRPosition.rotation, legRPosition);
+
+        _spawnedHead.GetComponentInChildren<MeshRenderer>().shadowCastingMode = ShadowCastingMode.Off;
+        _spawnedTorso.GetComponentInChildren<MeshRenderer>().shadowCastingMode = ShadowCastingMode.Off;
+        _spawnedArms[0].GetComponentInChildren<MeshRenderer>().shadowCastingMode = ShadowCastingMode.Off;
+        _spawnedArms[1].GetComponentInChildren<MeshRenderer>().shadowCastingMode = ShadowCastingMode.Off;
+        _spawnedLegs[0].GetComponentInChildren<MeshRenderer>().shadowCastingMode = ShadowCastingMode.Off;
+        _spawnedLegs[1].GetComponentInChildren<MeshRenderer>().shadowCastingMode = ShadowCastingMode.Off;
 
         CalculateCurrentStats();
     }

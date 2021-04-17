@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Characters;
@@ -27,7 +26,7 @@ public class SpawnManager : MonoBehaviour
     private void Awake()
     {
         _camera = Camera.main;
-        _rayLayerMask = ~LayerMask.GetMask("Zombies", "Obstacles");
+        _rayLayerMask = ~LayerMask.GetMask("Zombies", "Humans", "Obstacles");
     }
 
     private void Start()
@@ -105,7 +104,7 @@ public class SpawnManager : MonoBehaviour
                 {
                     for (var y = startGridPos.y; y <= endGridPos.y; y++)
                     {
-                        if (MapData.Map[x, y].nodeType == NodeTypes.Blocked) continue;
+                        if (!MapData.Map[x, y].canWalk) continue;
                         if (_currentCost > MapData.FingerAmount - MapData.ZombieToSpawn.totalCost || MapData.FingerAmount == 0) break;
 
                         var evalPreview = _spawnPreviews.FirstOrDefault(preview => preview.gridPosition == MapData.Map[x, y].gridPosition);
@@ -120,6 +119,8 @@ public class SpawnManager : MonoBehaviour
                         var objToInstantiate = Instantiate(zombiePreview,
                             MapData.Map[x, y].worldPosition,
                             Quaternion.identity);
+
+                        objToInstantiate.IsError = !MapData.Map[x, y].canSpawn;
 
                         objToInstantiate.gridPosition = MapData.Map[x, y].gridPosition;
 
@@ -140,7 +141,7 @@ public class SpawnManager : MonoBehaviour
 
                 //todo:fix flaoting away text on resolutions other than 1920x1080
                 costText.gameObject.SetActive(true);
-                costText.GetComponent<RectTransform>().anchoredPosition = endMousePos;
+                costText.GetComponent<RectTransform>().anchoredPosition = endMousePos * Screen.width/Screen.height;
                 costText.text = _currentCost.RoundToInt().ToString();
             }
 
@@ -164,6 +165,7 @@ public class SpawnManager : MonoBehaviour
             foreach (var preview in _spawnPreviews.ToArray())
             {
                 var spawnedZombie = Instantiate(_zombieToSpawn, MapData.Map[preview.gridPosition.x, preview.gridPosition.y].worldPosition + Vector3.up*0.5f, Quaternion.identity);
+                if (preview.IsError) _currentCost -= _zombieToSpawn.spawnCost;
                 spawnedZombie.gameObject.SetActive(true);
                 zombieBehaviours.Add(spawnedZombie);
                 preview.gameObject.Destroy();

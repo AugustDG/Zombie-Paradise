@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 using Utility;
@@ -13,7 +12,7 @@ public class DisplayCurrencyValue : MonoBehaviour
         _label = GetComponent<TMP_Text>();
         MapEvents.CurrencyChangedEvent += CurrencyChangedEvent;
     }
-    private void CurrencyChangedEvent(object sender, EventArgs e)
+    private void CurrencyChangedEvent(object sender, CurrencyType e)
     {
         _label.text = type == CurrencyType.Brains ? MapData.BrainAmount.ToString() : MapData.FingerAmount.ToString();
     }
@@ -22,5 +21,9 @@ public class DisplayCurrencyValue : MonoBehaviour
 public enum CurrencyType
 {
     Fingers,
-    Brains
+    Brains,
+    FingersAdded,
+    BrainsAdded,
+    FingersRemoved,
+    BrainsRemoved
 }

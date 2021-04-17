@@ -1,11 +1,6 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using Characters;
-using Unity.Burst;
 using Unity.Collections;
-using Unity.Jobs;
-using Unity.Mathematics;
 using UnityEditor;
 using UnityEngine;
 using Utilities.Extensions;
@@ -142,8 +137,10 @@ public class PathfindingManager : MonoBehaviour
 
                 var walkable = !Physics.CheckSphere(worldPoint, nodeRadius * 1.5f, obstacleMask);
 
+                var spawnable = !(x < y);
+
                 MapData.Map[x, y] = new Node(worldPoint, new Vector2Int(x, y),
-                    walkable ? NodeTypes.Free : NodeTypes.Blocked);
+                    walkable, spawnable);
             }
         }
 
@@ -333,7 +330,7 @@ public class PathfindingManager : MonoBehaviour
         {
             var tempNode = node;
 
-            if (tempNode.nodeType == NodeTypes.Blocked) continue;
+            if (!tempNode.canWalk) continue;
             if (Random.Range(0, GridSizeX * chanceMult) == 0)
             {
                 var spawns = 0;
@@ -341,7 +338,7 @@ public class PathfindingManager : MonoBehaviour
                 {
                     foreach (var neighbour in tempNode.neighbours)
                     {
-                        if (Random.Range(0, 10 * spawns) == 0 && neighbour.nodeType != NodeTypes.Blocked)
+                        if (Random.Range(0, 10 * spawns) == 0 && neighbour.canWalk)
                         {
                             var rndRot = Random.Range(0, 5);
                             var rot = new Vector3(0, 90 * rndRot, 0);

@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Characters;
 using ScriptableObjects;
-using Unity.Collections;
 using UnityEngine;
 
 namespace Utility
@@ -23,14 +21,29 @@ namespace Utility
 
         public static ZombieData ZombieToSpawn;
         public static CreationManager CreationManagerRef;
+        public static ResearchManager ResearchManagerRef;
+
+        public static float CurrentMaxAttack = 5f;
+        public static float CurrentMaxHealth = 30f;
+        public static float CurrentMaxSpeed = 5f;
+        public static float CurrentCostMult = 1f; //cost is dimished by this multiplier
+        public static float CurrentTreeHealth = 500f;
+        public static float CurrentTreeAttack = 10f;
 
         public static int FingerAmount
         {
             get => _fingerAmount;
             set
             {
+                var type = CurrencyType.Fingers;
+
+                if (value > _fingerAmount)
+                    type = CurrencyType.FingersAdded;
+                else if (value < _fingerAmount) 
+                    type = CurrencyType.FingersAdded;
+                
                 _fingerAmount = value;
-                MapEvents.CurrencyChangedEvent.Invoke(null, EventArgs.Empty);
+                MapEvents.CurrencyChangedEvent.Invoke(null, type);
             }
         }
 
@@ -41,8 +54,15 @@ namespace Utility
             get => _brainAmount;
             set
             {
+                var type = CurrencyType.Brains;
+
+                if (value > _brainAmount)
+                    type = CurrencyType.BrainsAdded;
+                else if (value < _brainAmount) 
+                    type = CurrencyType.BrainsAdded;
+
                 _brainAmount = value;
-                MapEvents.CurrencyChangedEvent.Invoke(null, EventArgs.Empty);
+                MapEvents.CurrencyChangedEvent.Invoke(null, type);
             }
         }
 

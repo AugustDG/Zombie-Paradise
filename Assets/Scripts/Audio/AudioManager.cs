@@ -1,12 +1,7 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using DG.Tweening;
 using UnityEngine;
-using Utilities.Extensions;
 using Utility;
 using Utility.Events;
-using Random = UnityEngine.Random;
 
 public class AudioManager : MonoBehaviour
 {
@@ -27,8 +22,7 @@ public class AudioManager : MonoBehaviour
     {
         MapEvents.ChangedToGraveyardEvent += ChangedToGraveyardHandler;
         MapEvents.ChangedToTopViewEvent += ChangedToTopViewHandler;
-        MapEvents.BrainAddedEvent += BrainAddedHandler;
-        MapEvents.FingerAddedEvent += FingerAddedHandler;
+        MapEvents.CurrencyChangedEvent += CurrencyChangedHandler;
         MapEvents.HumanKilledEvent += HumanKilledHandler;
         MapEvents.StepTakenEvent += StepTakenHandler;
     }
@@ -58,16 +52,14 @@ public class AudioManager : MonoBehaviour
         } 
     }
 
-    private void BrainAddedHandler(object sender, EventArgs e)
+    private void CurrencyChangedHandler(object sender, CurrencyType e)
     {
-        Instantiate(brainObj);
+        if (e == CurrencyType.BrainsAdded)
+            Instantiate(brainObj);
+        else if (e == CurrencyType.FingersAdded)
+            Instantiate(fingerObj);
     }
-    
-    private void FingerAddedHandler(object sender, EventArgs e)
-    {
-        Instantiate(fingerObj);
-    }
-    
+
     private void ChangedToTopViewHandler(object sender, bool goingToTop)
     {
         if (goingToTop)

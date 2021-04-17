@@ -3,8 +3,6 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
-using UnityEngine.Rendering.Universal;
-using UnityEngine.UI;
 using Utilities.Extensions;
 using Utility;
 public class CameraController : MonoBehaviour
@@ -14,13 +12,13 @@ public class CameraController : MonoBehaviour
 
     [SerializeField] private CinemachineVirtualCamera vPersCam, vTopCam, vGraveyardCam, vCreationCam, vResearchCam;
     [SerializeField] private RectTransform currencyColection;
-    [SerializeField] private RectTransform creationCollection;
+    [SerializeField] private RectTransform creationCollection, researchCollection;
     [SerializeField] private VolumeProfile volumeProfile;
 
     private Vector3 _translateVec;
     private Vector3 _targetRotation;
     private float _targetZoomDirection, _minZoom = 1f, _maxZoom = 75f;
-    private bool _isZoomedOut, _onGraveyard, _onCreation;
+    private bool _isZoomedOut, _onGraveyard, _onCreation, _onResearch;
 
     private CinemachineOrbitalTransposer _body;
     private Button3D _lastButt;
@@ -36,11 +34,17 @@ public class CameraController : MonoBehaviour
     private void Start()
     {
         //_dofComponent.gaussianStart.value = 300f;
+        
+        
     }
 
     private void Update()
     {
         transform.Translate(_translateVec * Time.deltaTime);
+
+        //transform.position = Vector3.Slerp(transform.position, transform.position + _translateVec, Time.deltaTime);
+        
+        //transform.GetComponent<Rigidbody>().AddForce(_translateVec * 0.5f, ForceMode.VelocityChange);
 
         if (_onGraveyard)
         {
@@ -144,12 +148,12 @@ public class CameraController : MonoBehaviour
             vCreationCam.Priority = 0;
             vGraveyardCam.Priority = 100;
 
-            creationCollection.DOAnchorPosY(Screen.width, 1.5f, true);
+            creationCollection.DOAnchorPosY(2500, 1.5f, true);
             
-            UnityExtensions.DelayAction(this, () =>
+            /*UnityExtensions.DelayAction(this, () =>
             {
                 //DOTween.To(() => _dofComponent.gaussianStart.value, res => _dofComponent.gaussianStart.value = res, 300f, 0.1f);
-            }, 0.1f);
+            }, 0.1f);*/
         }
         else
         {
@@ -158,12 +162,44 @@ public class CameraController : MonoBehaviour
 
             creationCollection.DOAnchorPosY(0f, 1.5f, true);
             
-            UnityExtensions.DelayAction(this, () =>
+            /*UnityExtensions.DelayAction(this, () =>
             {
                 //DOTween.To(() => _dofComponent.gaussianStart.value, res => _dofComponent.gaussianStart.value = res, 2f, 0.1f);
-            }, 0.8f);
+            }, 0.8f);*/
         }
 
         _onCreation = !_onCreation;
+    }
+    
+    public void OnChangeCamResearchClick()
+    {
+        if (!_onGraveyard) return;
+
+        if (_onResearch)
+        {
+            vResearchCam.Priority = 0;
+            vGraveyardCam.Priority = 100;
+
+            researchCollection.DOAnchorPosY(-2500, 1.5f, true);
+            
+            /*UnityExtensions.DelayAction(this, () =>
+            {
+                //DOTween.To(() => _dofComponent.gaussianStart.value, res => _dofComponent.gaussianStart.value = res, 300f, 0.1f);
+            }, 0.1f);*/
+        }
+        else
+        {
+            vResearchCam.Priority = 100;
+            vGraveyardCam.Priority = 0;
+
+            researchCollection.DOAnchorPosY(0f, 1.5f, true);
+            
+            /*UnityExtensions.DelayAction(this, () =>
+            {
+                //DOTween.To(() => _dofComponent.gaussianStart.value, res => _dofComponent.gaussianStart.value = res, 2f, 0.1f);
+            }, 0.8f);*/
+        }
+
+        _onResearch = !_onResearch;
     }
 }

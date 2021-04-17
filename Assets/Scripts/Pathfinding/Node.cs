@@ -11,25 +11,27 @@ public class Node
     public Vector2Int gridPosition;
     // ReSharper disable once InconsistentNaming
     [NonSerialized] public List<Node> neighbours;
-    public NodeTypes nodeType;
+    public bool canSpawn;
+    public bool canWalk;
 
     //Constructor
-    public Node(Vector3 position, Vector2Int gridPosition, NodeTypes nodeType)
+    public Node(Vector3 position, Vector2Int gridPosition, bool canWalk, bool canSpawn)
     {
         worldPosition = position;
         this.gridPosition = gridPosition;
-        this.nodeType = nodeType;
+        this.canWalk = canWalk;
+        this.canSpawn = canSpawn;
     }
 
     //Utility methods
     public static JobNode ToJobNode(Node node)
     {
-        return new JobNode(node.gridPosition, node.nodeType == NodeTypes.Blocked);
+        return new JobNode(node.gridPosition, node.canWalk);
     }
 
     public static JobNeighbour ToJobNeighbour(Node node)
     {
-        return new JobNeighbour(node.gridPosition, node.nodeType == NodeTypes.Blocked);
+        return new JobNeighbour(node.gridPosition, node.canWalk);
     }
 
     public static Node[] ToNodes(JobNode[] jobNode)
@@ -79,12 +81,12 @@ public struct JobNode
     public JobNeighbour Neighbour6;
     public JobNeighbour Neighbour7;
     public JobNeighbour Neighbour8;
-    public bool IsBlocked;
+    public bool CanWalk;
 
-    public JobNode(Vector2Int gridPosition, bool isBlocked)
+    public JobNode(Vector2Int gridPosition, bool canWalk)
     {
         GridPosition = gridPosition;
-        IsBlocked = isBlocked;
+        CanWalk = canWalk;
         Neighbour1 = new JobNeighbour();
         Neighbour2 = new JobNeighbour();
         Neighbour3 = new JobNeighbour();
@@ -98,7 +100,7 @@ public struct JobNode
     public JobNode(Vector2Int gridPosition)
     {
         GridPosition = gridPosition;
-        IsBlocked = true;
+        CanWalk = true;
         Neighbour1 = new JobNeighbour();
         Neighbour2 = new JobNeighbour();
         Neighbour3 = new JobNeighbour();
@@ -113,12 +115,12 @@ public struct JobNode
 public struct JobNeighbour
 {
     public Vector2Int GridPosition;
-    public bool IsBlocked;
+    public bool CanWalk;
 
-    public JobNeighbour(Vector2Int gridPosition, bool isBlocked)
+    public JobNeighbour(Vector2Int gridPosition, bool canWalk)
     {
         GridPosition = gridPosition;
-        IsBlocked = isBlocked;
+        CanWalk = canWalk;
     }
 }
 
