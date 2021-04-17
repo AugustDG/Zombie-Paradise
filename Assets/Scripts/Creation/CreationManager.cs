@@ -268,9 +268,3 @@ public class CreationManager : MonoBehaviour
         CalculateCurrentStats();
     }
 }
-
-public enum Side
-{
-    Left,
-    Right
-}

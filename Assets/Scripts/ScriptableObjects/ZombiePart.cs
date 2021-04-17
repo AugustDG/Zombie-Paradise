@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using Utility;
 [CreateAssetMenu(fileName = "ZP_", menuName = "Custom/Zombie Part", order = 0)]
 public class ZombiePart : ScriptableObject
 {
@@ -23,18 +24,4 @@ public class ZombiePart : ScriptableObject
     [Space(5f)]
     public float costModifier;
     public ModifierType costType;
-}
-
-public enum PartType
-{
-    Head,
-    Torso,
-    Arms,
-    Leg
-}
-
-public enum ModifierType
-{
-    Add,
-    Mult
 }

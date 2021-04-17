@@ -54,15 +54,15 @@ public class CameraController : MonoBehaviour
                 {
                     if (Mouse.current.leftButton.isPressed)
                     {
-                        _lastButt.SwitchButtonMesh(ButtonState.Pressed);
+                        _lastButt.SwitchButtonMesh(Button3DState.Pressed);
                         return;
                     }
-                    _lastButt.SwitchButtonMesh(ButtonState.Hovered);
+                    _lastButt.SwitchButtonMesh(Button3DState.Hovered);
                     return;
                 }
             }
 
-            if (_lastButt != null) _lastButt.SwitchButtonMesh(ButtonState.None);
+            if (_lastButt != null) _lastButt.SwitchButtonMesh(Button3DState.None);
         }
     }
 

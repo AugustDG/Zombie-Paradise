@@ -5,10 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f319ddcf-deb5-40fd-ad02-78d4e41a9a74" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Spawning/WaveManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Spawning/WaveManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Enums.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Enums.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Zombie-Paradise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Zombie-Paradise/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/BuildingBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/BuildingBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/CharacterBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/CharacterBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/HumanBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/HumanBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Creation/CreationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Creation/CreationManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Node.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Research/ResearchButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Research/ResearchButton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Research/ResearchManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Research/ResearchManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/UnityExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/UnityExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ZombieData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ZombieData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ZombiePart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ZombiePart.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Button3D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Button3D.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/DisplayCurrencyValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/DisplayCurrencyValue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Effects/UIFlippable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Effects/UIFlippable.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,15 +45,19 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.24/UnityEditor.TestRunner/TestRun/Tasks/BuildTestTreeTask.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/DevTools.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/TaskManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.24/UnityEditor.TestRunner/CommandLineTest/Executer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Target.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/HealthLight.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@10.3.2/Runtime/Debugging/DebugManager.Actions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@1.3.9/Tests/Editor/Models/Providers/MockSourceControlProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/UnselectSelf.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UILineRectConnector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph@10.3.2/Editor/Data/Implementation/NodeUtils.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/cc/a5da24d3/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/9d/7e8ed4c4/Monitor.cs" root0="SKIP_HIGHLIGHTING" />
@@ -45,6 +66,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/c0/bffe457e/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.3.2/Editor/ShaderPreprocessor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/DisplayCurrencyValue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Research/ResearchManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/ResearchManagerEditor.cs" root0="FORCE_HIGHLIGHTING" />
@@ -58,14 +80,10 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LookAtCam.cs" />
-      <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.3.2/Runtime/UniversalAdditionalLightData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ZombiePart.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SetLabel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ZombieData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SyncList.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SetCurrencyValue.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TaskManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/MapManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Editor/MapManagerEditor.cs" />
@@ -80,34 +98,39 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Characters/ZombieBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Research/ResearchCreation.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Creation/CreationManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/HealthLight.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/ZombieBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/CharacterBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/UILineRendererRectConnector.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/UILineRectConnector.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/BuildingBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ReadOnly.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/CustomButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SerializableDictionary.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ResearchManagerEditor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapEvents.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/DisplayCurrencyValue.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/HumanBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnPreview.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/DevTools.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Node.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinder.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/InjectUnscaledTime.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/UnselectSelf.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Research/ResearchButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/UnityExtensions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Creation/CreationManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Node.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Research/ResearchButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/DisplayCurrencyValue.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Enums.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapEvents.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Research/ResearchManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/BuildingBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ZombiePart.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/Button3D.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/CharacterBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/HumanBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/WaveManager.cs" />
     </changedPaths>
   </component>
   <component name="PerforceDirect.Settings">
@@ -214,7 +237,7 @@
       <workItem from="1618580152792" duration="5885000" />
       <workItem from="1618586613682" duration="4418000" />
       <workItem from="1618671068851" duration="3541000" />
-      <workItem from="1618675557797" duration="5601000" />
+      <workItem from="1618675557797" duration="10981000" />
     </task>
     <task id="LOCAL-00001" summary="Another &quot;first upload&quot;, a lot changed and is not fully working yet (play mode? human behaviour?).&#10;&#10;In any case, regular commits will follow!">
       <created>1616525541549</created>

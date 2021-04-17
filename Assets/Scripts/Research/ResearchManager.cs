@@ -236,8 +236,6 @@ public class ResearchManager : MonoBehaviour
                 dependentButt.RefreshResearchState();
             }
 
-            //todo: apply research effects
-
             switch (rType)
             {
                 case ResearchType.ATTACK:
@@ -299,26 +297,4 @@ public class ResearchManager : MonoBehaviour
             }
         }
     }
-}
-
-public enum ResearchType
-{
-    ATTACK,
-    HEALTH,
-    SPEED,
-    COST,
-    ATTACK2,
-    HEALTH2,
-    SPEED2,
-    COST2,
-    ATTACK3,
-    HEALTH3,
-    SPEED3,
-    COST3,
-    THEALTH,
-    THEALTH2,
-    THEALTH3,
-    TATTACK,
-    TATTACK2,
-    TATTACK3,
 }

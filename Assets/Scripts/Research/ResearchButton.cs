@@ -144,10 +144,3 @@ public class ResearchButton : MonoBehaviour
     }
 }
 
-public enum ResearchState
-{
-    Researched,
-    TooExpensive,
-    Unlocked,
-    Locked,
-}

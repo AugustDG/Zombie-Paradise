@@ -22,6 +22,7 @@ namespace Utility
         public static ZombieData ZombieToSpawn;
         public static CreationManager CreationManagerRef;
         public static ResearchManager ResearchManagerRef;
+        public static GameManager GameManagerRef;
 
         public static float CurrentMaxAttack = 5f;
         public static float CurrentMaxHealth = 30f;

@@ -17,13 +17,3 @@ public class DisplayCurrencyValue : MonoBehaviour
         _label.text = type == CurrencyType.Brains ? MapData.BrainAmount.ToString() : MapData.FingerAmount.ToString();
     }
 }
-
-public enum CurrencyType
-{
-    Fingers,
-    Brains,
-    FingersAdded,
-    BrainsAdded,
-    FingersRemoved,
-    BrainsRemoved
-}

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using Utility;
 public class Button3D : MonoBehaviour
 {
 
@@ -19,23 +20,23 @@ public class Button3D : MonoBehaviour
         _meshFilter = GetComponentInChildren<MeshFilter>();
     }
 
-    public void SwitchButtonMesh(ButtonState state)
+    public void SwitchButtonMesh(Button3DState state)
     {
         var tempMeshPos = _meshFilter.transform.localPosition;
         
         switch (state)
         {
-            case ButtonState.None:
+            case Button3DState.None:
                 _meshFilter.sharedMesh = baseMesh;
                 tempMeshPos.y = yNormal;
                 _justClicked = false;
                 break;
-            case ButtonState.Hovered:
+            case Button3DState.Hovered:
                 _meshFilter.sharedMesh = hoverMesh;
                 tempMeshPos.y = yNormal;
                 _justClicked = false;
                 break;
-            case ButtonState.Pressed:
+            case Button3DState.Pressed:
                 _meshFilter.sharedMesh = pressedMesh;
                 tempMeshPos.y = yPressed;
                 if (!_justClicked) onClick.Invoke();
@@ -45,11 +46,4 @@ public class Button3D : MonoBehaviour
 
         _meshFilter.transform.localPosition = tempMeshPos;
     }
-}
-
-public enum ButtonState
-{
-    None,
-    Hovered,
-    Pressed
 }

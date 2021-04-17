@@ -23,6 +23,7 @@ namespace Characters
         [Space(5f)]
         [Header("Roaming")]
         public float distance = 5f;
+        public bool isRobotSoldier;
         public Transform objective;
         private Vector3 _initialPos;
 
@@ -37,13 +38,40 @@ namespace Characters
 
         public void SpawnHead()
         {
-            Instantiate(Random.Range(0, 2) == 0 ? femaleHead : maleHead, headPosition.position, headPosition.rotation, headPosition); //gives a random custom head (M or F)   
+            if (!isRobotSoldier) Instantiate(Random.Range(0, 2) == 0 ? femaleHead : maleHead, headPosition.position, headPosition.rotation, headPosition); //gives a random custom head (M or F)   
         }
 
         protected override void FindTarget(bool newTarget = false)
         {
-            Target.isSearching = true;
-            UnityExtensions.DelayAction(this, ()=> StartCoroutine(FindTargetAndDelayRoaming()), Random.Range(1f, 5f));
+            if (!isRobotSoldier)
+            {
+                if (MapData.ZombieList.Count > 0)
+                {
+                    Target.isSearching = true;
+
+                    var closestZombie = MapData.ZombieList[0];
+
+                    foreach (var human in MapData.ZombieList)
+                    {
+                        if ((closestZombie.transform.position - human.transform.position).sqrMagnitude <
+                            (closestZombie.transform.position - transform.position).sqrMagnitude)
+                        {
+                            closestZombie = human;
+                        }
+                    }
+
+                    Target.TargetTransform = closestZombie.transform;
+                    StartCoroutine(Pathfinder.PathfindToTarget(closestZombie.transform, transform.position, queue =>
+                    {
+                        waypoints = queue;
+                        Target.isSearching = false;
+                    }));
+                }
+                else Target.isSearching = false;
+                
+                Target.isSearching = true;
+                UnityExtensions.DelayAction(this, ()=> StartCoroutine(FindTargetDelayed()), Random.Range(1f, 5f));   
+            }
         }
 
         protected override void OnTriggerEnter(Collider other)
@@ -54,7 +82,7 @@ namespace Characters
                 DamageDealerCoroutine = StartCoroutine(DealDamage(other.GetComponent<CharacterBehaviour>()));
             }
             
-            if (other.CompareTag("Z_Base") && isAttackingBuildings)
+            if (other.CompareTag("Z_Base") && isRobotSoldier)
             {
                 isDealingDamage = true;
                 DamageDealerCoroutine = StartCoroutine(DealDamage(other.GetComponent<BuildingBehaviour>()));
@@ -89,7 +117,7 @@ namespace Characters
             }
         }
 
-        private IEnumerator FindTargetAndDelayRoaming()
+        private IEnumerator FindTargetDelayed()
         {
             //find an objective position inside a certain radius of starting position
             do

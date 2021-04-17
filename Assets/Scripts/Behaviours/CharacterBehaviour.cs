@@ -11,7 +11,6 @@ public class CharacterBehaviour : MonoBehaviour
     public float health = 100f;
     public float attack = 2f;
     public float attackInterval = 1f;
-    public bool isAttackingBuildings;
     public bool IsScheduledForCleanup
     {
         get => isScheduledForCleanup;

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Utility;
 
 public class GameManager : MonoBehaviour
@@ -7,5 +8,10 @@ public class GameManager : MonoBehaviour
     {
         MapData.BrainAmount = 0;
         MapData.FingerAmount = 0;
+    }
+
+    public void GameFinished()
+    {
+        SceneManager.LoadSceneAsync(1, LoadSceneMode.Single);
     }
 }

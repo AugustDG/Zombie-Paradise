@@ -1,9 +1,9 @@
 using UnityEngine;
+using Utility;
 
 public class BuildingBehaviour : MonoBehaviour
 {
     [Header("Properties")]
-    public float health;
     private float _healthBit;
     private int _turnOffLights;
 
@@ -13,18 +13,20 @@ public class BuildingBehaviour : MonoBehaviour
 
     private void Awake()
     {
-        _healthBit = health / 10f;
+        _healthBit = MapData.CurrentTreeHealth / 10f;
     }
 
     public void SufferDamage(float damage)
     {
-        health -= damage;
+        MapData.CurrentTreeHealth -= damage;
 
-        if (health < 0)
+        _turnOffLights = 10 - (int)MapData.CurrentTreeHealth / (int)_healthBit;
+
+        for (var i = 0; i < _turnOffLights; i++) healthLights[_turnOffLights].FadeOut();
+
+        if (MapData.CurrentTreeHealth < 0)
         {
-            _turnOffLights = 10 - (int)health / (int)_healthBit;
-
-            for (var i = 0; i < _turnOffLights; i++) healthLights[_turnOffLights].FadeOut();   
+            MapData.GameManagerRef.GameFinished();
         }
     }
 }

@@ -124,8 +124,3 @@ public struct JobNeighbour
     }
 }
 
-public enum NodeTypes
-{
-    Blocked,
-    Free
-}
