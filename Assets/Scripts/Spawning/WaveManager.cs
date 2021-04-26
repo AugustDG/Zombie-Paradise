@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Characters;
 using UnityEngine;
 using UnityEngine.Rendering;
 using Utility;
@@ -9,6 +10,7 @@ public class WaveManager : MonoBehaviour
 {
     [SerializeField] private Transform startPoint;
     [SerializeField] private GameObject robotSoldierPrefab;
+    [SerializeField] private Transform treeGoal;
 
     private void Start()
     {
@@ -18,21 +20,29 @@ public class WaveManager : MonoBehaviour
     private IEnumerator SpawnWaves()
     {
         var i = 0;
+        HumanBehaviour behaviour;
+        
         while (MapData.HumanList.Count > 10)
         {
             i++;
             
-            yield return new WaitForSeconds(15f);
+            yield return new WaitForSeconds(3f);
 
             for (var j = 0; j < Mathf.Clamp(2*i, 0, 50); j++)
             {
-                Instantiate(robotSoldierPrefab, startPoint.position, Quaternion.identity, startPoint);
+                yield return new WaitForSeconds(0.5f);
+                
+                behaviour = Instantiate(robotSoldierPrefab, startPoint.position, Quaternion.identity, startPoint).GetComponent<HumanBehaviour>();
+
+                behaviour.Target.TargetTransform = treeGoal;
             }
         }
         
-        Instantiate(robotSoldierPrefab, startPoint.position, Quaternion.identity, startPoint);
+        behaviour = Instantiate(robotSoldierPrefab, startPoint.position, Quaternion.identity, startPoint).GetComponent<HumanBehaviour>();
         
-        yield return new WaitForSeconds(1f);
+        behaviour.Target.TargetTransform = treeGoal;
+        
+        yield return new WaitForSeconds(2f);
 
         StartCoroutine(SpawnWaves());
     }

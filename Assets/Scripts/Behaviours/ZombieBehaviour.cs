@@ -56,7 +56,7 @@ namespace Characters
 
         protected override void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag("Human"))
+            if (other.CompareTag("Human") && !isDealingDamage)
             {
                 isDealingDamage = true;
                 DamageDealerCoroutine = StartCoroutine(DealDamage(other.GetComponent<CharacterBehaviour>()));

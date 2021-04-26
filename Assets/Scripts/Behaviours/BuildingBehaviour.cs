@@ -4,29 +4,36 @@ using Utility;
 public class BuildingBehaviour : MonoBehaviour
 {
     [Header("Properties")]
-    private float _healthBit;
-    private int _turnOffLights;
+    [SerializeField] private float healthBit;
+    [SerializeField] private int turnOffLightsPos;
 
     [Space(5f)]
     [Header("References")]
     [SerializeField] private HealthLight[] healthLights = new HealthLight[10];
 
-    private void Awake()
+    private void Start()
     {
-        _healthBit = MapData.CurrentTreeHealth / 10f;
+        healthBit = MapData.CurrentTreeHealth / 10;
     }
 
     public void SufferDamage(float damage)
     {
         MapData.CurrentTreeHealth -= damage;
 
-        _turnOffLights = 10 - (int)MapData.CurrentTreeHealth / (int)_healthBit;
-
-        for (var i = 0; i < _turnOffLights; i++) healthLights[_turnOffLights].FadeOut();
+        //bigger than base health, no lights turn off
+        if (MapData.CurrentTreeHealth >= 500) return;
+        
+        print(MapData.CurrentTreeHealth);
 
         if (MapData.CurrentTreeHealth < 0)
         {
             MapData.GameManagerRef.GameFinished();
+        }
+        else
+        {
+            turnOffLightsPos = 10 - (int)MapData.CurrentTreeHealth / (int)healthBit;
+
+            for (var i = 0; i < turnOffLightsPos; i++) healthLights[turnOffLightsPos].FadeOut();
         }
     }
 }

@@ -13,6 +13,6 @@ public class HealthLight : MonoBehaviour
 
     public void FadeOut()
     {
-        _light.DOIntensity(0f, 5f);
+        _light.DOIntensity(0f, 2.5f).Play().OnComplete(() => _light.enabled = false);
     }
 }

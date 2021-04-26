@@ -66,6 +66,8 @@ public class SpawnManager : MonoBehaviour
             {
                 startWorldPos = hitInfo.point;
 
+                print(Node.NodeFromWorldPoint(hitInfo.point).gridPosition);
+                
                 _canSpawn = true;
             }
         }
@@ -139,7 +141,7 @@ public class SpawnManager : MonoBehaviour
                     }
                 }
 
-                //todo:fix flaoting away text on resolutions other than 1920x1080
+                //todo:fix floating away text on resolutions other than 1920x1080
                 costText.gameObject.SetActive(true);
                 costText.GetComponent<RectTransform>().anchoredPosition = endMousePos * Screen.width/Screen.height;
                 costText.text = _currentCost.RoundToInt().ToString();

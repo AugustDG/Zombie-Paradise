@@ -9,7 +9,7 @@ public class Target
         get => targetTransform;
         set
         {
-            if (value != null) node = PathfindingManager.NodeFromWorldPoint(value.position);
+            if (value != null) node = Node.NodeFromWorldPoint(value.position);
             targetTransform = value;
         }
     }

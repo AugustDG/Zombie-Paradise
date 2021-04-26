@@ -5,27 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f319ddcf-deb5-40fd-ad02-78d4e41a9a74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Spawning/WaveManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Spawning/WaveManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Enums.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Enums.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Humans/Shot.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Humans/Shot.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Humans/SoldierTemplate.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Humans/SoldierTemplate.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Button_CreatePartAgain.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Button_CreatePartAgain.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Loading.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Loading/Main Camera Profile Loading.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Loading/Main Camera Profile Loading.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Main_Menu.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Main_Menu.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/ShootingBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/FadeAway.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/FadeAway.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/GoForwardAndDestroy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/LoadingManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Zombie-Paradise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Zombie-Paradise/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/Button2D_Long.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/UI/Button2D_Long.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Environment/Translucent.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Environment/Translucent.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Graveyard/Ground.001.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Graveyard/Ground.001.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Graveyard/Tomb1.001.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Graveyard/Tomb1.001.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Graveyard/Tree.001.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Graveyard/Tree.001.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/Lamp_Cold.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Lamp_Cold.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/Lamp_Warm.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Lamp_Warm.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Humans/HumanTemplate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Humans/HumanTemplate.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map_1/Default Map_Lights.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1/Default Map_Lights.lighting" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map_1/Main Camera Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1/Main Camera Profile.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/BuildingBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/BuildingBehaviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/CharacterBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/CharacterBehaviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/HumanBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/HumanBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Creation/CreationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Creation/CreationManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Node.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Research/ResearchButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Research/ResearchButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Research/ResearchManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Research/ResearchManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ZombieData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ZombieData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ZombiePart.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ZombiePart.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/Button3D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/Button3D.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/DisplayCurrencyValue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/DisplayCurrencyValue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/ZombieBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/ZombieBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawning/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawning/WaveManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Effects/UIFlippable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/Effects/UIFlippable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/HealthLight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/HealthLight.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Target.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Main Camera Blends.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Main Camera Blends.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +85,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CustomButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/f3/d947ac18/JobHandle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/GoForwardAndDestroy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/ShootingBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/c0/bffe457e/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.3.2/Editor/ShaderPreprocessor.cs" root0="SKIP_HIGHLIGHTING" />
@@ -72,34 +95,29 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/ResearchManagerEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2348FB5E-CC9E-4E68-9F37-F7D7FADAEA9A/fc/3585da20/TweenManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/SerializableDictionary.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/LoadingManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C44E24CB-7B9D-4E50-96E6-5A3281E887F5/b4/b9a2a453/GUIUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/220F2AAB-ED1D-4738-94A8-8B65AAF6C105/16/753d7b8b/IEnumerator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/14/4731db24/KeyValuePair`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1CDF5C2C-C101-4916-9242-B9590B7EBB6B/a8/e334a7f8/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/eb/e6506a97/CustomYieldInstruction.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1CDF5C2C-C101-4916-9242-B9590B7EBB6B/33/e158c441/IMGUIContainer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/BuildingBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/11/5e0cc8b1/WaitForSecondsRealtime.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SetLabel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ZombieData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SyncList.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SetCurrencyValue.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TaskManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/MapManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Editor/MapManagerEditor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinding.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TargetVector.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SerializeProperty.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/AudioManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Target.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Characters/HumanBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Events/AudioEventArgs.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Characters/CharacterBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Characters/ZombieBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Research/ResearchCreation.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/HealthLight.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/ZombieBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/UILineRendererRectConnector.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/UILineRectConnector.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ReadOnly.cs" />
@@ -108,9 +126,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SerializableDictionary.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ResearchManagerEditor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnPreview.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/DevTools.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/InjectUnscaledTime.cs" />
@@ -124,13 +140,24 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapEvents.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Research/ResearchManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/BuildingBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ZombiePart.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Button3D.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/CharacterBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/HumanBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/WaveManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Target.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/HealthLight.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/BuildingBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/ZombieBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GoForward.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GoForwardAndDestroy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/HumanBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/ShootingBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/CharacterBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/FadeAway.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LoadingManager.cs" />
     </changedPaths>
   </component>
   <component name="PerforceDirect.Settings">
@@ -179,10 +206,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="21256">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="21256" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -237,7 +264,10 @@
       <workItem from="1618580152792" duration="5885000" />
       <workItem from="1618586613682" duration="4418000" />
       <workItem from="1618671068851" duration="3541000" />
-      <workItem from="1618675557797" duration="10981000" />
+      <workItem from="1618675557797" duration="11571000" />
+      <workItem from="1618837557498" duration="4510000" />
+      <workItem from="1619119100801" duration="8985000" />
+      <workItem from="1619186424409" duration="4323000" />
     </task>
     <task id="LOCAL-00001" summary="Another &quot;first upload&quot;, a lot changed and is not fully working yet (play mode? human behaviour?).&#10;&#10;In any case, regular commits will follow!">
       <created>1616525541549</created>

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Characters;
 using UnityEngine;
 using Utilities.Extensions;
 using Utility;
@@ -60,6 +61,17 @@ public class CharacterBehaviour : MonoBehaviour
     private void FixedUpdate()
     {
         if (!Pathfinder.HasInit) return;
+
+        if (this is HumanBehaviour)
+        {
+            var behaviour = (HumanBehaviour)this;
+            if (behaviour.isShooting)
+            {
+                transform.LookAt(behaviour.shootTrans);
+                transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+                return;
+            }
+        }
 
         if (!Target.isSearching && Target.TargetTransform == null)
         {

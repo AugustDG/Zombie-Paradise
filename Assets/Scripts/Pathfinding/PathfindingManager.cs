@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Characters;
 using Unity.Collections;
@@ -81,8 +82,8 @@ public class PathfindingManager : MonoBehaviour
         {
             if (nodeArray != null)
             {
-                //Handles.Label(nodeArray.worldPosition, $"{nodeArray.gridPosition} {Environment.NewLine} {nodeArray.neighbours[2].gridPosition}", style);
-                /*Gizmos.color = nodeArray.nodeType == NodeTypes.Blocked ? Color.red : Color.white;
+                //Handles.Label(nodeArray.worldPosition, $"{nodeArray.gridPosition} {Environment.NewLine} {nodeArray.canWalk}", style);
+                /*Gizmos.color = nodeArray.canWalk ? Color.white : Color.red;
                 Gizmos.DrawCube(nodeArray.worldPosition + new Vector3(0, 2, 0), Vector3.one * (_nodeDiameter - 0.1f));*/
             }
         }

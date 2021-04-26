@@ -12,6 +12,6 @@ public class GameManager : MonoBehaviour
 
     public void GameFinished()
     {
-        SceneManager.LoadSceneAsync(1, LoadSceneMode.Single);
+        SceneManager.LoadSceneAsync(2, LoadSceneMode.Single);
     }
 }

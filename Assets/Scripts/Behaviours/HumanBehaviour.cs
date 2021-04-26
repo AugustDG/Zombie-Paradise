@@ -26,6 +26,12 @@ namespace Characters
         public bool isRobotSoldier;
         public Transform objective;
         private Vector3 _initialPos;
+        
+        [Space(5f)]
+        [Header("Shooting")]
+        public bool isShooting;
+        public float shotDelay = 1.5f;
+        public Transform shootTrans;
 
         protected override IEnumerator Start()
         {
@@ -43,6 +49,8 @@ namespace Characters
 
         protected override void FindTarget(bool newTarget = false)
         {
+            if (isShooting) return;
+            
             if (!isRobotSoldier)
             {
                 if (MapData.ZombieList.Count > 0)
@@ -51,12 +59,12 @@ namespace Characters
 
                     var closestZombie = MapData.ZombieList[0];
 
-                    foreach (var human in MapData.ZombieList)
+                    foreach (var zombie in MapData.ZombieList)
                     {
-                        if ((closestZombie.transform.position - human.transform.position).sqrMagnitude <
-                            (closestZombie.transform.position - transform.position).sqrMagnitude)
+                        if ((closestZombie.transform.position - zombie.transform.position).sqrMagnitude <
+                            (closestZombie.transform.position - transform.position).sqrMagnitude && (closestZombie.transform.position - transform.position).sqrMagnitude <= 400)
                         {
-                            closestZombie = human;
+                            closestZombie = zombie;
                         }
                     }
 
@@ -72,10 +80,19 @@ namespace Characters
                 Target.isSearching = true;
                 UnityExtensions.DelayAction(this, ()=> StartCoroutine(FindTargetDelayed()), Random.Range(1f, 5f));   
             }
+
+            Target.isSearching = true;
+            StartCoroutine(Pathfinder.PathfindToTarget(Target.TargetTransform, transform.position, queue =>
+            {
+                waypoints = queue;
+                Target.isSearching = false;
+            }));
         }
 
         protected override void OnTriggerEnter(Collider other)
         {
+            if (isDealingDamage) return;
+            
             if (other.CompareTag("Zombie"))
             {
                 isDealingDamage = true;
