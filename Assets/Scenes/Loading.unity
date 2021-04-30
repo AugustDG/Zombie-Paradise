@@ -428,7 +428,7 @@ MonoBehaviour:
   duration: 2
   twirl: {fileID: 1944961084}
   fG: {fileID: 2051076229}
-  _volume: {fileID: 1852155780}
+  volume: {fileID: 1852155780}
 --- !u!1 &1425970922
 GameObject:
   m_ObjectHideFlags: 0

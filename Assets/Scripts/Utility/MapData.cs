@@ -10,6 +10,8 @@ namespace Utility
         public static float FogHiDensity = 0.1f;
         public static float FogLoDensity = 0.01f;
 
+        public static int CurrentTime = 600;
+        
         public static bool CanSpawnZombies = true;
 
         public static Node[,] Map;

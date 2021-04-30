@@ -17,7 +17,7 @@ MonoBehaviour:
   adjacentPart: {fileID: 0}
   attackModifier: 0
   attackType: 0
-  healthModifier: 15
+  healthModifier: 20
   healthType: 0
   speedModifier: 0
   speedType: 0

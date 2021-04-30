@@ -7,6 +7,7 @@ namespace Utility
     {
         public static EventHandler<CurrencyType> CurrencyChangedEvent;
         public static EventHandler HumanKilledEvent;
+        public static EventHandler TreeLifeLostEvent;
         
         public static EventHandler<AudioEventArgs> StepTakenEvent;
 

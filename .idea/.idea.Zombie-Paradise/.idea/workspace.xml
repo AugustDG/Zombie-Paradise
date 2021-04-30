@@ -5,47 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f319ddcf-deb5-40fd-ad02-78d4e41a9a74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Humans/Shot.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Humans/Shot.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Humans/SoldierTemplate.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Humans/SoldierTemplate.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Button_CreatePartAgain.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Button_CreatePartAgain.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Loading.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Loading/Main Camera Profile Loading.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Loading/Main Camera Profile Loading.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Main_Menu.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Main_Menu.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/ShootingBehaviour.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/FadeAway.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/FadeAway.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/GoForwardAndDestroy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/LoadingManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX/Realistic Gunshot Sound Effect.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX/Realistic Gunshot Sound Effect.mp3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Tree Life Lost.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Tree Life Lost.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Twirl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Textures/Twirl.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Zombie-Paradise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Zombie-Paradise/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/UI/Button2D_Long.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/UI/Button2D_Long.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Environment/Translucent.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Environment/Translucent.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Graveyard/Ground.001.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Graveyard/Ground.001.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Graveyard/Tomb1.001.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Graveyard/Tomb1.001.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Environment/Graveyard/Tree.001.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Environment/Graveyard/Tree.001.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/Lamp_Cold.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Lamp_Cold.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/Lamp_Warm.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Lamp_Warm.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Humans/HumanTemplate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Humans/HumanTemplate.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Loading.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Loading.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map_1/Default Map_Lights.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1/Default Map_Lights.lighting" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map_1/Main Camera Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1/Main Camera Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/BuildingBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/BuildingBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/CharacterBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/CharacterBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/HumanBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/HumanBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/ZombieBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/ZombieBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/ShootingBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/ShootingBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinder.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawning/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawning/WaveManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Enums.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Enums.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/HealthLight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/HealthLight.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Target.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Main Camera Blends.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Main Camera Blends.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/LoadingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/LoadingManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/MapEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/MapEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,13 +104,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/UILineRectConnector.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/ReadOnly.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/CustomButton.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SerializableDictionary.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ResearchManagerEditor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnPreview.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/DevTools.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/InjectUnscaledTime.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/UnselectSelf.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/UnityExtensions.cs" />
@@ -136,28 +115,31 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Node.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Research/ResearchButton.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/DisplayCurrencyValue.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Enums.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapEvents.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Research/ResearchManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ZombiePart.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Button3D.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/WaveManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Target.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/HealthLight.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/BuildingBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/ZombieBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GoForward.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GoForwardAndDestroy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/HumanBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/ShootingBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/CharacterBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/FadeAway.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/HumanBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/ShootingBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Enums.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LoadingManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapEvents.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/HealthLight.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/WaveManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/BuildingBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinder.cs" />
     </changedPaths>
   </component>
   <component name="PerforceDirect.Settings">
@@ -268,6 +250,7 @@
       <workItem from="1618837557498" duration="4510000" />
       <workItem from="1619119100801" duration="8985000" />
       <workItem from="1619186424409" duration="4323000" />
+      <workItem from="1619789433452" duration="4323000" />
     </task>
     <task id="LOCAL-00001" summary="Another &quot;first upload&quot;, a lot changed and is not fully working yet (play mode? human behaviour?).&#10;&#10;In any case, regular commits will follow!">
       <created>1616525541549</created>

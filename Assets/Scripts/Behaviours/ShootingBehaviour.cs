@@ -5,12 +5,15 @@ using UnityEngine;
 public class ShootingBehaviour : MonoBehaviour
 {
     [SerializeField] private GameObject shot;
+    [SerializeField] private AudioClip gunShot;
     
     private HumanBehaviour _humanBehaviour;
+    private AudioSource _audioSource;
 
     private void Awake()
     {
         _humanBehaviour = GetComponentInParent<HumanBehaviour>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -31,6 +34,8 @@ public class ShootingBehaviour : MonoBehaviour
     private IEnumerator Shoot()
     {
         yield return new WaitForSeconds(_humanBehaviour.shotDelay);
+        
+        _audioSource.PlayOneShot(gunShot);
         
         Instantiate(shot, transform.position + Vector3.up, transform.rotation);
 

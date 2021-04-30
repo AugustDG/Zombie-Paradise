@@ -27,11 +27,11 @@ public class BuildingBehaviour : MonoBehaviour
 
         if (MapData.CurrentTreeHealth < 0)
         {
-            MapData.GameManagerRef.GameFinished();
+            MapData.GameManagerRef.GameFinished(GameEndType.LossByTree);
         }
         else
         {
-            turnOffLightsPos = 10 - (int)MapData.CurrentTreeHealth / (int)healthBit;
+            turnOffLightsPos = 9 - (int)MapData.CurrentTreeHealth / (int)healthBit;
 
             for (var i = 0; i < turnOffLightsPos; i++) healthLights[turnOffLightsPos].FadeOut();
         }

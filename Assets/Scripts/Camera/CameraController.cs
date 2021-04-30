@@ -1,5 +1,6 @@
 using Cinemachine;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
@@ -13,7 +14,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] private CinemachineVirtualCamera vPersCam, vTopCam, vGraveyardCam, vCreationCam, vResearchCam;
     [SerializeField] private RectTransform currencyColection;
     [SerializeField] private RectTransform creationCollection, researchCollection;
-    [SerializeField] private VolumeProfile volumeProfile;
+    [SerializeField] private RectTransform timerTextTrans;
 
     private Vector3 _translateVec;
     private Vector3 _targetRotation;
@@ -29,13 +30,6 @@ public class CameraController : MonoBehaviour
         _body = (CinemachineOrbitalTransposer)vPersCam.GetCinemachineComponent(CinemachineCore.Stage.Body);
 
         //volumeProfile.TryGet(out _dofComponent);
-    }
-
-    private void Start()
-    {
-        //_dofComponent.gaussianStart.value = 300f;
-        
-        
     }
 
     private void Update()
@@ -120,7 +114,8 @@ public class CameraController : MonoBehaviour
         {
             Time.timeScale = 1f;
             currencyColection.DOAnchorPosY(0f, 1.5f, true);
-
+            timerTextTrans.DOAnchorPosY(-75f, 1.5f, true);
+            
             RenderSettings.fogDensity = MapData.FogLoDensity;
             vGraveyardCam.Priority = 0;
         }
@@ -128,6 +123,7 @@ public class CameraController : MonoBehaviour
         {
             Time.timeScale = 0f;
             currencyColection.DOAnchorPosY(-400f, 1.5f, true);
+            timerTextTrans.DOAnchorPosY(150f, 1.5f, true);
             
             RenderSettings.fogDensity = MapData.FogHiDensity;
             vGraveyardCam.Priority = 100;

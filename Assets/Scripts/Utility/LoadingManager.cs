@@ -14,13 +14,13 @@ public class LoadingManager : MonoBehaviour
 
     [SerializeField] private RectTransform twirl;
     [SerializeField] private Image fG;
-    [SerializeField] private Volume _volume;
+    [SerializeField] private Volume volume;
 
     private LensDistortion _distortion;
 
     private void Awake()
     {
-        _volume.profile.TryGet(out _distortion);
+        volume.profile.TryGet(out _distortion);
     }
 
     private IEnumerator Start()

@@ -26,7 +26,7 @@ public class WaveManager : MonoBehaviour
         {
             i++;
             
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(45f);
 
             for (var j = 0; j < Mathf.Clamp(2*i, 0, 50); j++)
             {
@@ -42,7 +42,7 @@ public class WaveManager : MonoBehaviour
         
         behaviour.Target.TargetTransform = treeGoal;
         
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(10f);
 
         StartCoroutine(SpawnWaves());
     }

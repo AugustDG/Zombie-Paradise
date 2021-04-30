@@ -72,4 +72,11 @@
         FingersRemoved,
         BrainsRemoved
     }
+
+    public enum GameEndType
+    {
+        Win,
+        LossByTime,
+        LossByTree
+    }
 }

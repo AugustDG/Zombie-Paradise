@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioObject mainAmbienceObj;
     [SerializeField] private AudioObject endAmbienceObj;
     [SerializeField] private AudioObject footstepObj;
+    [SerializeField] private AudioObject lifeLostObj;
     [SerializeField] private AudioObject brainObj;
     [SerializeField] private AudioObject fingerObj;
 
@@ -25,6 +26,11 @@ public class AudioManager : MonoBehaviour
         MapEvents.CurrencyChangedEvent += CurrencyChangedHandler;
         MapEvents.HumanKilledEvent += HumanKilledHandler;
         MapEvents.StepTakenEvent += StepTakenHandler;
+        MapEvents.TreeLifeLostEvent += TreeLifeLostHandler;
+    }
+    private void TreeLifeLostHandler(object sender, EventArgs e)
+    {
+        Instantiate(lifeLostObj, transform);
     }
     private void StepTakenHandler(object sender, AudioEventArgs obj)
     {
@@ -55,9 +61,9 @@ public class AudioManager : MonoBehaviour
     private void CurrencyChangedHandler(object sender, CurrencyType e)
     {
         if (e == CurrencyType.BrainsAdded)
-            Instantiate(brainObj);
+            Instantiate(brainObj, transform);
         else if (e == CurrencyType.FingersAdded)
-            Instantiate(fingerObj);
+            Instantiate(fingerObj, transform);
     }
 
     private void ChangedToTopViewHandler(object sender, bool goingToTop)

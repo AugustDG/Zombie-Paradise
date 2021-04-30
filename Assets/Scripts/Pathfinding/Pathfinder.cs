@@ -39,7 +39,7 @@ public static class Pathfinder
     public static bool Cleanup()
     {
         if (!HasInit) return false;
-
+        
         JobNodeMap.Dispose();
 
         HasInit = false;
