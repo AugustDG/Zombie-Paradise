@@ -5,57 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f319ddcf-deb5-40fd-ad02-78d4e41a9a74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX/204431__jaraxe__robot-walk.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX/204431__jaraxe__robot-walk.ogg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX/204431__jaraxe__robot-walk.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX/204431__jaraxe__robot-walk.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX/385049__mortisblack__attack.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX/385049__mortisblack__attack.ogg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX/385049__mortisblack__attack.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX/385049__mortisblack__attack.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX/518155__lukeo135__zombie-bite.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Audio/SFX/518155__lukeo135__zombie-bite.wav.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Characters/Human_Robot.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Materials/Characters/Human_Robot.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Human/arm_left_robot.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Human/arm_left_robot.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Human/arm_right_robot.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Human/arm_right_robot.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Human/head_robot.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Human/head_robot.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Human/legs_left_robot.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Human/legs_left_robot.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Human/legs_right_robot.fbx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Human/legs_right_robot.fbx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Human/torso_robot.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Models/Human/torso_robot.obj.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Robot Attack.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Robot Attack.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Robot Step.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Robot Step.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Zombie Attack.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Zombie Attack.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Humans/RobotTemplate.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Humans/RobotTemplate.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/EADesktopInstaller.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/EADesktopInstaller.exe.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/Models/robot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/Models/robot.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/distance-measure_HFvuhdbt2O.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Textures/distance-measure_HFvuhdbt2O.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Zombie-Paradise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Zombie-Paradise/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Characters/Human.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Characters/Human.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Human/_source/Base Human.vox" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Human/_source/Base Human.vox" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Humans/SoldierTemplate.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Humans/SoldierTemplate.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/CharacterBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/CharacterBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/HumanBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/HumanBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Research/ResearchButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Research/ResearchButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/Events/AudioEventArgs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/Events/AudioEventArgs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/MapEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/MapEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Base Zombie/_source/Base Zombie.vox" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Base Zombie/_source/Base Zombie.vox" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,7 +229,7 @@
       <workItem from="1619119100801" duration="8985000" />
       <workItem from="1619186424409" duration="4323000" />
       <workItem from="1619789433452" duration="5082000" />
-      <workItem from="1620054539197" duration="2566000" />
+      <workItem from="1620054539197" duration="3357000" />
     </task>
     <task id="LOCAL-00001" summary="Another &quot;first upload&quot;, a lot changed and is not fully working yet (play mode? human behaviour?).&#10;&#10;In any case, regular commits will follow!">
       <created>1616525541549</created>
