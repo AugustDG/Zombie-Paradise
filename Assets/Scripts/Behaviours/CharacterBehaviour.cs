@@ -119,13 +119,24 @@ public class CharacterBehaviour : MonoBehaviour
         _isPlayingStep = true;
 
         var audioArgs = new AudioEventArgs();
-        
+
         MapEvents.StepTakenEvent.Invoke(this, audioArgs);
 
         yield return new WaitForSeconds(0.5f);
 
         audioArgs.AudioObject.gameObject.Destroy();
         _isPlayingStep = false;
+    }
+    
+    protected IEnumerator PlayAttackSound()
+    {
+        var audioArgs = new AudioEventArgs();
+
+        MapEvents.AttackEvent.Invoke(this, audioArgs);
+
+        yield return new WaitForSeconds(0.5f);
+
+        audioArgs.AudioObject.gameObject.Destroy();
     }
     
     private void OnDrawGizmos()

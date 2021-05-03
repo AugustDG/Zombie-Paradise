@@ -42,7 +42,7 @@ namespace Characters
             yield return base.Start();
         }
 
-        public void SpawnHead()
+        private void SpawnHead()
         {
             if (!isRobotSoldier) Instantiate(Random.Range(0, 2) == 0 ? femaleHead : maleHead, headPosition.position, headPosition.rotation, headPosition); //gives a random custom head (M or F)   
         }
@@ -164,6 +164,8 @@ namespace Characters
                 yield break;
             }
 
+            StartCoroutine(PlayAttackSound());
+            
             attackedChar.SufferDamage(attack);
 
             yield return new WaitForSecondsRealtime(attackInterval);
@@ -177,6 +179,8 @@ namespace Characters
                 base.FindTarget(true);
                 yield break;
             }
+            
+            StartCoroutine(PlayAttackSound());
 
             atackedBuild.SufferDamage(attack);
 

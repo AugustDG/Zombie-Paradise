@@ -33,6 +33,7 @@ public class ResearchButton : MonoBehaviour
     public List<ResearchButton> dependentButts;
 
     [SerializeField] private ResearchType rType;
+    private readonly int _offset = Animator.StringToHash("Offset");
 
     private void OnValidate()
     {
@@ -57,7 +58,7 @@ public class ResearchButton : MonoBehaviour
     
     private void AssignReferences()
     {
-        GetComponent<Animator>().SetFloat("Offset", Random.value * 2f);
+        GetComponent<Animator>().SetFloat(_offset, Random.value * 2f);
         
         butt = GetComponentInChildren<CustomButton>();
         shadow = butt.GetComponent<Shadow>();

@@ -1,4 +1,5 @@
 using System;
+using Characters;
 using UnityEngine;
 using Utility;
 using Utility.Events;
@@ -10,6 +11,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioObject mainAmbienceObj;
     [SerializeField] private AudioObject endAmbienceObj;
     [SerializeField] private AudioObject footstepObj;
+    [SerializeField] private AudioObject robotStepObj;
+    [SerializeField] private AudioObject robotAttackObj;
+    [SerializeField] private AudioObject zombieAttackObj;
     [SerializeField] private AudioObject lifeLostObj;
     [SerializeField] private AudioObject brainObj;
     [SerializeField] private AudioObject fingerObj;
@@ -26,15 +30,32 @@ public class AudioManager : MonoBehaviour
         MapEvents.CurrencyChangedEvent += CurrencyChangedHandler;
         MapEvents.HumanKilledEvent += HumanKilledHandler;
         MapEvents.StepTakenEvent += StepTakenHandler;
+        MapEvents.AttackEvent += AttackHandler;
         MapEvents.TreeLifeLostEvent += TreeLifeLostHandler;
     }
     private void TreeLifeLostHandler(object sender, EventArgs e)
     {
         Instantiate(lifeLostObj, transform);
     }
+    
     private void StepTakenHandler(object sender, AudioEventArgs obj)
     {
-        obj.AudioObject = Instantiate(footstepObj, (sender as MonoBehaviour)?.transform);
+        var behaviour = sender as HumanBehaviour;
+        
+        if (behaviour == null) return;
+
+        obj.AudioObject = Instantiate(behaviour.isRobotSoldier ? robotStepObj : footstepObj, behaviour.transform);
+    }
+    
+    private void AttackHandler(object sender, AudioEventArgs obj)
+    {
+        var behaviour = sender as CharacterBehaviour;
+        
+        if (behaviour == null) return;
+
+        if (behaviour is HumanBehaviour hBehaviour) obj.AudioObject = Instantiate(hBehaviour.isRobotSoldier ? robotAttackObj : null, hBehaviour.transform);
+
+        if (behaviour is ZombieBehaviour zBehaviour) obj.AudioObject = Instantiate(zombieAttackObj, zBehaviour.transform);
     }
 
     private void Start()

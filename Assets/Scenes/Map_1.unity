@@ -35213,7 +35213,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _UnscaledTime: 17.188873
+    - _UnscaledTime: 2039.8845
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
@@ -74368,6 +74368,9 @@ MonoBehaviour:
   mainAmbienceObj: {fileID: -8591534563691180200, guid: b423b88ee50285e44b6cf9b67409638c, type: 3}
   endAmbienceObj: {fileID: -8591534563691180200, guid: f444d7e01b42a444293168fe3c725b96, type: 3}
   footstepObj: {fileID: 8812362878430211890, guid: e2092f644eaa5164a91e57038efa8eb3, type: 3}
+  robotStepObj: {fileID: 8812362878430211890, guid: 43fb69c072eac11468dea9776fc17986, type: 3}
+  robotAttackObj: {fileID: 8812362878430211890, guid: 75398aae573aa10409fc258cf1bb3b27, type: 3}
+  zombieAttackObj: {fileID: 8812362878430211890, guid: 1ea4b7aa9d57a6b42bf556c10bd53197, type: 3}
   lifeLostObj: {fileID: 8812362878430211890, guid: dbe5a4e6eb1ef6942abf7c4f7b148658, type: 3}
   brainObj: {fileID: 8812362878430211890, guid: 7d15566bd6b94d2429ed4037bc8a6d19, type: 3}
   fingerObj: {fileID: 8812362878430211890, guid: 082d8774410d34d4989f2e9403daf68c, type: 3}
