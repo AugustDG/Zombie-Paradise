@@ -32,7 +32,7 @@ public class LoadingManager : MonoBehaviour
         twirl.DOScale(new Vector3(1, 1, 1), duration / 1.5f).OnComplete(() => twirl.DOScale(Vector3.zero, 0.5f).Play());
 
         DOTween.To(() => _distortion.intensity.value, res => _distortion.intensity.value = res, -1f, duration);
-        DOTween.To(() => _distortion.scale.value, res => _distortion.scale.value = res, 0.01f, duration).OnComplete(() => SceneManager.LoadSceneAsync(2, LoadSceneMode.Single));
+        DOTween.To(() => _distortion.scale.value, res => _distortion.scale.value = res, 0.01f, duration).OnComplete(() => SceneManager.LoadSceneAsync(3, LoadSceneMode.Single));
 
         DOTween.PlayAll();
 

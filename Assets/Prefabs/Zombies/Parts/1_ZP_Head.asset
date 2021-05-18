@@ -15,9 +15,9 @@ MonoBehaviour:
   partType: 0
   partObject: {fileID: 539518478048673518, guid: 590cc2f2f2cc7584cb3368845ebd1c1d, type: 3}
   adjacentPart: {fileID: 0}
-  attackModifier: 1
+  attackModifier: 0.9
   attackType: 0
-  healthModifier: 10
+  healthModifier: 5
   healthType: 0
   speedModifier: 0
   speedType: 0

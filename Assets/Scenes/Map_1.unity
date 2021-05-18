@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.18056251, g: 0.20587498, b: 0.27, a: 1}
+  m_SubtractiveShadowColor: {r: 0.09371662, g: 0.113567404, b: 0.16981131, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 1
   m_FlareStrength: 1
@@ -33,7 +33,7 @@ RenderSettings:
   m_HaloTexture: {fileID: 10305, guid: 0000000000000000f000000000000000, type: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
-  m_DefaultReflectionResolution: 128
+  m_DefaultReflectionResolution: 1024
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
@@ -895,6 +895,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile
       objectReference: {fileID: 0}
+    - target: {fileID: 3729543091810604097, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -938,6 +942,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090350683402082980, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
@@ -1024,6 +1032,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 2214034726742362691, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2583732805628193461, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_Name
       value: Vegetation 2
@@ -1071,6 +1083,10 @@ PrefabInstance:
     - target: {fileID: 3399573329754088084, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790303927452337318, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
@@ -1162,6 +1178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock
       objectReference: {fileID: 0}
+    - target: {fileID: 621331641453706244, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_RootOrder
       value: 61
@@ -1205,6 +1225,10 @@ PrefabInstance:
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060268870575977185, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
@@ -1272,6 +1296,14 @@ PrefabInstance:
     - target: {fileID: 3833344170575740210, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
       propertyPath: m_Name
       value: Vegetation 4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
@@ -1699,6 +1731,14 @@ PrefabInstance:
     - target: {fileID: 3833344170575740210, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
       propertyPath: m_Name
       value: Vegetation 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
@@ -2144,6 +2184,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vegetation 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
 --- !u!1 &49196325 stripped
@@ -2297,6 +2345,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 479559692}
     m_Modifications:
+    - target: {fileID: 2214034726742362691, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2583732805628193461, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_Name
       value: Vegetation 2 (1)
@@ -2344,6 +2396,10 @@ PrefabInstance:
     - target: {fileID: 3399573329754088084, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790303927452337318, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
@@ -2407,6 +2463,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vegetation 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
 --- !u!1 &53566306 stripped
@@ -2419,6 +2483,140 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 338243782212886979, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
   m_PrefabInstance: {fileID: 53566305}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &55005976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 55005977}
+  - component: {fileID: 55005979}
+  - component: {fileID: 55005978}
+  m_Layer: 5
+  m_Name: TextOver
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &55005977
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55005976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 292017242}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 247}
+  m_SizeDelta: {x: 459.4663, y: 122.975}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &55005978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55005976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Game Over...
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: d168a38b0f8083c4f9d61b6649aef01d, type: 2}
+  m_sharedMaterial: {fileID: -7876233684776941233, guid: d168a38b0f8083c4f9d61b6649aef01d, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 72
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &55005979
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 55005976}
+  m_CullTransparentMesh: 1
 --- !u!1001 &61122873
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2541,6 +2739,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vegetation 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
 --- !u!1 &62380293 stripped
@@ -2603,6 +2809,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635963632}
     m_Modifications:
+    - target: {fileID: 936728763717231479, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2387907430422265586, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_Name
       value: Vegetation 3
@@ -2650,6 +2860,10 @@ PrefabInstance:
     - target: {fileID: 7313411789675888392, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762894984371416466, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
@@ -3063,6 +3277,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3185097637337901052, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -3106,6 +3324,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5437823244774746393, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
@@ -3670,6 +3892,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vegetation 4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
 --- !u!4 &84582192 stripped
@@ -3785,6 +4015,7 @@ RectTransform:
   - {fileID: 937379877}
   - {fileID: 2137748162}
   - {fileID: 1253051301}
+  - {fileID: 1861434445}
   m_Father: {fileID: 736231800}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4000,6 +4231,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3185097637337901052, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -4043,6 +4278,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5437823244774746393, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
@@ -4442,6 +4681,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 936728763717231479, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2387907430422265586, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_Name
       value: Vegetation 3
@@ -4489,6 +4732,10 @@ PrefabInstance:
     - target: {fileID: 7313411789675888392, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762894984371416466, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
@@ -4623,6 +4870,14 @@ PrefabInstance:
     - target: {fileID: 3833344170575740210, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
       propertyPath: m_Name
       value: Vegetation 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
@@ -4792,6 +5047,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -4852,6 +5115,140 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8135465479175743614, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
   m_PrefabInstance: {fileID: 114291951}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &117158181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 117158182}
+  - component: {fileID: 117158184}
+  - component: {fileID: 117158183}
+  m_Layer: 5
+  m_Name: TextStats
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &117158182
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117158181}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 292017242}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 51}
+  m_SizeDelta: {x: 904.8657, y: 122.975}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &117158183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117158181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Brains: | Fingers:'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: d168a38b0f8083c4f9d61b6649aef01d, type: 2}
+  m_sharedMaterial: {fileID: -7876233684776941233, guid: d168a38b0f8083c4f9d61b6649aef01d, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 72
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 16
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &117158184
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117158181}
+  m_CullTransparentMesh: 1
 --- !u!1 &118417609
 GameObject:
   m_ObjectHideFlags: 0
@@ -5266,6 +5663,14 @@ PrefabInstance:
       value: 'Tree
 
         Health'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165569561633022846, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
+      propertyPath: msg
+      value: 'Increments Tree''s Health [10]
+
+        Tree has now deeper roots
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 8051644627412213157, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
       propertyPath: rType
@@ -5734,6 +6139,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock
       objectReference: {fileID: 0}
+    - target: {fileID: 621331641453706244, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -5777,6 +6186,10 @@ PrefabInstance:
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060268870575977185, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
@@ -6192,6 +6605,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3185097637337901052, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -6235,6 +6652,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5437823244774746393, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
@@ -7089,6 +7510,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635963632}
     m_Modifications:
+    - target: {fileID: 2111015547864097960, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7784321620756892183, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -7136,6 +7561,10 @@ PrefabInstance:
     - target: {fileID: 7784321620756892392, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
       propertyPath: m_Name
       value: House
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795371158156028493, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
@@ -7319,6 +7748,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock
       objectReference: {fileID: 0}
+    - target: {fileID: 621331641453706244, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -7362,6 +7795,10 @@ PrefabInstance:
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060268870575977185, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
@@ -7453,6 +7890,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock
       objectReference: {fileID: 0}
+    - target: {fileID: 621331641453706244, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -7496,6 +7937,10 @@ PrefabInstance:
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060268870575977185, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
@@ -7930,6 +8375,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -8044,6 +8497,14 @@ PrefabInstance:
     - target: {fileID: 3833344170575740210, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
       propertyPath: m_Name
       value: Vegetation 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
@@ -8314,7 +8775,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 2.6079235, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -8330,6 +8791,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 936728763717231479, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2387907430422265586, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_Name
       value: Vegetation 3
@@ -8377,6 +8842,10 @@ PrefabInstance:
     - target: {fileID: 7313411789675888392, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762894984371416466, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
@@ -9588,6 +10057,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vegetation 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
 --- !u!4 &240678390 stripped
@@ -9967,6 +10444,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1493262836}
     m_Modifications:
+    - target: {fileID: 2111015547864097960, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7784321620756892183, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -10015,6 +10496,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House
       objectReference: {fileID: 0}
+    - target: {fileID: 8795371158156028493, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
 --- !u!4 &258780305 stripped
@@ -10033,13 +10518,31 @@ GameObject:
   - component: {fileID: 259021294}
   - component: {fileID: 259021293}
   - component: {fileID: 259021292}
+  - component: {fileID: 259021291}
   m_Layer: 5
   m_Name: Overlay Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
+--- !u!114 &259021291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259021290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!114 &259021292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10057,7 +10560,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0.5
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -10080,7 +10583,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 1
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -10352,6 +10855,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vegetation 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
 --- !u!1 &267554515 stripped
@@ -10551,6 +11062,14 @@ PrefabInstance:
     - target: {fileID: 3833344170575740210, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
       propertyPath: m_Name
       value: Vegetation 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
@@ -10815,6 +11334,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vegetation 4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
 --- !u!4 &281061220 stripped
@@ -10876,6 +11403,14 @@ PrefabInstance:
     - target: {fileID: 3833344170575740210, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
       propertyPath: m_Name
       value: Vegetation 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
@@ -11023,6 +11558,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7148322820257065310, guid: a1ef244c6537c944996a59b6ebde2a85, type: 3}
   m_PrefabInstance: {fileID: 291537402}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &292017241
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 292017242}
+  - component: {fileID: 292017243}
+  - component: {fileID: 292017244}
+  m_Layer: 5
+  m_Name: End Menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &292017242
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292017241}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 55005977}
+  - {fileID: 1119039577}
+  - {fileID: 117158182}
+  - {fileID: 1035095337}
+  m_Father: {fileID: 1903963072}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &292017243
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292017241}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &292017244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292017241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40f246668e8b90d4f859256019a50b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textOver: {fileID: 55005978}
+  textWin: {fileID: 1119039578}
+  textStats: {fileID: 117158183}
+  optionsGroup: {fileID: 1035095338}
 --- !u!1001 &294269567
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11033,6 +11637,10 @@ PrefabInstance:
     - target: {fileID: 2088707701632232004, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_Name
       value: Ground Tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 3729543091810604097, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_RootOrder
@@ -11077,6 +11685,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090350683402082980, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
@@ -12109,6 +12721,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -12251,6 +12871,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1528050156}
     m_Modifications:
+    - target: {fileID: 4319756411623228045, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680634379483204712, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8387160460988855518, guid: 4b97439a1651839489626c5271bff911, type: 3}
       propertyPath: m_Name
       value: Vegetation 1
@@ -12313,6 +12941,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1939988760}
     m_Modifications:
+    - target: {fileID: 367110128271175530, guid: 72ba8e34fc3370e4c934095a10a71f6b, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2088707701632232004, guid: 72ba8e34fc3370e4c934095a10a71f6b, type: 3}
       propertyPath: m_Name
       value: Ground Tile Path (1)
@@ -12429,6 +13061,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile
       objectReference: {fileID: 0}
+    - target: {fileID: 3729543091810604097, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -12472,6 +13108,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090350683402082980, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
@@ -12968,6 +13608,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile
       objectReference: {fileID: 0}
+    - target: {fileID: 3729543091810604097, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -13011,6 +13655,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090350683402082980, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
@@ -13164,6 +13812,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 2214034726742362691, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2583732805628193461, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_Name
       value: Vegetation 2
@@ -13211,6 +13863,10 @@ PrefabInstance:
     - target: {fileID: 3399573329754088084, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790303927452337318, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
@@ -14263,7 +14919,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 2.6079235, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -15494,6 +16150,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 479559692}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -15603,6 +16267,14 @@ PrefabInstance:
     - target: {fileID: 3833344170575740210, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
       propertyPath: m_Name
       value: Vegetation 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
@@ -15958,7 +16630,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &441805637
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16715,6 +17387,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 2214034726742362691, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2583732805628193461, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_Name
       value: Vegetation 2
@@ -16762,6 +17438,10 @@ PrefabInstance:
     - target: {fileID: 3399573329754088084, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790303927452337318, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
@@ -17323,6 +18003,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBit: 0
   turnOffLightsPos: 0
+  isDealingDamage: 0
+  attackInterval: 0
   healthLights:
   - {fileID: 1979432474}
   - {fileID: 714657113}
@@ -17341,6 +18023,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 2214034726742362691, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2583732805628193461, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_Name
       value: Vegetation 2
@@ -17388,6 +18074,10 @@ PrefabInstance:
     - target: {fileID: 3399573329754088084, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790303927452337318, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
@@ -17475,6 +18165,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635963632}
     m_Modifications:
+    - target: {fileID: 2214034726742362691, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2583732805628193461, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_Name
       value: Vegetation 2 (1)
@@ -17522,6 +18216,10 @@ PrefabInstance:
     - target: {fileID: 3399573329754088084, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790303927452337318, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
@@ -17878,6 +18576,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 936728763717231479, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2387907430422265586, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_Name
       value: Vegetation 3
@@ -17925,6 +18627,10 @@ PrefabInstance:
     - target: {fileID: 7313411789675888392, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762894984371416466, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
@@ -18183,6 +18889,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3185097637337901052, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -18226,6 +18936,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5437823244774746393, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
@@ -18379,6 +19093,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 936728763717231479, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2387907430422265586, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_Name
       value: Vegetation 3
@@ -18426,6 +19144,10 @@ PrefabInstance:
     - target: {fileID: 7313411789675888392, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762894984371416466, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
@@ -18767,6 +19489,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vegetation 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
 --- !u!1 &502423822 stripped
@@ -18869,6 +19599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile
       objectReference: {fileID: 0}
+    - target: {fileID: 3729543091810604097, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -18912,6 +19646,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090350683402082980, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
@@ -19237,6 +19975,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 936728763717231479, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2387907430422265586, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_Name
       value: Vegetation 3
@@ -19284,6 +20026,10 @@ PrefabInstance:
     - target: {fileID: 7313411789675888392, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762894984371416466, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
@@ -19391,6 +20137,12 @@ PrefabInstance:
     - target: {fileID: 6057650291649942857, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
       propertyPath: m_Name
       value: RB_Zombie
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165569561633022846, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
+      propertyPath: msg
+      value: 'Base Zombie
+
+        Mainly eats, sometimes poops (?)'
       objectReference: {fileID: 0}
     - target: {fileID: 8051644627412213157, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
       propertyPath: dependentButts.Array.data[0]
@@ -19568,6 +20320,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock
       objectReference: {fileID: 0}
+    - target: {fileID: 621331641453706244, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_RootOrder
       value: 55
@@ -19612,6 +20368,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8060268870575977185, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
 --- !u!1 &518663918 stripped
@@ -19624,6 +20384,111 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
   m_PrefabInstance: {fileID: 518663917}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &518747380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 518747381}
+  - component: {fileID: 518747385}
+  - component: {fileID: 518747384}
+  - component: {fileID: 518747383}
+  - component: {fileID: 518747382}
+  m_Layer: 0
+  m_Name: BG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &518747381
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518747380}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1627192262}
+  m_Father: {fileID: 1861434445}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 163.3, y: 57.9}
+  m_SizeDelta: {x: 326.6, y: 178.2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &518747382
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518747380}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &518747383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518747380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.2509804}
+  m_EffectDistance: {x: 7, y: 7}
+  m_UseGraphicAlpha: 1
+--- !u!114 &518747384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518747380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 489a137b8432ad443a8b8d41bf436669, type: 3}
+  m_Type: 2
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &518747385
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 518747380}
+  m_CullTransparentMesh: 1
 --- !u!1 &519344434
 GameObject:
   m_ObjectHideFlags: 0
@@ -19765,6 +20630,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1400128186}
     m_Modifications:
+    - target: {fileID: 4319756411623228045, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680634379483204712, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8387160460988855518, guid: 4b97439a1651839489626c5271bff911, type: 3}
       propertyPath: m_Name
       value: Vegetation 1 (2)
@@ -21545,6 +22418,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -22405,6 +23286,12 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
+    - target: {fileID: 7165569561633022846, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
+      propertyPath: msg
+      value: 'Boosts Speed [8]
+
+        Zombies go Brrr'
+      objectReference: {fileID: 0}
     - target: {fileID: 8051644627412213157, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
       propertyPath: rType
       value: 2
@@ -22915,6 +23802,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 936728763717231479, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2387907430422265586, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_Name
       value: Vegetation 3
@@ -22963,6 +23854,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7762894984371416466, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
 --- !u!1 &619545788 stripped
@@ -22985,6 +23880,10 @@ PrefabInstance:
     - target: {fileID: 2088707701632232004, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
       propertyPath: m_Name
       value: Ground Tile 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3185097637337901052, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
       propertyPath: m_RootOrder
@@ -23029,6 +23928,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5437823244774746393, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
@@ -23533,6 +24436,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3185097637337901052, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -23576,6 +24483,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5437823244774746393, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
@@ -24306,6 +25217,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vegetation 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
 --- !u!1 &649895918 stripped
@@ -24392,6 +25311,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1528050156}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -24827,6 +25754,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3185097637337901052, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -24870,6 +25801,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5437823244774746393, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
@@ -25479,6 +26414,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -25692,6 +26635,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 479559692}
     m_Modifications:
+    - target: {fileID: 4319756411623228045, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680634379483204712, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8387160460988855518, guid: 4b97439a1651839489626c5271bff911, type: 3}
       propertyPath: m_Name
       value: Vegetation 1 (1)
@@ -26210,6 +27161,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 2214034726742362691, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2583732805628193461, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_Name
       value: Vegetation 2
@@ -26257,6 +27212,10 @@ PrefabInstance:
     - target: {fileID: 3399573329754088084, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790303927452337318, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
@@ -26793,6 +27752,14 @@ PrefabInstance:
     - target: {fileID: 3833344170575740210, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
       propertyPath: m_Name
       value: Vegetation 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
@@ -27604,6 +28571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock
       objectReference: {fileID: 0}
+    - target: {fileID: 621331641453706244, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_RootOrder
       value: 68
@@ -27647,6 +28618,10 @@ PrefabInstance:
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060268870575977185, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
@@ -27869,6 +28844,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1400128186}
     m_Modifications:
+    - target: {fileID: 2214034726742362691, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2583732805628193461, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_Name
       value: Vegetation 2 (1)
@@ -27917,6 +28896,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8790303927452337318, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
 --- !u!4 &781958163 stripped
@@ -27931,6 +28914,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 2214034726742362691, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2583732805628193461, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_Name
       value: Vegetation 2
@@ -27978,6 +28965,10 @@ PrefabInstance:
     - target: {fileID: 3399573329754088084, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790303927452337318, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
@@ -28219,7 +29210,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786609436}
-  m_LocalRotation: {x: 0.4518383, y: -0.00000001534981, z: 0.000000007774503, w: 0.89209986}
+  m_LocalRotation: {x: 0.4518383, y: -0.00000001534981, z: 0.000000007774502, w: 0.89209986}
   m_LocalPosition: {x: 81.2, y: 27.25, z: -117.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -28776,6 +29767,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1400128186}
     m_Modifications:
+    - target: {fileID: 2111015547864097960, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7784321620756892183, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -28823,6 +29818,10 @@ PrefabInstance:
     - target: {fileID: 7784321620756892392, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
       propertyPath: m_Name
       value: House
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795371158156028493, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
@@ -28912,7 +29911,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0.5
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -28945,6 +29944,10 @@ PrefabInstance:
     - target: {fileID: 382273242918400619, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_Name
       value: Rock
+      objectReference: {fileID: 0}
+    - target: {fileID: 621331641453706244, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_RootOrder
@@ -28989,6 +29992,10 @@ PrefabInstance:
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060268870575977185, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
@@ -29190,6 +30197,14 @@ PrefabInstance:
     - target: {fileID: 3833344170575740210, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
       propertyPath: m_Name
       value: Vegetation 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
@@ -29411,6 +30426,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 2214034726742362691, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2583732805628193461, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_Name
       value: Vegetation 2
@@ -29458,6 +30477,10 @@ PrefabInstance:
     - target: {fileID: 3399573329754088084, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790303927452337318, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
@@ -30286,6 +31309,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 936728763717231479, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2387907430422265586, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_Name
       value: Vegetation 3
@@ -30334,6 +31361,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7762894984371416466, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
 --- !u!1 &831493806 stripped
@@ -30346,6 +31377,97 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7313411789675888392, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
   m_PrefabInstance: {fileID: 831493805}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &840780036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 840780037}
+  - component: {fileID: 840780040}
+  - component: {fileID: 840780039}
+  - component: {fileID: 840780038}
+  m_Layer: 0
+  m_Name: Graphic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &840780037
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840780036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1635051336}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &840780038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840780036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.754717, g: 0.41504064, b: 0.2242791, a: 0.5}
+  m_EffectDistance: {x: 0, y: 7}
+  m_UseGraphicAlpha: 1
+--- !u!114 &840780039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840780036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ffadb7784d989424a8dc9198c04e4726, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &840780040
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840780036}
+  m_CullTransparentMesh: 1
 --- !u!1001 &841282661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31599,6 +32721,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1528050156}
     m_Modifications:
+    - target: {fileID: 4319756411623228045, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680634379483204712, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8387160460988855518, guid: 4b97439a1651839489626c5271bff911, type: 3}
       propertyPath: m_Name
       value: Vegetation 1 (1)
@@ -32276,6 +33406,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 2214034726742362691, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2583732805628193461, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_Name
       value: Vegetation 2
@@ -32323,6 +33457,10 @@ PrefabInstance:
     - target: {fileID: 3399573329754088084, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790303927452337318, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
@@ -33288,8 +34426,8 @@ MonoBehaviour:
   - {fileID: 32732879}
   ResearchCostDictionary:
     m_Keys: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000
-    m_Values: 020000000200000002000000020000000400000004000000040000000400000006000000060000000600000006000000040000000600000008000000040000000600000008000000
-  researchCosts: 020000000200000002000000020000000400000004000000040000000400000006000000060000000600000006000000040000000600000008000000040000000600000008000000
+    m_Values: 080000000800000008000000080000000c0000000c0000000c0000000c000000100000001000000010000000100000000a0000000e0000001200000012000000180000001e000000
+  researchCosts: 080000000800000008000000080000000c0000000c0000000c0000000c000000100000001000000010000000100000000a0000000e0000001200000012000000180000001e000000
   partPreview:
   - {fileID: 1895541967}
   - {fileID: 1384024441}
@@ -33971,6 +35109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile
       objectReference: {fileID: 0}
+    - target: {fileID: 3729543091810604097, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -34014,6 +35156,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090350683402082980, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
@@ -34145,6 +35291,12 @@ PrefabInstance:
         Health
 
         II'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165569561633022846, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
+      propertyPath: msg
+      value: 'Increments Tree''s Health II [14]
+
+        Tree''s roots reach China'
       objectReference: {fileID: 0}
     - target: {fileID: 8051644627412213157, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
       propertyPath: rType
@@ -35045,6 +36197,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 936728763717231479, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2387907430422265586, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_Name
       value: Vegetation 3
@@ -35092,6 +36248,10 @@ PrefabInstance:
     - target: {fileID: 7313411789675888392, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762894984371416466, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
@@ -35213,7 +36373,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _UnscaledTime: 2039.8845
+    - _UnscaledTime: 7.287135
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
@@ -35364,6 +36524,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 2214034726742362691, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2583732805628193461, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_Name
       value: Vegetation 2
@@ -35411,6 +36575,10 @@ PrefabInstance:
     - target: {fileID: 3399573329754088084, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790303927452337318, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
@@ -35836,6 +37004,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1400128186}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -36400,6 +37576,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 479559692}
     m_Modifications:
+    - target: {fileID: 2111015547864097960, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7784321620756892183, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -36447,6 +37627,10 @@ PrefabInstance:
     - target: {fileID: 7784321620756892392, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
       propertyPath: m_Name
       value: House
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795371158156028493, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
@@ -37147,6 +38331,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile
       objectReference: {fileID: 0}
+    - target: {fileID: 3729543091810604097, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -37190,6 +38378,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090350683402082980, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
@@ -37754,6 +38946,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 2214034726742362691, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2583732805628193461, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_Name
       value: Vegetation 2
@@ -37801,6 +38997,10 @@ PrefabInstance:
     - target: {fileID: 3399573329754088084, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790303927452337318, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
@@ -38030,6 +39230,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 2214034726742362691, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2583732805628193461, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_Name
       value: Vegetation 2
@@ -38078,6 +39282,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8790303927452337318, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
 --- !u!1 &1033098906 stripped
@@ -38090,6 +39298,56 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3399573329754088084, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
   m_PrefabInstance: {fileID: 1033098905}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1035095336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1035095337}
+  - component: {fileID: 1035095338}
+  m_Layer: 5
+  m_Name: Options
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1035095337
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035095336}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6891204958323201375}
+  - {fileID: 1635051336}
+  m_Father: {fileID: 292017242}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -146}
+  m_SizeDelta: {x: 533.0933, y: 515.9412}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1035095338
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035095336}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 1
 --- !u!1001 &1035957881
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38623,6 +39881,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vegetation 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
 --- !u!1 &1040663549 stripped
@@ -39042,6 +40308,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock
       objectReference: {fileID: 0}
+    - target: {fileID: 621331641453706244, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -39085,6 +40355,10 @@ PrefabInstance:
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060268870575977185, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
@@ -39840,6 +41114,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 936728763717231479, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2387907430422265586, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_Name
       value: Vegetation 3
@@ -39887,6 +41165,10 @@ PrefabInstance:
     - target: {fileID: 7313411789675888392, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762894984371416466, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
@@ -40527,6 +41809,12 @@ PrefabInstance:
     - target: {fileID: 7093633568894851738, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
       propertyPath: m_text
       value: Attack
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165569561633022846, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
+      propertyPath: msg
+      value: 'Boosts Attack [8]
+
+        Zombies bite with more gusto'
       objectReference: {fileID: 0}
     - target: {fileID: 8051644627412213157, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
       propertyPath: rState
@@ -41170,6 +42458,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103789156}
   m_CullTransparentMesh: 1
+--- !u!1 &1104273430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1104273431}
+  - component: {fileID: 1104273433}
+  - component: {fileID: 1104273432}
+  m_Layer: 0
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1104273431
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104273430}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1635051336}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1104273432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104273430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Quit
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: d168a38b0f8083c4f9d61b6649aef01d, type: 2}
+  m_sharedMaterial: {fileID: -7876233684776941233, guid: d168a38b0f8083c4f9d61b6649aef01d, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 63.85
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 16.17}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1104273433
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104273430}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1104437268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41812,6 +43234,140 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4371488038353556790, guid: 4faf92770efdb4a46ad012f4db201d08, type: 3}
   m_PrefabInstance: {fileID: 1118429126}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1119039576
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1119039577}
+  - component: {fileID: 1119039579}
+  - component: {fileID: 1119039578}
+  m_Layer: 5
+  m_Name: TextWin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1119039577
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119039576}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 292017242}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 247}
+  m_SizeDelta: {x: 459.4663, y: 122.975}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1119039578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119039576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: ...
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: d168a38b0f8083c4f9d61b6649aef01d, type: 2}
+  m_sharedMaterial: {fileID: -7876233684776941233, guid: d168a38b0f8083c4f9d61b6649aef01d, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 72
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1119039579
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1119039576}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1120942215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41986,6 +43542,12 @@ PrefabInstance:
       propertyPath: m_text
       value: Cost
       objectReference: {fileID: 0}
+    - target: {fileID: 7165569561633022846, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
+      propertyPath: msg
+      value: 'Reduces Cost [8]
+
+        Zombies can be mass produced!'
+      objectReference: {fileID: 0}
     - target: {fileID: 8051644627412213157, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
       propertyPath: rType
       value: 3
@@ -42047,6 +43609,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile
       objectReference: {fileID: 0}
+    - target: {fileID: 3729543091810604097, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -42090,6 +43656,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090350683402082980, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
@@ -42366,7 +43936,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 2.6079235, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -42801,6 +44371,14 @@ PrefabInstance:
     - target: {fileID: 3833344170575740210, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
       propertyPath: m_Name
       value: Vegetation 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
@@ -43383,6 +44961,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 936728763717231479, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2387907430422265586, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_Name
       value: Vegetation 3
@@ -43430,6 +45012,10 @@ PrefabInstance:
     - target: {fileID: 7313411789675888392, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762894984371416466, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
@@ -43517,6 +45103,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 936728763717231479, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2387907430422265586, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_Name
       value: Vegetation 3
@@ -43564,6 +45154,10 @@ PrefabInstance:
     - target: {fileID: 7313411789675888392, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762894984371416466, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
@@ -44201,6 +45795,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vegetation 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
 --- !u!1 &1192241639 stripped
@@ -44483,6 +46085,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1400128186}
     m_Modifications:
+    - target: {fileID: 936728763717231479, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2387907430422265586, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_Name
       value: Vegetation 3
@@ -44530,6 +46136,10 @@ PrefabInstance:
     - target: {fileID: 7313411789675888392, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762894984371416466, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
@@ -45019,6 +46629,14 @@ PrefabInstance:
     - target: {fileID: 3833344170575740210, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
       propertyPath: m_Name
       value: Vegetation 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
@@ -46520,6 +48138,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 2214034726742362691, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2583732805628193461, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_Name
       value: Vegetation 2
@@ -46567,6 +48189,10 @@ PrefabInstance:
     - target: {fileID: 3399573329754088084, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790303927452337318, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
@@ -47145,6 +48771,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RB_TAttack2
       objectReference: {fileID: 0}
+    - target: {fileID: 6057650291649942857, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7093633568894851738, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
       propertyPath: m_text
       value: 'Tree
@@ -47152,6 +48782,13 @@ PrefabInstance:
         Attack
 
         II'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165569561633022846, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
+      propertyPath: msg
+      value: 'Boosts Tree''s Attack II [24]
+
+        Tree detests being touched and
+        will bite'
       objectReference: {fileID: 0}
     - target: {fileID: 8051644627412213157, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
       propertyPath: rType
@@ -47324,6 +48961,14 @@ PrefabInstance:
     - target: {fileID: 3833344170575740210, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
       propertyPath: m_Name
       value: Vegetation 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
@@ -47820,6 +49465,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1400128186}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5 (1)
@@ -48150,6 +49803,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -49301,6 +50962,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635963632}
     m_Modifications:
+    - target: {fileID: 4319756411623228045, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680634379483204712, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8387160460988855518, guid: 4b97439a1651839489626c5271bff911, type: 3}
       propertyPath: m_Name
       value: Vegetation 1 (1)
@@ -49540,6 +51209,12 @@ PrefabInstance:
 
         II'
       objectReference: {fileID: 0}
+    - target: {fileID: 7165569561633022846, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
+      propertyPath: msg
+      value: 'Boosts Speed II [12]
+
+        Zombies go BRRRR'
+      objectReference: {fileID: 0}
     - target: {fileID: 8051644627412213157, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
       propertyPath: rType
       value: 6
@@ -49597,6 +51272,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -49846,6 +51529,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vegetation 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
 --- !u!1 &1330228924 stripped
@@ -49865,6 +51556,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1400128186}
     m_Modifications:
+    - target: {fileID: 4319756411623228045, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680634379483204712, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8387160460988855518, guid: 4b97439a1651839489626c5271bff911, type: 3}
       propertyPath: m_Name
       value: Vegetation 1 (1)
@@ -50159,6 +51858,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile
       objectReference: {fileID: 0}
+    - target: {fileID: 3729543091810604097, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -50202,6 +51905,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090350683402082980, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
@@ -51721,6 +53428,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 936728763717231479, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2387907430422265586, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_Name
       value: Vegetation 3
@@ -51768,6 +53479,10 @@ PrefabInstance:
     - target: {fileID: 7313411789675888392, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762894984371416466, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
@@ -52203,7 +53918,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 2.6079235, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -52219,7 +53934,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395217569}
-  m_LocalRotation: {x: 0.4518383, y: -0.00000001534981, z: 0.000000007774503, w: 0.89209986}
+  m_LocalRotation: {x: 0.4518383, y: -0.00000001534981, z: 0.000000007774502, w: 0.89209986}
   m_LocalPosition: {x: 0, y: 27.25, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -53119,6 +54834,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1528050156}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5 (1)
@@ -53321,6 +55044,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1493262836}
     m_Modifications:
+    - target: {fileID: 4319756411623228045, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680634379483204712, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8387160460988855518, guid: 4b97439a1651839489626c5271bff911, type: 3}
       propertyPath: m_Name
       value: Vegetation 1 (1)
@@ -53756,6 +55487,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -54071,6 +55810,12 @@ PrefabInstance:
       propertyPath: m_text
       value: Health
       objectReference: {fileID: 0}
+    - target: {fileID: 7165569561633022846, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
+      propertyPath: msg
+      value: 'Boosts Health [8]
+
+        Zombies can have more holes in them'
+      objectReference: {fileID: 0}
     - target: {fileID: 8051644627412213157, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
       propertyPath: rType
       value: 1
@@ -54195,6 +55940,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1528050156}
     m_Modifications:
+    - target: {fileID: 4319756411623228045, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680634379483204712, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8387160460988855518, guid: 4b97439a1651839489626c5271bff911, type: 3}
       propertyPath: m_Name
       value: Vegetation 1 (2)
@@ -54462,6 +56215,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock
       objectReference: {fileID: 0}
+    - target: {fileID: 621331641453706244, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -54505,6 +56262,10 @@ PrefabInstance:
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060268870575977185, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
@@ -54947,6 +56708,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7635826562936255635, guid: 76a22b67b698540438eef7b8cb5b7dfe, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 76a22b67b698540438eef7b8cb5b7dfe, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 83fbaf7ad298ce44c8caa164a768470e, type: 2}
@@ -54977,6 +56742,10 @@ PrefabInstance:
     - target: {fileID: 1151388028547126963, guid: 76a22b67b698540438eef7b8cb5b7dfe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 76a22b67b698540438eef7b8cb5b7dfe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76a22b67b698540438eef7b8cb5b7dfe, type: 3}
@@ -55581,6 +57350,12 @@ PrefabInstance:
 
         II'
       objectReference: {fileID: 0}
+    - target: {fileID: 7165569561633022846, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
+      propertyPath: msg
+      value: 'Boosts Attack II [12]
+
+        Zombies bite with ultimate gusto'
+      objectReference: {fileID: 0}
     - target: {fileID: 8051644627412213157, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
       propertyPath: rType
       value: 4
@@ -55968,6 +57743,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 936728763717231479, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2387907430422265586, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_Name
       value: Vegetation 3
@@ -56015,6 +57794,10 @@ PrefabInstance:
     - target: {fileID: 7313411789675888392, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762894984371416466, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
@@ -56779,6 +58562,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vegetation 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
 --- !u!1 &1504875148 stripped
@@ -56798,6 +58589,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -56902,6 +58701,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 936728763717231479, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2387907430422265586, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_Name
       value: Vegetation 3
@@ -56949,6 +58752,10 @@ PrefabInstance:
     - target: {fileID: 7313411789675888392, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762894984371416466, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
@@ -63314,6 +65121,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vegetation 4 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
 --- !u!4 &1550440645 stripped
@@ -63390,6 +65205,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635963632}
     m_Modifications:
+    - target: {fileID: 4319756411623228045, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680634379483204712, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8387160460988855518, guid: 4b97439a1651839489626c5271bff911, type: 3}
       propertyPath: m_Name
       value: Vegetation 1 (2)
@@ -63519,6 +65342,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -64145,6 +65976,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 479559692}
     m_Modifications:
+    - target: {fileID: 4319756411623228045, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680634379483204712, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8387160460988855518, guid: 4b97439a1651839489626c5271bff911, type: 3}
       propertyPath: m_Name
       value: Vegetation 1
@@ -64383,6 +66222,12 @@ PrefabInstance:
       value: 'Cost
 
         II'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165569561633022846, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
+      propertyPath: msg
+      value: 'Reduces Cost II [12]
+
+        Zombie factory now runs on free air'
       objectReference: {fileID: 0}
     - target: {fileID: 8051644627412213157, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
       propertyPath: rType
@@ -65126,6 +66971,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 479559692}
     m_Modifications:
+    - target: {fileID: 4319756411623228045, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680634379483204712, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8387160460988855518, guid: 4b97439a1651839489626c5271bff911, type: 3}
       propertyPath: m_Name
       value: Vegetation 1 (2)
@@ -65461,6 +67314,13 @@ PrefabInstance:
       value: 'Health
 
         II'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165569561633022846, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
+      propertyPath: msg
+      value: 'Boosts Health II [12]
+
+        Zombies can (not) litterally walk with
+        no legs'
       objectReference: {fileID: 0}
     - target: {fileID: 8051644627412213157, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
       propertyPath: rType
@@ -66349,6 +68209,140 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7148322820257065310, guid: a1ef244c6537c944996a59b6ebde2a85, type: 3}
   m_PrefabInstance: {fileID: 1625350166}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1627192261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1627192262}
+  - component: {fileID: 1627192264}
+  - component: {fileID: 1627192263}
+  m_Layer: 0
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1627192262
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627192261}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0026308363}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 518747381}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1627192263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627192261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: d168a38b0f8083c4f9d61b6649aef01d, type: 2}
+  m_sharedMaterial: {fileID: -7876233684776941233, guid: d168a38b0f8083c4f9d61b6649aef01d, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 50
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 25, y: 20, z: 30, w: 25}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1627192264
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627192261}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1628070686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66356,6 +68350,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 2214034726742362691, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2583732805628193461, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_Name
       value: Vegetation 2
@@ -66403,6 +68401,10 @@ PrefabInstance:
     - target: {fileID: 3399573329754088084, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790303927452337318, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
@@ -66576,6 +68578,129 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 68075938470637220, guid: e8458fefb6fae894aaa0983400637156, type: 3}
   m_PrefabInstance: {fileID: 1633658859}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1635051335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1635051336}
+  - component: {fileID: 1635051339}
+  - component: {fileID: 1635051338}
+  - component: {fileID: 1635051337}
+  m_Layer: 0
+  m_Name: ButtonLong (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1635051336
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635051335}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 20.999977}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 840780037}
+  - {fileID: 1104273431}
+  m_Father: {fileID: 1035095337}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 50}
+  m_SizeDelta: {x: 400, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1635051337
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635051335}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac97bca5f92b2db4199c280d4c4643ad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1635051338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635051335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 3
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 292017244}
+        m_TargetAssemblyTypeName: EndMenuManager, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!222 &1635051339
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635051335}
+  m_CullTransparentMesh: 1
 --- !u!1 &1635963631
 GameObject:
   m_ObjectHideFlags: 0
@@ -66761,6 +68886,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -68145,6 +70278,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 2214034726742362691, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2583732805628193461, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_Name
       value: Vegetation 2
@@ -68193,6 +70330,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8790303927452337318, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
 --- !u!1 &1675075885 stripped
@@ -68215,6 +70356,10 @@ PrefabInstance:
     - target: {fileID: 2088707701632232004, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_Name
       value: Ground Tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 3729543091810604097, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_RootOrder
@@ -68259,6 +70404,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090350683402082980, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
@@ -68346,6 +70495,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -68704,6 +70861,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 479559692}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5 (1)
@@ -68945,6 +71110,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -69699,6 +71872,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile
       objectReference: {fileID: 0}
+    - target: {fileID: 3729543091810604097, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -69742,6 +71919,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090350683402082980, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
@@ -69950,7 +72131,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 0
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 2.6079235, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -70795,6 +72976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3185097637337901052, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -70838,6 +73023,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5437823244774746393, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
@@ -71957,6 +74146,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -72229,6 +74426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock
       objectReference: {fileID: 0}
+    - target: {fileID: 621331641453706244, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_RootOrder
       value: 60
@@ -72272,6 +74473,10 @@ PrefabInstance:
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060268870575977185, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
@@ -73967,6 +76172,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1528050156}
     m_Modifications:
+    - target: {fileID: 936728763717231479, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2387907430422265586, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_Name
       value: Vegetation 3
@@ -74014,6 +76223,10 @@ PrefabInstance:
     - target: {fileID: 7313411789675888392, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762894984371416466, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
@@ -74275,6 +76488,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1400128186}
     m_Modifications:
+    - target: {fileID: 4319756411623228045, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680634379483204712, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8387160460988855518, guid: 4b97439a1651839489626c5271bff911, type: 3}
       propertyPath: m_Name
       value: Vegetation 1
@@ -74505,7 +76726,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1858364106}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b524afe0107ffdb48817b6ce06e1d301, type: 3}
   m_Name: 
@@ -74523,8 +76744,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialBrains: 3
-  initialFingers: 25
+  initialFingers: 50
   timerText: {fileID: 441805638}
+  endMenu: {fileID: 292017244}
 --- !u!114 &1858364112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74607,6 +76829,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7341142204800429331, guid: 96043fcfab156d94599b565b720e4391, type: 3}
   m_PrefabInstance: {fileID: 1859955634}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1861434444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1861434445}
+  - component: {fileID: 1861434446}
+  m_Layer: 0
+  m_Name: ToolTip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1861434445
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861434444}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 518747381}
+  m_Father: {fileID: 86794577}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 35, y: 75}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1861434446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861434444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb2594d8d7c0dc4ba674d00d9687995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1861529395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74752,6 +77023,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock
       objectReference: {fileID: 0}
+    - target: {fileID: 621331641453706244, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -74795,6 +77070,10 @@ PrefabInstance:
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060268870575977185, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
@@ -75927,6 +78206,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vegetation 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
 --- !u!1 &1886655216 stripped
@@ -75946,6 +78233,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1493262836}
     m_Modifications:
+    - target: {fileID: 4319756411623228045, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680634379483204712, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8387160460988855518, guid: 4b97439a1651839489626c5271bff911, type: 3}
       propertyPath: m_Name
       value: Vegetation 1 (2)
@@ -76323,6 +78618,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vegetation 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
 --- !u!1 &1900666005 stripped
@@ -76342,6 +78645,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635963632}
     m_Modifications:
+    - target: {fileID: 4319756411623228045, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680634379483204712, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8387160460988855518, guid: 4b97439a1651839489626c5271bff911, type: 3}
       propertyPath: m_Name
       value: Vegetation 1
@@ -76474,8 +78785,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1903963072}
   - component: {fileID: 1903963074}
-  - component: {fileID: 1903963073}
   - component: {fileID: 1903963075}
+  - component: {fileID: 1903963073}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -76493,7 +78804,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 292017242}
   m_Father: {fileID: 259021294}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -76516,9 +78828,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -76641,6 +78953,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635963632}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -77267,6 +79587,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vegetation 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
 --- !u!1 &1918963801 stripped
@@ -77353,6 +79681,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 479559692}
     m_Modifications:
+    - target: {fileID: 936728763717231479, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2387907430422265586, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_Name
       value: Vegetation 3
@@ -77400,6 +79732,10 @@ PrefabInstance:
     - target: {fileID: 7313411789675888392, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762894984371416466, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
@@ -78225,6 +80561,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock
       objectReference: {fileID: 0}
+    - target: {fileID: 621331641453706244, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -78268,6 +80608,10 @@ PrefabInstance:
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060268870575977185, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
@@ -78663,6 +81007,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock
       objectReference: {fileID: 0}
+    - target: {fileID: 621331641453706244, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_RootOrder
       value: 56
@@ -78706,6 +81054,10 @@ PrefabInstance:
     - target: {fileID: 1618197130408133871, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8060268870575977185, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53c0396d7fdfaf442b83a063fb0e6ec9, type: 3}
@@ -79008,6 +81360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile
       objectReference: {fileID: 0}
+    - target: {fileID: 3729543091810604097, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_RootOrder
       value: 24
@@ -79051,6 +81407,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090350683402082980, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
@@ -80184,6 +82544,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1528050156}
     m_Modifications:
+    - target: {fileID: 2214034726742362691, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2583732805628193461, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_Name
       value: Vegetation 2 (1)
@@ -80231,6 +82595,10 @@ PrefabInstance:
     - target: {fileID: 3399573329754088084, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790303927452337318, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
@@ -80642,6 +83010,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1635963632}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5 (1)
@@ -81443,6 +83819,14 @@ PrefabInstance:
     - target: {fileID: 3833344170575740210, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
       propertyPath: m_Name
       value: Vegetation 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
@@ -87253,7 +89637,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.58686364, g: 0.6104033, b: 0.7924528, a: 1}
-  m_Intensity: 0.75
+  m_Intensity: 0.7
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -87295,7 +89679,7 @@ Light:
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 2
+  m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -87925,6 +90309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile
       objectReference: {fileID: 0}
+    - target: {fileID: 3729543091810604097, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -87968,6 +90356,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090350683402082980, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
@@ -88571,6 +90963,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile
       objectReference: {fileID: 0}
+    - target: {fileID: 3729543091810604097, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -88614,6 +91010,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090350683402082980, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
@@ -88869,6 +91269,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3185097637337901052, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -88912,6 +91316,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5437823244774746393, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 512ba54f4a8ba8b43b345fead0fd66c8, type: 3}
@@ -89740,6 +92148,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1528050156}
     m_Modifications:
+    - target: {fileID: 2111015547864097960, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7784321620756892183, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -89787,6 +92199,10 @@ PrefabInstance:
     - target: {fileID: 7784321620756892392, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
       propertyPath: m_Name
       value: House
+      objectReference: {fileID: 0}
+    - target: {fileID: 8795371158156028493, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2eaf450c5fe31c4ca6f9ffbb1edc9fb, type: 3}
@@ -90614,6 +93030,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1037328090}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -91329,11 +93753,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: RB_TAttack
       objectReference: {fileID: 0}
+    - target: {fileID: 6057650291649942857, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7093633568894851738, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
       propertyPath: m_text
       value: 'Tree
 
         Attack'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165569561633022846, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
+      propertyPath: msg
+      value: 'Boosts Tree''s Attack [18]
+
+        Tree now has sharp branches'
       objectReference: {fileID: 0}
     - target: {fileID: 8051644627412213157, guid: a3e097ce9b8dba9418bc04ea2246923d, type: 3}
       propertyPath: rType
@@ -91582,6 +94016,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground Tile
       objectReference: {fileID: 0}
+    - target: {fileID: 3729543091810604097, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -91625,6 +94063,10 @@ PrefabInstance:
     - target: {fileID: 4260612041275093159, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6090350683402082980, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a333b24a973b5e74ea29d0796f12374a, type: 3}
@@ -91835,6 +94277,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vegetation 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
 --- !u!4 &220566971978374850 stripped
@@ -91990,6 +94440,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1493262836}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5
@@ -92052,6 +94510,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1493262836}
     m_Modifications:
+    - target: {fileID: 4319756411623228045, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6680634379483204712, guid: 4b97439a1651839489626c5271bff911, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8387160460988855518, guid: 4b97439a1651839489626c5271bff911, type: 3}
       propertyPath: m_Name
       value: Vegetation 1
@@ -92480,6 +94946,354 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ddb8aad35b6d604e82eade1a7432d71, type: 3}
+--- !u!224 &6891204957681499208
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891204957681499209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6891204958323201375}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &6891204957681499209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6891204957681499208}
+  - component: {fileID: 6891204957681499214}
+  - component: {fileID: 6891204957681499215}
+  m_Layer: 0
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!222 &6891204957681499214
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891204957681499209}
+  m_CullTransparentMesh: 1
+--- !u!114 &6891204957681499215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891204957681499209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Again
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: d168a38b0f8083c4f9d61b6649aef01d, type: 2}
+  m_sharedMaterial: {fileID: -7876233684776941233, guid: d168a38b0f8083c4f9d61b6649aef01d, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 63.85
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 16.17}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &6891204957724738376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891204957724738378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.754717, g: 0.41504064, b: 0.2242791, a: 0.5}
+  m_EffectDistance: {x: 0, y: 7}
+  m_UseGraphicAlpha: 1
+--- !u!224 &6891204957724738377
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891204957724738378}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6891204958323201375}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &6891204957724738378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6891204957724738377}
+  - component: {fileID: 6891204957724738382}
+  - component: {fileID: 6891204957724738383}
+  - component: {fileID: 6891204957724738376}
+  m_Layer: 0
+  m_Name: Graphic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!222 &6891204957724738382
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891204957724738378}
+  m_CullTransparentMesh: 1
+--- !u!114 &6891204957724738383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891204957724738378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ffadb7784d989424a8dc9198c04e4726, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &6891204958323201368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6891204958323201375}
+  - component: {fileID: 6891204958323201372}
+  - component: {fileID: 6891204958323201373}
+  - component: {fileID: 6891204958323201374}
+  m_Layer: 0
+  m_Name: ButtonLong
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!222 &6891204958323201372
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891204958323201368}
+  m_CullTransparentMesh: 1
+--- !u!114 &6891204958323201373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891204958323201368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 3
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 292017244}
+        m_TargetAssemblyTypeName: EndMenuManager, Assembly-CSharp
+        m_MethodName: Again
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!95 &6891204958323201374
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891204958323201368}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ac97bca5f92b2db4199c280d4c4643ad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!224 &6891204958323201375
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6891204958323201368}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 20.999977}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6891204957724738377}
+  - {fileID: 6891204957681499208}
+  m_Father: {fileID: 1035095337}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 190}
+  m_SizeDelta: {x: 400, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &6961746919617584281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92487,6 +95301,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1493262836}
     m_Modifications:
+    - target: {fileID: 2214034726742362691, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2583732805628193461, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
       propertyPath: m_Name
       value: Vegetation 2 (1)
@@ -92535,6 +95353,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8790303927452337318, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f5426483542d0b4489b6f729f9248db, type: 3}
 --- !u!4 &6961746919617584282 stripped
@@ -92549,6 +95371,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1493262836}
     m_Modifications:
+    - target: {fileID: 351080843075430435, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177594492221630150, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8110994756572099620, guid: 49b099601d6d85249a422b75f9f47d0a, type: 3}
       propertyPath: m_Name
       value: Vegetation 5 (1)
@@ -92611,6 +95441,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1493262836}
     m_Modifications:
+    - target: {fileID: 936728763717231479, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2387907430422265586, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_Name
       value: Vegetation 3
@@ -92658,6 +95492,10 @@ PrefabInstance:
     - target: {fileID: 7313411789675888392, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762894984371416466, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd2e59544aa0ff44aa5d147fb76818e7, type: 3}
@@ -92997,6 +95835,14 @@ PrefabInstance:
     - target: {fileID: 3833344170575740210, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
       propertyPath: m_Name
       value: Vegetation 4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913095540227198769, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839657620087456212, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a8c0c7c6396c384083d5b70b762130f, type: 3}

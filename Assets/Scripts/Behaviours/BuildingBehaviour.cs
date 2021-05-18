@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using UnityEngine;
 using Utility;
 
@@ -6,6 +8,9 @@ public class BuildingBehaviour : MonoBehaviour
     [Header("Properties")]
     [SerializeField] private float healthBit;
     [SerializeField] private int turnOffLightsPos;
+    [SerializeField] private bool isDealingDamage;
+    [SerializeField] private float attackInterval;
+    private Coroutine DamageDealerCoroutine;
 
     [Space(5f)]
     [Header("References")]
@@ -14,6 +19,32 @@ public class BuildingBehaviour : MonoBehaviour
     private void Start()
     {
         healthBit = MapData.CurrentTreeHealth / 10;
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Human") && !isDealingDamage)
+        {
+            isDealingDamage = true;
+            DamageDealerCoroutine = StartCoroutine(DealDamage(other.GetComponent<CharacterBehaviour>()));
+        }
+    }
+    
+    private void OnTriggerExit(Collider other)
+    {
+        if (DamageDealerCoroutine != null)
+        {
+            isDealingDamage = false;
+            StopCoroutine(DamageDealerCoroutine);
+        }
+    }
+
+    private IEnumerator DealDamage(CharacterBehaviour attackChar)
+    {
+        attackChar.SufferDamage(MapData.CurrentTreeAttack);
+
+        yield return new WaitForSeconds(attackInterval);
+        if (isDealingDamage) StartCoroutine(DealDamage(attackChar));
     }
 
     public void SufferDamage(float damage)

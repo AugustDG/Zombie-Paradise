@@ -6,6 +6,7 @@ namespace Utility
     public static class MapEvents
     {
         public static EventHandler<CurrencyType> CurrencyChangedEvent;
+        public static EventHandler ZombieCreated;
         public static EventHandler HumanKilledEvent;
         public static EventHandler TreeLifeLostEvent;
         

@@ -53,7 +53,7 @@ public class AudioManager : MonoBehaviour
         
         if (behaviour == null) return;
 
-        if (behaviour is HumanBehaviour hBehaviour) obj.AudioObject = Instantiate(hBehaviour.isRobotSoldier ? robotAttackObj : null, hBehaviour.transform);
+        if (behaviour is HumanBehaviour hBehaviour) obj.AudioObject = Instantiate(hBehaviour.isRobotSoldier ? robotAttackObj : zombieAttackObj, hBehaviour.transform);
 
         if (behaviour is ZombieBehaviour zBehaviour) obj.AudioObject = Instantiate(zombieAttackObj, zBehaviour.transform);
     }

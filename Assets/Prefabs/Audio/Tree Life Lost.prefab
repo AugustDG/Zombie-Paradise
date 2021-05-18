@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8812362878430211890}
   - component: {fileID: -7041004832639275033}
   m_Layer: 0
-  m_Name: Tree Health Drop
+  m_Name: Tree Life Lost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54,7 +54,7 @@ AudioSource:
   m_GameObject: {fileID: 3863342654656905720}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 8a3ff2e16926c61408ab3c50482a5a6f, type: 2}
   m_audioClip: {fileID: 8300000, guid: 9eb4eb16c8a4542f5bf83b467616344b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.6

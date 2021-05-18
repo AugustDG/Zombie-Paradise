@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Characters;
@@ -27,6 +28,8 @@ public class SpawnManager : MonoBehaviour
     {
         _camera = Camera.main;
         _rayLayerMask = ~LayerMask.GetMask("Zombies", "Humans", "Obstacles");
+
+        MapEvents.ZombieCreated += UpdateZombie;
     }
 
     private void Start()
@@ -66,8 +69,6 @@ public class SpawnManager : MonoBehaviour
             {
                 startWorldPos = hitInfo.point;
 
-                print(Node.NodeFromWorldPoint(hitInfo.point).gridPosition);
-                
                 _canSpawn = true;
             }
         }
@@ -106,7 +107,7 @@ public class SpawnManager : MonoBehaviour
                 {
                     for (var y = startGridPos.y; y <= endGridPos.y; y++)
                     {
-                        if (!MapData.Map[x, y].canWalk) continue;
+                        if (!MapData.Map[x, y].canSpawn) continue;
                         if (_currentCost > MapData.FingerAmount - MapData.ZombieToSpawn.totalCost || MapData.FingerAmount == 0) break;
 
                         var evalPreview = _spawnPreviews.FirstOrDefault(preview => preview.gridPosition == MapData.Map[x, y].gridPosition);
@@ -166,7 +167,7 @@ public class SpawnManager : MonoBehaviour
 
             foreach (var preview in _spawnPreviews.ToArray())
             {
-                var spawnedZombie = Instantiate(_zombieToSpawn, MapData.Map[preview.gridPosition.x, preview.gridPosition.y].worldPosition + Vector3.up*0.5f, Quaternion.identity);
+                var spawnedZombie = Instantiate(_zombieToSpawn, MapData.Map[preview.gridPosition.x, preview.gridPosition.y].worldPosition, Quaternion.identity);
                 if (preview.IsError) _currentCost -= _zombieToSpawn.spawnCost;
                 spawnedZombie.gameObject.SetActive(true);
                 zombieBehaviours.Add(spawnedZombie);
@@ -180,6 +181,16 @@ public class SpawnManager : MonoBehaviour
 
             costText.gameObject.SetActive(false);
         }
+    }
+    
+    private void UpdateZombie(object sender, EventArgs args)
+    {
+        if(!_zombieToSpawn) return;
+        
+        _zombieToSpawn.attack = MapData.ZombieToSpawn.totalAttack;
+        _zombieToSpawn.health = MapData.ZombieToSpawn.totalHealth;
+        _zombieToSpawn.speed = MapData.ZombieToSpawn.totalSpeed;
+        _zombieToSpawn.spawnCost = MapData.ZombieToSpawn.totalCost;
     }
 
     private void OnDrawGizmos()

@@ -101,22 +101,22 @@ public class ResearchManager : MonoBehaviour
 
         var tempPart = (ZombiePart)ScriptableObject.CreateInstance(typeof(ZombiePart));
 
-        //the part preview list is in accord with the PartType enum 
+        //the part preview list is in sync with the PartType enum 
         tempPart.partType = (PartType)_activePart;
 
-        var calcAttack = (MapData.CurrentMaxAttack * Random.Range(0f + _numbOBrains * 0.08f, _numbOBrains * 0.1f)).Round(1);
+        var calcAttack = (MapData.CurrentMaxAttack * Random.Range(_numbOBrains * 0.04f, _numbOBrains * 0.1f)).Round(1);
         tempPart.attackModifier = calcAttack;
         statTexts[0].text = calcAttack.ToString(CultureInfo.InvariantCulture);
 
-        var calcHealth = (MapData.CurrentMaxHealth * Random.Range(0f + _numbOBrains * 0.08f, _numbOBrains * 0.1f)).Round(1);
+        var calcHealth = (MapData.CurrentMaxHealth * Random.Range(_numbOBrains * 0.04f, _numbOBrains * 0.1f)).Round(1);
         tempPart.healthModifier = calcHealth;
         statTexts[1].text = calcHealth.ToString(CultureInfo.InvariantCulture);
 
-        var calcSpeed = MapData.CurrentMaxSpeed * Random.Range(0f + _numbOBrains * 0.08f, _numbOBrains * 0.1f).Round(1);
+        var calcSpeed = MapData.CurrentMaxSpeed * Random.Range(_numbOBrains * 0.04f, _numbOBrains * 0.1f).Round(1);
         tempPart.speedModifier = calcSpeed;
         statTexts[2].text = calcSpeed.ToString(CultureInfo.InvariantCulture);
 
-        var calcCost = (MapData.CurrentCostMult * (tempPart.attackModifier + tempPart.healthModifier + tempPart.speedModifier) / 20f).Round(1);
+        var calcCost = (MapData.CurrentCostMult * (tempPart.attackModifier + tempPart.healthModifier + tempPart.speedModifier) / 10f).Round(1);
         tempPart.costModifier = calcCost;
         statTexts[3].text = calcCost.ToString(CultureInfo.InvariantCulture);
         
@@ -239,13 +239,13 @@ public class ResearchManager : MonoBehaviour
             switch (rType)
             {
                 case ResearchType.ATTACK:
-                    MapData.CurrentMaxAttack += 2f;
+                    MapData.CurrentMaxAttack += 1f;
                     break;
                 case ResearchType.HEALTH:
-                    MapData.CurrentMaxHealth += 10f;
+                    MapData.CurrentMaxHealth += 5f;
                     break;
                 case ResearchType.SPEED:
-                    MapData.CurrentMaxSpeed += 5f;
+                    MapData.CurrentMaxSpeed += 3f;
                     break;
                 case ResearchType.COST:
                     MapData.CurrentMaxSpeed -= 0.05f;
@@ -254,13 +254,13 @@ public class ResearchManager : MonoBehaviour
                     MapData.CurrentMaxAttack += 3f;
                     break;
                 case ResearchType.HEALTH2:
-                    MapData.CurrentMaxHealth += 10f;
+                    MapData.CurrentMaxHealth += 5f;
                     break;
                 case ResearchType.SPEED2:
-                    MapData.CurrentMaxSpeed += 5f;
+                    MapData.CurrentMaxSpeed += 3f;
                     break;
                 case ResearchType.COST2:
-                    MapData.CurrentMaxSpeed -= 0.1f;
+                    MapData.CurrentMaxSpeed -= 0.15f;
                     break;
                 case ResearchType.ATTACK3:
                     MapData.CurrentMaxAttack += 5f;
@@ -269,10 +269,10 @@ public class ResearchManager : MonoBehaviour
                     MapData.CurrentMaxAttack += 5f;
                     break;
                 case ResearchType.SPEED3:
-                    MapData.CurrentMaxSpeed += 5f;
+                    MapData.CurrentMaxSpeed += 3f;
                     break;
                 case ResearchType.COST3:
-                    MapData.CurrentMaxSpeed -= 0.1f;
+                    MapData.CurrentMaxSpeed -= 0.15f;
                     break;
                 case ResearchType.THEALTH:
                     MapData.CurrentTreeHealth += 250f;

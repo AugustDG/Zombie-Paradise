@@ -108,7 +108,7 @@ public class CameraController : MonoBehaviour
 
     public void OnChangeCamGraveyardInput(InputAction.CallbackContext context)
     {
-        if (_isZoomedOut || _onCreation) return;
+        if (_isZoomedOut || _onCreation || _onResearch) return;
         if (!context.started) return;
         if (_onGraveyard)
         {

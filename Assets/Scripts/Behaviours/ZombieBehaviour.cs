@@ -1,4 +1,6 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using Utilities.Extensions;
 using Utility;
@@ -9,45 +11,28 @@ namespace Characters
     {
         public float spawnCost;
 
-        protected override void FindTarget(bool newTarget = false)
+        protected override void FindTarget()
         {
-            if (!newTarget)
-            {
-                Target.isSearching = true;
-
-                StartCoroutine(Pathfinder.PathfindToTarget(Target.TargetTransform, transform.position, queue =>
-                {
-                    foreach (var node in queue)
-                    {
-                        if (waypoints.Count > 0) waypoints.Dequeue();
-                        waypoints.Enqueue(node);   
-                    }
-                    
-                    Target.isSearching = false;
-                }));
-
-                return;
-            }
+            Target.isSearching = true;
 
             if (MapData.HumanList.Count > 0)
             {
                 Target.isSearching = true;
 
-                var closestHuman = MapData.HumanList[0];
+                Target.TargetTransform = MapData.HumanList[0].transform;
 
                 foreach (var human in MapData.HumanList)
                 {
-                    if ((closestHuman.transform.position - human.transform.position).sqrMagnitude <
-                        (closestHuman.transform.position - transform.position).sqrMagnitude)
+                    if ((transform.position - human.transform.position).sqrMagnitude <
+                        (transform.position - Target.TargetTransform.position).sqrMagnitude)
                     {
-                        closestHuman = human;
+                        Target.TargetTransform = human.transform;
                     }
                 }
 
-                Target.TargetTransform = closestHuman.transform;
-                StartCoroutine(Pathfinder.PathfindToTarget(closestHuman.transform, transform.position, queue =>
+                StartCoroutine(Pathfinder.PathfindToTarget(Target.TargetTransform, transform.position, array =>
                 {
-                    waypoints = queue;
+                    waypoints = new Queue<Node>(array.Reverse());
                     Target.isSearching = false;
                 }));
             }
@@ -76,18 +61,14 @@ namespace Characters
         {
             health -= damage;
 
-            if (health < 0)
-            {
-                IsScheduledForCleanup = true;
-                StartCoroutine(Cleanup());
-            }
+            if (health < 0) IsScheduledForCleanup = true;
         }
 
         private IEnumerator DealDamage(CharacterBehaviour attackChar)
         {
             if (attackChar == null || attackChar.IsScheduledForCleanup)
             {
-                base.FindTarget(true);
+                base.FindTarget();
                 yield break;
             }
 
@@ -97,9 +78,9 @@ namespace Characters
             if (isDealingDamage) StartCoroutine(DealDamage(attackChar));
         }
 
-        protected override IEnumerator Cleanup()
+        protected override void Cleanup()
         {
-            yield return new WaitForFixedUpdate();
+            base.Cleanup();
 
             MapData.ZombieList.Remove(this);
             gameObject.Destroy();

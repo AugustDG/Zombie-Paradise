@@ -15,7 +15,7 @@ MonoBehaviour:
   partType: 2
   partObject: {fileID: 3425488167074989734, guid: 50115b22d93ad7e418d899223dd1ef8c, type: 3}
   adjacentPart: {fileID: 11400000, guid: d965f91d7b0a8f34f8ff0fe35a2e6186, type: 2}
-  attackModifier: 1
+  attackModifier: 0.8
   attackType: 0
   healthModifier: 0
   healthType: 0

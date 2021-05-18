@@ -11,5 +11,10 @@ public class DevTools : MonoBehaviour
             MapData.FingerAmount += 10;
             MapData.BrainAmount += 1;
         }
+
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            MapData.GameManagerRef.GameFinished(GameEndType.Win);
+        }
     }
 }

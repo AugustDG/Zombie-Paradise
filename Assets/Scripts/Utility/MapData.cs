@@ -31,7 +31,7 @@ namespace Utility
         public static float CurrentMaxSpeed = 5f;
         public static float CurrentCostMult = 1f; //cost is dimished by this multiplier
         public static float CurrentTreeHealth = 500f;
-        public static float CurrentTreeAttack = 10f;
+        public static float CurrentTreeAttack = 0f;
 
         public static int FingerAmount
         {

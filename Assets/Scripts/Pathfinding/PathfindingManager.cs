@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Characters;
 using Unity.Collections;
+using Unity.Mathematics;
 using UnityEditor;
 using UnityEngine;
 using Utilities.Extensions;
@@ -92,17 +93,6 @@ public class PathfindingManager : MonoBehaviour
         {
             Handles.Label(((Vector2)jobNode.GridPosition).TransformTo2DVector3() - new Vector3(12f, 0, 12f), $"{jobNode.GridPosition} {Environment.NewLine} {jobNode.Neighbour1.GridPosition}", style);
         }*/
-    }
-
-    public JobNode NodeFromWorldPointTest(Vector3 worldPos)
-    {
-        var percentX = Mathf.Clamp01((worldPos.x + MapData.MapSize.x / 2f) /MapData. MapSize.x);
-        var percentY = Mathf.Clamp01((worldPos.z + MapData.MapSize.y / 2f) / MapData.MapSize.y);
-
-        var x = ((GridSizeX - 1) * percentX).RoundToInt();
-        var y = ((GridSizeY - 1) * percentY).RoundToInt();
-
-        return _nativeMap[y * MapData.MapSize.x + x];
     }
 
     public static Node NodeFromWorldPoint(Vector3 worldPos)
@@ -205,16 +195,21 @@ public class PathfindingManager : MonoBehaviour
             tempMap[i].Neighbour1 = Node.ToJobNeighbour(tempNode.neighbours[0]);
             tempMap[i].Neighbour2 = Node.ToJobNeighbour(tempNode.neighbours[1]);
             tempMap[i].Neighbour3 = Node.ToJobNeighbour(tempNode.neighbours[2]);
-            tempMap[i].Neighbour4 = tempNode.neighbours.Count > 3 ? Node.ToJobNeighbour(tempNode.neighbours[3]) : new JobNeighbour(Vector2Int.zero, true);
-            tempMap[i].Neighbour5 = tempNode.neighbours.Count > 4 ? Node.ToJobNeighbour(tempNode.neighbours[4]) : new JobNeighbour(Vector2Int.zero, true);
-            tempMap[i].Neighbour6 = tempNode.neighbours.Count > 5 ? Node.ToJobNeighbour(tempNode.neighbours[5]) : new JobNeighbour(Vector2Int.zero, true);
-            tempMap[i].Neighbour7 = tempNode.neighbours.Count > 6 ? Node.ToJobNeighbour(tempNode.neighbours[6]) : new JobNeighbour(Vector2Int.zero, true);
-            tempMap[i].Neighbour8 = tempNode.neighbours.Count > 7 ? Node.ToJobNeighbour(tempNode.neighbours[7]) : new JobNeighbour(Vector2Int.zero, true);
+            tempMap[i].Neighbour4 = tempNode.neighbours.Count > 3 ? Node.ToJobNeighbour(tempNode.neighbours[3]) : new NodeNeighbour(Vector2Int.zero, 0);
+            tempMap[i].Neighbour5 = tempNode.neighbours.Count > 4 ? Node.ToJobNeighbour(tempNode.neighbours[4]) : new NodeNeighbour(Vector2Int.zero, 0);
+            tempMap[i].Neighbour6 = tempNode.neighbours.Count > 5 ? Node.ToJobNeighbour(tempNode.neighbours[5]) : new NodeNeighbour(Vector2Int.zero, 0);
+            tempMap[i].Neighbour7 = tempNode.neighbours.Count > 6 ? Node.ToJobNeighbour(tempNode.neighbours[6]) : new NodeNeighbour(Vector2Int.zero, 0);
+            tempMap[i].Neighbour8 = tempNode.neighbours.Count > 7 ? Node.ToJobNeighbour(tempNode.neighbours[7]) : new NodeNeighbour(Vector2Int.zero, 0);
         }
 
         _nativeMap = new NativeArray<JobNode>(tempMap, Allocator.Persistent);
 
         Pathfinder.Init(new Vector2Int(localMapSize, localMapSize), new Vector2Int(GridSizeX, GridSizeY), MapData.Map, _nativeMap);
+    }
+
+    private void OnDestroy()
+    {
+        if (_nativeMap.IsCreated) _nativeMap.Dispose();
     }
 
     #region Map Functions
@@ -223,8 +218,6 @@ public class PathfindingManager : MonoBehaviour
     {
         if (MapData.Map == null || MapData.Map.Length == 0) CreateMap();
         if (spawnedBorderTrees.Count > 0) DeleteBorderTrees();
-
-        var i = 0;
 
         for (var x = 0; x <MapData. MapSize.x; x += 4)
         {
@@ -239,8 +232,6 @@ public class PathfindingManager : MonoBehaviour
                     treeToSpawn.transform.position = MapData.Map[x, y].worldPosition;
                     treeToSpawn.transform.rotation = Quaternion.Euler(rot);
                     spawnedBorderTrees.Add((GameObject)PrefabUtility.InstantiatePrefab(treeToSpawn, borderTreesParent));
-
-                    i++;
                 }
             }
         }

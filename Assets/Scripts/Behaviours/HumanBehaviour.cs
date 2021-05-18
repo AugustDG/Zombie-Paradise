@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using DG.Tweening;
 using UnityEngine;
 using Utilities.Extensions;
 using Utility;
@@ -30,7 +33,7 @@ namespace Characters
         [Space(5f)]
         [Header("Shooting")]
         public bool isShooting;
-        public float shotDelay = 1.5f;
+        public float shotDelay = 2.5f;
         public Transform shootTrans;
 
         protected override IEnumerator Start()
@@ -47,44 +50,63 @@ namespace Characters
             if (!isRobotSoldier) Instantiate(Random.Range(0, 2) == 0 ? femaleHead : maleHead, headPosition.position, headPosition.rotation, headPosition); //gives a random custom head (M or F)   
         }
 
-        protected override void FindTarget(bool newTarget = false)
+        protected override void FindTarget()
         {
             if (isShooting) return;
             
+            Target.isSearching = true;
+            
             if (!isRobotSoldier)
             {
-                if (MapData.ZombieList.Count > 0)
+                /*if (MapData.ZombieList.Count > 0)
                 {
-                    Target.isSearching = true;
-
                     var closestZombie = MapData.ZombieList[0];
 
                     foreach (var zombie in MapData.ZombieList)
                     {
-                        if ((closestZombie.transform.position - zombie.transform.position).sqrMagnitude <
-                            (closestZombie.transform.position - transform.position).sqrMagnitude && (closestZombie.transform.position - transform.position).sqrMagnitude <= 400)
+                        if ((transform.position - zombie.transform.position).sqrMagnitude <
+                            (transform.position - closestZombie.transform.position).sqrMagnitude && (transform.position - closestZombie.transform.position).sqrMagnitude <= 10)
                         {
                             closestZombie = zombie;
                         }
                     }
-
-                    Target.TargetTransform = closestZombie.transform;
-                    StartCoroutine(Pathfinder.PathfindToTarget(closestZombie.transform, transform.position, queue =>
+                    
+                    if (closestZombie)
+                    
+                    StartCoroutine(Pathfinder.PathfindToTarget(Target.TargetTransform, transform.position, queue =>
                     {
                         waypoints = queue;
                         Target.isSearching = false;
                     }));
                 }
-                else Target.isSearching = false;
-                
-                Target.isSearching = true;
-                UnityExtensions.DelayAction(this, ()=> StartCoroutine(FindTargetDelayed()), Random.Range(1f, 5f));   
+                else
+                {*/
+                    UnityExtensions.DelayAction(this, FindTargetDelayed, Random.Range(2f, 15f));
+                //}
             }
-
-            Target.isSearching = true;
-            StartCoroutine(Pathfinder.PathfindToTarget(Target.TargetTransform, transform.position, queue =>
+            else
             {
-                waypoints = queue;
+                StartCoroutine(Pathfinder.PathfindToTarget(Target.TargetTransform, transform.position, array =>
+                {
+                    waypoints = new Queue<Node>(array.Reverse());
+                    Target.isSearching = false;
+                }));   
+            }
+        }
+        
+        private void FindTargetDelayed()
+        {
+            //find an objective position inside a certain radius of starting position
+            do
+            {
+                objective.position = _initialPos + (Random.insideUnitSphere * distance).ChopTo2DVector3();
+            } while (!Node.NodeFromWorldPoint(objective.position).canWalk);
+
+            Target.TargetTransform = objective;
+
+            StartCoroutine(Pathfinder.PathfindToTarget(objective, transform.position, array =>
+            {
+                waypoints = new Queue<Node>(array);
                 Target.isSearching = false;
             }));
         }
@@ -122,8 +144,7 @@ namespace Characters
             if (health < 0)
             {
                 IsScheduledForCleanup = true;
-                StartCoroutine(Cleanup());
-                
+
                 MapEvents.HumanKilledEvent.Invoke(this, EventArgs.Empty);
 
                 for (var i = 0; i < fingerDrop; i++) Instantiate(fingerParticles, transform.position, Quaternion.identity).Play();
@@ -134,33 +155,11 @@ namespace Characters
             }
         }
 
-        private IEnumerator FindTargetDelayed()
-        {
-            //find an objective position inside a certain radius of starting position
-            do
-            {
-                objective.position = _initialPos + (Random.insideUnitSphere * distance).ChopTo2DVector3();
-            } while (!Node.NodeFromWorldPoint(objective.position).canWalk);
-
-            Target.TargetTransform = objective;
-            
-            var hasCompleted = false;
-            
-            StartCoroutine(Pathfinder.PathfindToTarget(objective, transform.position, queue =>
-            {
-                waypoints = queue;
-                hasCompleted = true;
-            }));
-
-            yield return new WaitUntil(() => hasCompleted);
-            Target.isSearching = false;
-        }
-
         private IEnumerator DealDamage(CharacterBehaviour attackedChar)
         {
             if (attackedChar == null || attackedChar.IsScheduledForCleanup)
             {
-                base.FindTarget(true);
+                base.FindTarget();
                 yield break;
             }
 
@@ -176,7 +175,7 @@ namespace Characters
         {
             if (atackedBuild == null)
             {
-                base.FindTarget(true);
+                base.FindTarget();
                 yield break;
             }
             
@@ -185,13 +184,13 @@ namespace Characters
             atackedBuild.SufferDamage(attack);
 
             yield return new WaitForSecondsRealtime(attackInterval);
-            if (isDealingDamage) StartCoroutine(DealDamage(atackedBuild));
+            StartCoroutine(DealDamage(atackedBuild));
         }
 
-        protected override IEnumerator Cleanup()
+        protected override void Cleanup()
         {
-            yield return new WaitForFixedUpdate();
-
+            base.Cleanup();
+            
             MapData.HumanList.Remove(this);
             gameObject.Destroy();
         }

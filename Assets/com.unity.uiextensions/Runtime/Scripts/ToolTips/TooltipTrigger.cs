@@ -2,6 +2,7 @@
 ///Credit Martin Nerurkar // www.martin.nerurkar.de // www.sharkbombs.com
 ///Sourced from - http://www.sharkbombs.com/2015/02/10/tooltips-with-the-new-unity-ui-ugui/
 using UnityEngine.EventSystems;
+using Utilities.Extensions;
 
 namespace UnityEngine.UI.Extensions
 {
@@ -63,9 +64,7 @@ namespace UnityEngine.UI.Extensions
                     StartCoroutine(HoveredMouseFollowingLoop());
                     break;
                 case TooltipPositioningType.transformPosition:
-                    StartHover((WorldToScreenIsRequired ? 
-                        ToolTip.Instance.GuiCamera.WorldToScreenPoint(transform.position) :
-                        transform.position) + offset, true);
+                    StartHover((Vector3)GetComponent<RectTransform>().anchoredPosition + offset, true);
                     break;
             }
         }

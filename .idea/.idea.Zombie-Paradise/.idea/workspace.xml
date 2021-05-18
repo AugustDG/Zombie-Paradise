@@ -5,8 +5,174 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f319ddcf-deb5-40fd-ad02-78d4e41a9a74" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/MainAudio.mixer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/MainAudio.mixer.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1/Lightmap-0_comp_dir.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1/Lightmap-0_comp_dir.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1/Lightmap-0_comp_light.exr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1/Lightmap-0_comp_light.exr.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Mini_Tut.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Mini_Tut.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CustomTooltip.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CustomTooltipTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/EndMenuManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/TutManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/PathfindJobResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/PathfindJobResult.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Prefabs/UserReportingPrefab.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Prefabs/UserReportingPrefab.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Release Notes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Release Notes.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/AttachmentExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/AttachmentExtensions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/CyclicalList.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/CyclicalList.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/IUserReportingPlatform.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/IUserReportingPlatform.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/LicenseLevel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/LicenseLevel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/MetricsGatheringMode.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/MetricsGatheringMode.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/NullUserReportingPlatform.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/NullUserReportingPlatform.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/PngHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/PngHelper.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/Preconditions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/Preconditions.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/SerializableException.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/SerializableException.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/SerializableStackFrame.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/SerializableStackFrame.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReport.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReport.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportAppearanceHint.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportAppearanceHint.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportAttachment.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportAttachment.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportEventLevel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportEventLevel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportList.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportList.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportMeasure.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportMeasure.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportMetric.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportMetric.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportNamedValue.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportNamedValue.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportPreview.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportPreview.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportScreenshot.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportScreenshot.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportingClient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportingClient.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportingClientConfiguration.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Client/UserReportingClientConfiguration.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/FramerateMonitor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/FramerateMonitor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/SimpleJson.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/SimpleJson.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/UnityUserReportParser.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/UnityUserReportParser.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/UnityUserReporting.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/UnityUserReporting.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/UnityUserReportingPlatform.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/UnityUserReportingPlatform.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/UnityUserReportingUpdater.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/UnityUserReportingUpdater.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/Version2018_3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/Version2018_3/AsyncUnityUserReportingPlatform.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/Version2018_3/AsyncUnityUserReportingPlatform.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/Version2018_3/Screenshots.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/Version2018_3/Screenshots/Downsampler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/Version2018_3/Screenshots/Downsampler.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/Version2018_3/Screenshots/PngEncoder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/Version2018_3/Screenshots/PngEncoder.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/Version2018_3/Screenshots/ScreenshotManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/Version2018_3/Screenshots/ScreenshotManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/Version2018_3/Screenshots/ScreenshotRecorder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/Version2018_3/Screenshots/ScreenshotRecorder.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/Version2018_3/Screenshots/ScreenshotType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/Plugin/Version2018_3/Screenshots/ScreenshotType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/UserReportingConfigureOnly.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/UserReportingConfigureOnly.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/UserReportingMonitor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/UserReportingMonitor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/UserReportingPlatformType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/UserReportingPlatformType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/UserReportingScript.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/UserReportingScript.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/UserReportingState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/UserReportingState.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/UserReportingXRExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/UserReporting/Scripts/UserReportingXRExtensions.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Zombie-Paradise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Zombie-Paradise/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Base Zombie/_source/Base Zombie.vox" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Base Zombie/_source/Base Zombie.vox" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Characters/Zombies/BasicZombie.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Characters/Zombies/BasicZombie.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Environment/Graveyard Path.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Environment/Graveyard Path.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Environment/Graveyard.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Environment/Graveyard.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Environment/Ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Environment/Ground.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Environment/Props_EnvPack.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Environment/Props_EnvPack.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Environment/Tombstone.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Environment/Tombstone.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Environment/Vegetation.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Environment/Vegetation.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/UI/Currency.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/UI/Currency.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Audio/Brain Drop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Brain Drop.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Audio/End Ambience.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/End Ambience.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Audio/Finger Drop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Finger Drop.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Audio/Footstep.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Footstep.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Audio/Graveyard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Graveyard.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Audio/Human Attack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Human Attack.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Audio/Main Ambience.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Main Ambience.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Audio/Robot Attack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Robot Attack.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Audio/Robot Step.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Robot Step.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Audio/Tree Life Lost.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Tree Life Lost.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Audio/Wind.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Wind.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Audio/Zombie Attack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Audio/Zombie Attack.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/Tiles/Ground Tile 2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Tiles/Ground Tile 2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/Tiles/Ground Tile Path.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Tiles/Ground Tile Path.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Environment/Tiles/Ground Tile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Environment/Tiles/Ground Tile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Humans/HumanTemplate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Humans/HumanTemplate.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Humans/RobotTemplate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Humans/RobotTemplate.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Humans/Shot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Humans/Shot.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/ResearchButton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/ResearchButton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_ArmL.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_ArmL.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_ArmR.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_ArmR.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_Head.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_Head.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_Torso.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombies/Parts/1_ZP_Torso.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Loading.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Loading.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map_1/Default Map_Lights.lighting" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1/Default Map_Lights.lighting" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map_1/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Map_1/Main Camera Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Map_1/Main Camera Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/BuildingBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/BuildingBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/CharacterBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/CharacterBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/HumanBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/HumanBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/ZombieBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/ZombieBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Creation/CreationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Creation/CreationManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Node.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Node.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Research/ResearchManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Research/ResearchManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawning/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawning/WaveManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/DevTools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/DevTools.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/LoadingManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/LoadingManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/MapEvents.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/MapEvents.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/ToolTips/ToolTip.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/ToolTips/ToolTip.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/ToolTips/TooltipTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/ToolTips/TooltipTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,57 +191,65 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.24/UnityEditor.TestRunner/TestRun/Tasks/BuildTestTreeTask.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/DevTools.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/TaskManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.24/UnityEditor.TestRunner/CommandLineTest/Executer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Target.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/HealthLight.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@10.3.2/Runtime/Debugging/DebugManager.Actions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@1.3.9/Tests/Editor/Models/Providers/MockSourceControlProvider.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/UnselectSelf.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UILineRectConnector.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph@10.3.2/Editor/Data/Implementation/NodeUtils.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/cc/a5da24d3/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/9d/7e8ed4c4/Monitor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CustomButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/f3/d947ac18/JobHandle.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/GoForwardAndDestroy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/ShootingBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/c0/bffe457e/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.3.2/Editor/ShaderPreprocessor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/DisplayCurrencyValue.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Research/ResearchManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/ResearchManagerEditor.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2348FB5E-CC9E-4E68-9F37-F7D7FADAEA9A/fc/3585da20/TweenManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph@10.3.2/Editor/Data/Implementation/NodeUtils.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/GoForwardAndDestroy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/SerializableDictionary.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/LoadingManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C44E24CB-7B9D-4E50-96E6-5A3281E887F5/b4/b9a2a453/GUIUtility.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/220F2AAB-ED1D-4738-94A8-8B65AAF6C105/16/753d7b8b/IEnumerator.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/14/4731db24/KeyValuePair`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1CDF5C2C-C101-4916-9242-B9590B7EBB6B/a8/e334a7f8/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2348FB5E-CC9E-4E68-9F37-F7D7FADAEA9A/fc/3585da20/TweenManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/eb/e6506a97/CustomYieldInstruction.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1CDF5C2C-C101-4916-9242-B9590B7EBB6B/33/e158c441/IMGUIContainer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/BuildingBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/220F2AAB-ED1D-4738-94A8-8B65AAF6C105/16/753d7b8b/IEnumerator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/11/5e0cc8b1/WaitForSecondsRealtime.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/Target.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/HealthLight.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/c0/bffe457e/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/LoadingManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/9d/7e8ed4c4/Monitor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C44E24CB-7B9D-4E50-96E6-5A3281E887F5/b4/b9a2a453/GUIUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A8E296DC-7C7B-4E92-800D-9E996ED99E15/c5/1edf74e6/RenderMode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CustomTooltip.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CustomTooltipTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@10.3.2/Runtime/Debugging/DebugManager.Actions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/220F2AAB-ED1D-4738-94A8-8B65AAF6C105/90/7c5f2260/EventHandler`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2348FB5E-CC9E-4E68-9F37-F7D7FADAEA9A/8b/0daf5fdb/TweenManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2348FB5E-CC9E-4E68-9F37-F7D7FADAEA9A/2b/90fccd25/DOTween.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1CDF5C2C-C101-4916-9242-B9590B7EBB6B/a8/e334a7f8/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/f3/d947ac18/JobHandle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA976C21-0410-4B7C-A9E1-785715722C9D/6e/19e5bc3e/Timer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/AA976C21-0410-4B7C-A9E1-785715722C9D/fb/64c9cef1/Socket.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/UILineRectConnector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.24/UnityEditor.TestRunner/TestRun/Tasks/BuildTestTreeTask.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/ba/a7b44abf/TaskAwaiter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/CustomButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@10.3.2/Editor/ShaderPreprocessor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/40/4016b0f8/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/cf/3fe2afbd/FileStream.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/92/fbd654f7/EncodingTable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.burst@1.4.6/Editor/BurstReflection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/20/cabe39c1/MonoModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/fe/6637b7d8/NativeArray`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/ResearchManagerEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/BuildingBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/UnselectSelf.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/ShootingBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/DevTools.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/UserReporting/Scripts/UserReportingXRExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.test-framework@1.1.24/UnityEditor.TestRunner/CommandLineTest/Executer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/EndMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2020.2.7f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EAE584CE-26BC-4022-9C1B-1AA476BFA589/14/4731db24/KeyValuePair`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Research/ResearchManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/TaskManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42A5878C-E129-4030-83AC-CCF18E43363F/cc/a5da24d3/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/Editor/MapManagerEditor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinding.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TargetVector.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SerializeProperty.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/AudioManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Characters/HumanBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Characters/CharacterBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Characters/ZombieBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioObject.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Research/ResearchCreation.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/UILineRendererRectConnector.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/UILineRectConnector.cs" />
@@ -84,40 +258,49 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/SerializableDictionary.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Editor/ResearchManagerEditor.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnPreview.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/DevTools.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/InjectUnscaledTime.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/UnselectSelf.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/UnityExtensions.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Creation/CreationManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Node.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/DisplayCurrencyValue.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Research/ResearchManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/ZombiePart.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/Button3D.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Target.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/ZombieBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GoForward.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GoForwardAndDestroy.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/FadeAway.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainMenuManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/ShootingBehaviour.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Enums.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LoadingManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/HealthLight.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/BuildingBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinder.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/WaveManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Research/ResearchButton.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapEvents.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Utility/Events/AudioEventArgs.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/CharacterBehaviour.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/HumanBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/ToolTips/TooltipTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/ToolTips/ToolTip.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/CustomTolltip.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/CustomTooltip.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/CustomTooltipTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/BuildingBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapData.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Audio/AudioManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/PathfindJobResult.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/PathfindingManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/ShootingBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/DevTools.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/ZombieBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/CharacterBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Node.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/EndMenuManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/UserReporting/Scripts/UserReportingXRExtensions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/MapEvents.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/SpawnManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Creation/CreationManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Spawning/WaveManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/HumanBehaviour.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Research/ResearchManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Pathfinding/Pathfinder.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utility/LoadingManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UI/TutManager.cs" />
     </changedPaths>
   </component>
   <component name="PerforceDirect.Settings">
@@ -133,7 +316,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.26256078" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.26267058" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -147,7 +330,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="threadsIsVisibleKey" value="false" />
   </component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/Builds\Zombie Paradise.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -230,6 +413,13 @@
       <workItem from="1619186424409" duration="4323000" />
       <workItem from="1619789433452" duration="5082000" />
       <workItem from="1620054539197" duration="3357000" />
+      <workItem from="1620392224516" duration="21049000" />
+      <workItem from="1620441157295" duration="1302000" />
+      <workItem from="1620489213077" duration="20708000" />
+      <workItem from="1620524646887" duration="5882000" />
+      <workItem from="1620827351668" duration="286000" />
+      <workItem from="1620827677177" duration="1329000" />
+      <workItem from="1620832062113" duration="1031000" />
     </task>
     <task id="LOCAL-00001" summary="Another &quot;first upload&quot;, a lot changed and is not fully working yet (play mode? human behaviour?).&#10;&#10;In any case, regular commits will follow!">
       <created>1616525541549</created>
@@ -337,7 +527,7 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+        <breakpoint suspend="NONE" type="DotNet Exception Breakpoints">
           <properties exception="System.NullReferenceException" isInternal="false" displayValue="NullReferenceException" namespaceName="System">
             <option name="internal" value="false" />
           </properties>
@@ -349,6 +539,38 @@
           </properties>
           <option name="timeStamp" value="59" />
         </breakpoint>
+        <breakpoint suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.IO.IOException" isInternal="false" displayValue="IOException" namespaceName="System.IO">
+            <option name="internal" value="false" />
+          </properties>
+          <option name="timeStamp" value="62" />
+        </breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/ToolTips/TooltipTrigger.cs</url>
+          <line>66</line>
+          <properties documentPath="F:\Projects\Dev\Unity\Zombie-Paradise\Assets\com.unity.uiextensions\Runtime\Scripts\ToolTips\TooltipTrigger.cs" initialLine="66" containingFunctionPresentation="method 'OnPointerEnter'">
+            <startOffsets>
+              <option value="2843" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2926" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/com.unity.uiextensions/Runtime/Scripts/ToolTips/TooltipTrigger.cs</url>
+          <line>97</line>
+          <properties documentPath="F:\Projects\Dev\Unity\Zombie-Paradise\Assets\com.unity.uiextensions\Runtime\Scripts\ToolTips\TooltipTrigger.cs" initialLine="97" containingFunctionPresentation="method 'StartHover'">
+            <startOffsets>
+              <option value="3774" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3838" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="DotNet Exception Breakpoints">
@@ -356,5 +578,11 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Type#JobNode" memberName="GridPosition" />
+        <PinnedItemInfo parentTag="Type#UnityEngine.Transform" memberName="position" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

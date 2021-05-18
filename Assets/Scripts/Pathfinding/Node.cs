@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using JetBrains.Annotations;
+using Unity.Mathematics;
 using UnityEngine;
 using Utilities.Extensions;
 using Utility;
@@ -9,8 +10,7 @@ public class Node
 {
     public Vector3 worldPosition;
     public Vector2Int gridPosition;
-    // ReSharper disable once InconsistentNaming
-    [NonSerialized] public List<Node> neighbours;
+    [NonSerialized] public List<Node> neighbours; // ReSharper disable once InconsistentNaming
     public bool canSpawn;
     public bool canWalk;
 
@@ -24,23 +24,51 @@ public class Node
     }
 
     //Utility methods
+    public static int ApproximateDistance(int dx, int dy)
+    {
+        //From here: https://www.flipcode.com/archives/Fast_Approximate_Distance_Functions.shtml
+        
+        int min, max;
+
+        if (dx < 0) dx = -dx;
+        if (dy < 0) dy = -dy;
+
+        if (dx < dy)
+        {
+            min = dx;
+            max = dy;
+        }
+        else
+        {
+            min = dy;
+            max = dx;
+        }
+
+        var approx = max * 1007 + min * 441;
+
+        if (max < min << 4)
+            approx -= max * 40;
+        
+        //add 512 for proper rounding
+        return (approx + 512) >> 10;
+    }
     public static JobNode ToJobNode(Node node)
     {
         return new JobNode(node.gridPosition, node.canWalk);
     }
 
-    public static JobNeighbour ToJobNeighbour(Node node)
+    public static NodeNeighbour ToJobNeighbour(Node node)
     {
-        return new JobNeighbour(node.gridPosition, node.canWalk);
+        return new NodeNeighbour(node.gridPosition, node.canWalk ? 1 : 0);
     }
 
-    public static Node[] ToNodes(JobNode[] jobNode)
+    public static Node[] ToNodes(JobNode[] jobNodes, int length)
     {
-        var returnNodes = new Node[jobNode.Length];
+        var returnNodes = new Node[length];
 
-        for (var i = 0; i < jobNode.Length; i++)
+        for (var i = 0; i < length; i++)
         {
-            returnNodes[i] = MapData.Map[jobNode[i].GridPosition.x, jobNode[i].GridPosition.y];
+            returnNodes[i] = MapData.Map[jobNodes[i].GridPosition.x, jobNodes[i].GridPosition.y];
         }
 
         return returnNodes;
@@ -73,54 +101,66 @@ public class Node
 public struct JobNode
 {
     public Vector2Int GridPosition;
-    public JobNeighbour Neighbour1;
-    public JobNeighbour Neighbour2;
-    public JobNeighbour Neighbour3;
-    public JobNeighbour Neighbour4;
-    public JobNeighbour Neighbour5;
-    public JobNeighbour Neighbour6;
-    public JobNeighbour Neighbour7;
-    public JobNeighbour Neighbour8;
-    public bool CanWalk;
+    public NodeNeighbour Neighbour1;
+    public NodeNeighbour Neighbour2;
+    public NodeNeighbour Neighbour3;
+    public NodeNeighbour Neighbour4;
+    public NodeNeighbour Neighbour5;
+    public NodeNeighbour Neighbour6;
+    public NodeNeighbour Neighbour7;
+    public NodeNeighbour Neighbour8;
+    //public bool CanWalk;
 
     public JobNode(Vector2Int gridPosition, bool canWalk)
     {
         GridPosition = gridPosition;
-        CanWalk = canWalk;
-        Neighbour1 = new JobNeighbour();
-        Neighbour2 = new JobNeighbour();
-        Neighbour3 = new JobNeighbour();
-        Neighbour4 = new JobNeighbour();
-        Neighbour5 = new JobNeighbour();
-        Neighbour6 = new JobNeighbour();
-        Neighbour7 = new JobNeighbour();
-        Neighbour8 = new JobNeighbour();
+        //CanWalk = canWalk;
+        Neighbour1 = new NodeNeighbour();
+        Neighbour2 = new NodeNeighbour();
+        Neighbour3 = new NodeNeighbour();
+        Neighbour4 = new NodeNeighbour();
+        Neighbour5 = new NodeNeighbour();
+        Neighbour6 = new NodeNeighbour();
+        Neighbour7 = new NodeNeighbour();
+        Neighbour8 = new NodeNeighbour();
     }
 
     public JobNode(Vector2Int gridPosition)
     {
         GridPosition = gridPosition;
-        CanWalk = true;
-        Neighbour1 = new JobNeighbour();
-        Neighbour2 = new JobNeighbour();
-        Neighbour3 = new JobNeighbour();
-        Neighbour4 = new JobNeighbour();
-        Neighbour5 = new JobNeighbour();
-        Neighbour6 = new JobNeighbour();
-        Neighbour7 = new JobNeighbour();
-        Neighbour8 = new JobNeighbour();
+        //CanWalk = true;
+        Neighbour1 = new NodeNeighbour();
+        Neighbour2 = new NodeNeighbour();
+        Neighbour3 = new NodeNeighbour();
+        Neighbour4 = new NodeNeighbour();
+        Neighbour5 = new NodeNeighbour();
+        Neighbour6 = new NodeNeighbour();
+        Neighbour7 = new NodeNeighbour();
+        Neighbour8 = new NodeNeighbour();
     }
 }
 
-public struct JobNeighbour
+public struct NodeNeighbour
 {
     public Vector2Int GridPosition;
-    public bool CanWalk;
+    public int CanWalk;
 
-    public JobNeighbour(Vector2Int gridPosition, bool canWalk)
+    public NodeNeighbour(Vector2Int gridPosition, int canWalk)
     {
         GridPosition = gridPosition;
         CanWalk = canWalk;
+    }
+}
+
+public struct CostNode
+{
+    public Vector2Int GridPosition;
+    public int Cost;
+
+    public CostNode(Vector2Int gridPosition, int cost)
+    {
+        GridPosition = gridPosition;
+        Cost = cost;
     }
 }
 

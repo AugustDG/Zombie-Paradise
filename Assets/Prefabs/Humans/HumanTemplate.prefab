@@ -363,10 +363,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9015392c5da5408fba86be161b0403f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 3
   health: 100
-  attack: 3.5
-  attackInterval: 1
+  attack: 4
+  attackInterval: 0.5
   isScheduledForCleanup: 0
   headPosition: {fileID: 9010886535172180625}
   torsoPosition: {fileID: 9010886534424195925}
@@ -383,6 +383,7 @@ MonoBehaviour:
       canSpawn: 0
       canWalk: 0
     isSearching: 0
+  nodes: []
   fingerDrop: 10
   brainDrop: 1
   fingerParticles: {fileID: 8497151285980114238, guid: ba75c4ad47dafde4dad05ab62f06e48d, type: 3}
@@ -393,7 +394,7 @@ MonoBehaviour:
   isRobotSoldier: 0
   objective: {fileID: 0}
   isShooting: 0
-  shotDelay: 1.5
+  shotDelay: 2.5
   shootTrans: {fileID: 0}
 --- !u!136 &3379567772744489650
 CapsuleCollider:
@@ -405,7 +406,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 2
   m_Height: 2.5
   m_Direction: 1
   m_Center: {x: 0, y: 1.0024643, z: 0.14923632}

@@ -215,6 +215,8 @@ public class CreationManager : MonoBehaviour
         costLabel.text =  tempZData.totalCost.ToString(CultureInfo.InvariantCulture);
 
         MapData.ZombieToSpawn = tempZData;
+        
+        MapEvents.ZombieCreated.Invoke(this, EventArgs.Empty);
     }
 
     public void DeleteZombie()
